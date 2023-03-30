@@ -19,8 +19,6 @@ export default function RecipeDetails({ recipe }: Props) {
 
                 if (ingredient.amount === 'to taste') {
                     amountWithUnit = `${ingredient.amount}`
-                } else if (ingredient.unit === 'NA') {
-                    amountWithUnit = `- ${ingredient.amount}`
                 } else {
                     amountWithUnit = `- ${ingredient.amount} ${ingredient.unit}`
                 }
