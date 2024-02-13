@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { supabase } from '@src/lib/supabaseClient'
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, GetStaticPaths } from 'next'
 import { Recipe } from '@src/types/custom'
 
 type Props = {
@@ -26,7 +26,7 @@ export default function RecipeDetails({ recipe }: Props) {
                 const output = `${ingredient.details.name} ${amountWithUnit}`
                 return (
                     <Box key={ingredient.id}>
-                        <Typography variant="caption">{output}</Typography>
+                        <Typography variant="body1">{output}</Typography>
                     </Box>
                 )
             })}
@@ -34,8 +34,19 @@ export default function RecipeDetails({ recipe }: Props) {
     )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-    const { path } = context.query
+export async function getStaticPaths() {
+    const { data } = await supabase.from('dishes').select('url')
+
+    const paths = (data || []).map((entry) => ({
+        params: { path: entry.url },
+    }))
+
+    return { paths, fallback: false }
+}
+
+export const getStaticProps: GetServerSideProps = async (context) => {
+    const { path } = context.params as any
+
     const { data: dishData, error } = await supabase
         .from('dishes')
         .select('*')

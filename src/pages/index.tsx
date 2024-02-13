@@ -7,7 +7,7 @@ type Props = {
     dishes: Dishes
 }
 
-export default function Home({ dishes }: Props) {
+export default function HomePage({ dishes }: Props) {
     return (
         <Container>
             {dishes.map((dish) => (
