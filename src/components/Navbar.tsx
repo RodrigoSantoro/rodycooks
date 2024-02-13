@@ -34,7 +34,7 @@ export const Navbar = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="xl">
+            <Container>
                 <Toolbar disableGutters>
                     <LocalDiningIcon
                         sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
