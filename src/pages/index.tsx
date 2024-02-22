@@ -7,7 +7,6 @@ import {
     type MRT_ColumnDef,
 } from 'material-react-table'
 import { useMemo } from 'react'
-import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 
 interface Props {
     dishes: Dishes
@@ -34,10 +33,8 @@ export default function HomePage({ dishes }: Props) {
                     <Link
                         href={`recipes/${cell.row.original.url}`}
                         target="_blank"
-                        style={{ display: 'flex', alignItems: 'center' }}
                     >
                         {cell.getValue<string>()}
-                        <OpenInNewIcon sx={{ pl: 1, fontSize: 12 }} />
                     </Link>
                 ),
             },
