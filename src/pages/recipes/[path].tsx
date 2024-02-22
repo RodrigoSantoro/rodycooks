@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material'
 import { supabase } from '@src/lib/supabaseClient'
-import { GetServerSideProps, GetStaticPaths } from 'next'
+import { GetStaticProps } from 'next'
 import { Recipe } from '@src/types/custom'
+import { ParsedUrlQuery } from 'querystring'
 
 interface Props {
     recipe: Recipe
@@ -42,8 +43,13 @@ export async function getStaticPaths() {
     return { paths, fallback: false }
 }
 
-export const getStaticProps: GetServerSideProps = async (context) => {
-    const { path } = context.params as any
+interface ContextParams extends ParsedUrlQuery {
+    path: string
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+    const { path } = context.params as ContextParams
+
     const { data: data, error: error } = await supabase.rpc(
         'get_dish_ingredients_by_url',
         {
