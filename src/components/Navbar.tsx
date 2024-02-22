@@ -20,10 +20,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import LocalDiningIcon from '@mui/icons-material/LocalDining'
 
-const pages = [
-    { label: 'Home', path: '/' },
-    { label: 'Recipes', path: '/recipes' },
-]
+const pages = [{ label: 'Home', path: '/' }]
 
 export const Navbar = () => {
     const [openDrawer, setOpenDrawer] = useState(false)
