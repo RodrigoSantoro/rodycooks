@@ -39,9 +39,11 @@ export default function HomePage({ dishes }: Props) {
                 accessorKey: 'categories',
                 id: 'categories',
                 header: 'Categories',
-                Cell: ({ cell }) => <>{cell.getValue<string[]>().join(', ')}</>,
+                Cell: ({ cell }) => (
+                    <>{cell.getValue<string[]>().sort().join(', ')}</>
+                ),
                 filterVariant: 'multi-select',
-                filterSelectOptions: categories,
+                filterSelectOptions: categories.sort(),
             },
         ],
         [categories]
