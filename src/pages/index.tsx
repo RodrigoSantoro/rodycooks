@@ -1,5 +1,5 @@
 import { supabase } from '@src/lib/supabaseClient'
-import { DishInfo, Dishes } from '@src/types/custom'
+import { Dish, Dishes } from '@src/types/custom'
 import Link from 'next/link'
 import {
     MaterialReactTable,
@@ -23,7 +23,7 @@ export default function HomePage({ dishes }: Props) {
         return Array.from(categories)
     }, [dishes])
 
-    const columns = useMemo<MRT_ColumnDef<DishInfo>[]>(
+    const columns = useMemo<MRT_ColumnDef<Dish>[]>(
         () => [
             {
                 accessorKey: 'name',
@@ -76,8 +76,6 @@ export async function getStaticProps() {
         console.error(error.message)
         return { props: {} }
     }
-
-    console.log('returning dishes', Array.from(dishes.values()))
 
     return {
         props: {
