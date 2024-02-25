@@ -3,6 +3,8 @@ export type Dish = {
     name: string
     url: string
     categories: string[]
+    prepTime: number
+    cookTime: number
 }
 export type Dishes = Dish[]
 export type Ingredient = {

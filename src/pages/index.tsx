@@ -7,21 +7,17 @@ import {
     type MRT_ColumnDef,
 } from 'material-react-table'
 import { useMemo } from 'react'
+// import { Button } from '@mui/material'
 
 interface Props {
     dishes: Dishes
+    categories: string[]
 }
 
-export default function HomePage({ dishes }: Props) {
-    const categories = useMemo(() => {
-        const categories = new Set<string>()
-        dishes.forEach((dish) => {
-            dish.categories.forEach((category) => {
-                categories.add(category)
-            })
-        })
-        return Array.from(categories)
-    }, [dishes])
+export default function HomePage({ dishes, categories }: Props) {
+    // const addToCart = (cell: any) => {
+    //     console.log(cell)
+    // }
 
     const columns = useMemo<MRT_ColumnDef<Dish>[]>(
         () => [
@@ -47,7 +43,29 @@ export default function HomePage({ dishes }: Props) {
                 ),
                 filterVariant: 'multi-select',
                 filterSelectOptions: categories.sort(),
+                size: 100,
             },
+            {
+                accessorKey: 'prepTime',
+                id: 'prepTime',
+                header: 'Prep Time',
+                size: 50,
+            },
+            {
+                accessorKey: 'cookTime',
+                id: 'cookTime',
+                header: 'Cook Time',
+                size: 50,
+            },
+            // {
+            //     accessorKey: 'addToCart',
+            //     header: '',
+            //     Cell: ({ cell }) => (
+            //         <Button onClick={() => addToCart(cell)}>Add to card</Button>
+            //     ),
+            //     enableSorting: false,
+            //     enableColumnActions: false,
+            // },
         ],
         [categories]
     )
@@ -62,7 +80,9 @@ export default function HomePage({ dishes }: Props) {
 }
 
 export async function getStaticProps() {
-    const { data, error } = await supabase.from('view_name').select('*')
+    const { data, error } = await supabase
+        .from('dishes_with_categories_view')
+        .select('*')
     const dishes = new Map()
     data?.forEach((dish) => {
         if (dishes.get(dish.dish_id)) {
@@ -73,9 +93,19 @@ export async function getStaticProps() {
                 name: dish.dish_name,
                 url: dish.url,
                 categories: [dish.cat_name],
+                prepTime: dish.prep_time,
+                cookTime: dish.cook_time,
             })
         }
     })
+
+    const categoriesSet = new Set<string>()
+    dishes.forEach((dish) => {
+        dish.categories.forEach((category: string) => {
+            categoriesSet.add(category)
+        })
+    })
+    const categories = Array.from(categoriesSet)
 
     if (error) {
         console.error(error.message)
@@ -85,6 +115,7 @@ export async function getStaticProps() {
     return {
         props: {
             dishes: Array.from(dishes.values()),
+            categories,
         },
     }
 }
