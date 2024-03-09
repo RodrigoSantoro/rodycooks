@@ -25,7 +25,7 @@ export const RecipeIngredients = ({ ingredients }: RecipeIngredientsProps) => {
     }
 
     return (
-        <Stack spacing={1.5}>
+        <Stack spacing={2}>
             <Typography variant="h5">Ingredients:</Typography>
             <FormGroup>
                 <Stack>

@@ -5,6 +5,7 @@ import { Recipe } from '@src/types/custom'
 import { ParsedUrlQuery } from 'querystring'
 import { RecipeInfo } from '@src/components/RecipeInfo/RecipeInfo'
 import { RecipeIngredients } from '@src/components/RecipeIngredients/RecipeIngredients'
+import { RecipeSteps } from '@src/components/RecipeSteps/RecipeSteps'
 
 interface Props {
     recipe: Recipe
@@ -20,6 +21,7 @@ export default function RecipeDetails({ recipe }: Props) {
                 servings={recipe.servings}
             />
             <RecipeIngredients ingredients={recipe.ingredients} />
+            <RecipeSteps steps={recipe.steps} />
         </Stack>
     )
 }
@@ -60,6 +62,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
         prepTime: data[0].prep_time,
         cookTime: data[0].cook_time,
         ingredients: [],
+        steps: [],
     }
 
     data.forEach((ingredient) => {
@@ -70,6 +73,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
             unit: ingredient.unit,
         })
     })
+
+    // recipe.steps = [
+    //     { id: '1', order: 1, description: 'Do something1' },
+    //     { id: '2', order: 2, description: 'Do something2' },
+    //     { id: '3', order: 3, description: 'Do something3' },
+    // ]
+
     return {
         props: { recipe },
     }

@@ -6,13 +6,22 @@ export type Dish = {
     prepTime: number
     cookTime: number
 }
+
 export type Dishes = Dish[]
+
 export type Ingredient = {
     id: string
     name: string
     unit: string
     amount: string
 }
+
+export type Step = {
+    id: string
+    order: number
+    description: string
+}
+
 export type Recipe = {
     id: string
     name: string
@@ -20,4 +29,5 @@ export type Recipe = {
     prepTime: number
     cookTime: number
     ingredients: Ingredient[]
+    steps: Step[]
 }
