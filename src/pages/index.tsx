@@ -7,7 +7,7 @@ import {
     type MRT_ColumnDef,
 } from 'material-react-table'
 import { useMemo } from 'react'
-// import { Button } from '@mui/material'
+import { Typography } from '@mui/material'
 
 interface Props {
     dishes: Dishes
@@ -15,10 +15,6 @@ interface Props {
 }
 
 export default function HomePage({ dishes, categories }: Props) {
-    // const addToCart = (cell: any) => {
-    //     console.log(cell)
-    // }
-
     const columns = useMemo<MRT_ColumnDef<Dish>[]>(
         () => [
             {
@@ -29,6 +25,7 @@ export default function HomePage({ dishes, categories }: Props) {
                     <Link
                         href={`recipes/${cell.row.original.url}`}
                         target="_blank"
+                        style={{ fontSize: '16px' }}
                     >
                         {cell.getValue<string>()}
                     </Link>
@@ -39,7 +36,9 @@ export default function HomePage({ dishes, categories }: Props) {
                 id: 'categories',
                 header: 'Categories',
                 Cell: ({ cell }) => (
-                    <>{cell.getValue<string[]>().sort().join(', ')}</>
+                    <Typography>
+                        {cell.getValue<string[]>().sort().join(', ')}
+                    </Typography>
                 ),
                 filterVariant: 'multi-select',
                 filterSelectOptions: categories.sort(),
@@ -48,24 +47,21 @@ export default function HomePage({ dishes, categories }: Props) {
             {
                 accessorKey: 'prepTime',
                 id: 'prepTime',
-                header: 'Prep Time',
+                header: 'Prep Time (minutes)',
                 size: 50,
+                Cell: ({ cell }) => (
+                    <Typography>{cell.getValue<string>()}</Typography>
+                ),
             },
             {
                 accessorKey: 'cookTime',
                 id: 'cookTime',
-                header: 'Cook Time',
+                header: 'Cook Time (minutes)',
                 size: 50,
+                Cell: ({ cell }) => (
+                    <Typography>{cell.getValue<string>()}</Typography>
+                ),
             },
-            // {
-            //     accessorKey: 'addToCart',
-            //     header: '',
-            //     Cell: ({ cell }) => (
-            //         <Button onClick={() => addToCart(cell)}>Add to card</Button>
-            //     ),
-            //     enableSorting: false,
-            //     enableColumnActions: false,
-            // },
         ],
         [categories]
     )

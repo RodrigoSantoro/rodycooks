@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { Navbar } from '@src/components/Navbar'
+import { Navbar } from '@src/components/Navbar/Navbar'
 import { Box, Container } from '@mui/material'
 
 type Props = {
@@ -11,7 +11,7 @@ export const Layout = ({ children }: Props) => {
         <>
             <Navbar />
             <Box sx={{ height: 24 }} />
-            <Container>{children}</Container>
+            <Container sx={{ marginBottom: 8 }}>{children}</Container>
         </>
     )
 }

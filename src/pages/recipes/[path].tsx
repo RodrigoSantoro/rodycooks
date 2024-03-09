@@ -1,8 +1,10 @@
-import { Box, Typography } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 import { supabase } from '@src/lib/supabaseClient'
 import { GetStaticProps } from 'next'
 import { Recipe } from '@src/types/custom'
 import { ParsedUrlQuery } from 'querystring'
+import { RecipeInfo } from '@src/components/RecipeInfo/RecipeInfo'
+import { RecipeIngredients } from '@src/components/RecipeIngredients/RecipeIngredients'
 
 interface Props {
     recipe: Recipe
@@ -10,26 +12,15 @@ interface Props {
 
 export default function RecipeDetails({ recipe }: Props) {
     return (
-        <Box>
-            <Typography variant="h3">{recipe.name}</Typography>
-            <Typography variant="body1">Servings: {recipe.servings}</Typography>
-            {recipe.ingredients.map((ingredient) => {
-                let amountWithUnit = ''
-
-                if (ingredient.amount === 'to taste') {
-                    amountWithUnit = `${ingredient.amount}`
-                } else {
-                    amountWithUnit = `- ${ingredient.amount} ${ingredient.unit}`
-                }
-
-                const output = `${ingredient.name} ${amountWithUnit}`
-                return (
-                    <Box key={ingredient.id}>
-                        <Typography variant="body1">{output}</Typography>
-                    </Box>
-                )
-            })}
-        </Box>
+        <Stack spacing={6}>
+            <Typography variant="h4">{recipe.name}</Typography>
+            <RecipeInfo
+                prepTime={recipe.prepTime}
+                cookTime={recipe.cookTime}
+                servings={recipe.servings}
+            />
+            <RecipeIngredients ingredients={recipe.ingredients} />
+        </Stack>
     )
 }
 
@@ -66,6 +57,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
         id: data[0].dish_id,
         name: data[0].dish_name,
         servings: data[0].servings,
+        prepTime: data[0].prep_time,
+        cookTime: data[0].cook_time,
         ingredients: [],
     }
 

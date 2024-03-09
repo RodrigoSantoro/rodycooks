@@ -65,7 +65,7 @@ export type Database = {
                         foreignKeyName: 'dish_categories_dish_id_fkey'
                         columns: ['dish_id']
                         isOneToOne: false
-                        referencedRelation: 'view_name'
+                        referencedRelation: 'dishes_with_categories_view'
                         referencedColumns: ['dish_id']
                     }
                 ]
@@ -107,7 +107,7 @@ export type Database = {
                         foreignKeyName: 'dish_ingredients_dish_id_fkey'
                         columns: ['dish_id']
                         isOneToOne: false
-                        referencedRelation: 'view_name'
+                        referencedRelation: 'dishes_with_categories_view'
                         referencedColumns: ['dish_id']
                     },
                     {
@@ -121,29 +121,35 @@ export type Database = {
             }
             dishes: {
                 Row: {
+                    cook_time: number | null
                     created_at: string
                     description: string
                     id: string
                     name: string
                     notes: string | null
+                    prep_time: number | null
                     servings: number
                     url: string
                 }
                 Insert: {
+                    cook_time?: number | null
                     created_at?: string
                     description: string
                     id?: string
                     name: string
                     notes?: string | null
+                    prep_time?: number | null
                     servings?: number
                     url?: string
                 }
                 Update: {
+                    cook_time?: number | null
                     created_at?: string
                     description?: string
                     id?: string
                     name?: string
                     notes?: string | null
+                    prep_time?: number | null
                     servings?: number
                     url?: string
                 }
@@ -169,11 +175,13 @@ export type Database = {
             }
         }
         Views: {
-            view_name: {
+            dishes_with_categories_view: {
                 Row: {
                     cat_name: string | null
+                    cook_time: number | null
                     dish_id: string | null
                     dish_name: string | null
+                    prep_time: number | null
                     url: string | null
                 }
                 Relationships: []
@@ -192,6 +200,8 @@ export type Database = {
                     ingredient_name: string
                     ingredient_id: string
                     servings: number
+                    prep_time: number
+                    cook_time: number
                 }[]
             }
         }

@@ -30,7 +30,14 @@ export const Navbar = () => {
     }
 
     return (
-        <AppBar position="static">
+        <AppBar
+            position="static"
+            style={{
+                height: 120,
+                backgroundColor: 'primary.main',
+                justifyContent: 'center',
+            }}
+        >
             <Container>
                 <Toolbar disableGutters>
                     <LocalDiningIcon
@@ -125,6 +132,7 @@ export const Navbar = () => {
                     <Box
                         flexGrow={1}
                         display={{ xs: 'none', md: 'flex' }}
+                        justifyContent="end"
                         ml={4}
                     >
                         {pages.map((page) => (

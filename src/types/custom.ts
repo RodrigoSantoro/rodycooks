@@ -17,5 +17,7 @@ export type Recipe = {
     id: string
     name: string
     servings: number
+    prepTime: number
+    cookTime: number
     ingredients: Ingredient[]
 }
