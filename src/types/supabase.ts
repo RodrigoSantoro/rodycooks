@@ -119,6 +119,45 @@ export type Database = {
                     }
                 ]
             }
+            dish_steps: {
+                Row: {
+                    created_at: string
+                    description: string
+                    dish_id: string
+                    id: string
+                    order: number
+                }
+                Insert: {
+                    created_at?: string
+                    description: string
+                    dish_id: string
+                    id?: string
+                    order: number
+                }
+                Update: {
+                    created_at?: string
+                    description?: string
+                    dish_id?: string
+                    id?: string
+                    order?: number
+                }
+                Relationships: [
+                    {
+                        foreignKeyName: 'public_dish_steps_dish_id_fkey'
+                        columns: ['dish_id']
+                        isOneToOne: false
+                        referencedRelation: 'dishes'
+                        referencedColumns: ['id']
+                    },
+                    {
+                        foreignKeyName: 'public_dish_steps_dish_id_fkey'
+                        columns: ['dish_id']
+                        isOneToOne: false
+                        referencedRelation: 'dishes_with_categories_view'
+                        referencedColumns: ['dish_id']
+                    }
+                ]
+            }
             dishes: {
                 Row: {
                     cook_time: number | null
@@ -193,15 +232,13 @@ export type Database = {
                     urlparam: string
                 }
                 Returns: {
-                    dish_id: string
-                    dish_name: string
-                    amount: string
-                    unit: string
-                    ingredient_name: string
-                    ingredient_id: string
+                    id: string
+                    name: string
                     servings: number
                     prep_time: number
                     cook_time: number
+                    steps: Json
+                    ingredients: Json
                 }[]
             }
         }

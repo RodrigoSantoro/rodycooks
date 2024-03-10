@@ -1,7 +1,7 @@
 import { Stack, Typography } from '@mui/material'
 import { supabase } from '@src/lib/supabaseClient'
 import { GetStaticProps } from 'next'
-import { Recipe } from '@src/types/custom'
+import { Ingredient, Recipe, Step } from '@src/types/custom'
 import { ParsedUrlQuery } from 'querystring'
 import { RecipeInfo } from '@src/components/RecipeInfo/RecipeInfo'
 import { RecipeIngredients } from '@src/components/RecipeIngredients/RecipeIngredients'
@@ -11,7 +11,11 @@ interface Props {
     recipe: Recipe
 }
 
-export default function RecipeDetails({ recipe }: Props) {
+export default function RecipePage({ recipe }: Props) {
+    if (!recipe) {
+        return <Typography variant="h4">Recipe not found</Typography>
+    }
+
     return (
         <Stack spacing={6}>
             <Typography variant="h4">{recipe.name}</Typography>
@@ -43,12 +47,11 @@ interface ContextParams extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps = async (context) => {
     const { path } = context.params as ContextParams
 
-    const { data: data, error: error } = await supabase.rpc(
-        'get_dish_ingredients_by_url',
-        {
+    const { data: data, error: error } = await supabase
+        .rpc('get_dish_ingredients_by_url', {
             urlparam: path,
-        }
-    )
+        })
+        .single()
 
     if (error) {
         console.error(error.message)
@@ -56,29 +59,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }
 
     const recipe: Recipe = {
-        id: data[0].dish_id,
-        name: data[0].dish_name,
-        servings: data[0].servings,
-        prepTime: data[0].prep_time,
-        cookTime: data[0].cook_time,
-        ingredients: [],
-        steps: [],
+        id: data.id,
+        name: data.name,
+        servings: data.servings,
+        prepTime: data.prep_time,
+        cookTime: data.cook_time,
+        ingredients: data.ingredients as Ingredient[],
+        steps: (data.steps || []) as Step[],
     }
-
-    data.forEach((ingredient) => {
-        recipe.ingredients.push({
-            id: ingredient.ingredient_id,
-            name: ingredient.ingredient_name,
-            amount: ingredient.amount,
-            unit: ingredient.unit,
-        })
-    })
-
-    // recipe.steps = [
-    //     { id: '1', order: 1, description: 'Do something1' },
-    //     { id: '2', order: 2, description: 'Do something2' },
-    //     { id: '3', order: 3, description: 'Do something3' },
-    // ]
 
     return {
         props: { recipe },
