@@ -65,7 +65,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
         prepTime: data.prep_time,
         cookTime: data.cook_time,
         ingredients: data.ingredients as Ingredient[],
-        steps: (data.steps || []) as Step[],
+        steps: ((data.steps || []) as Step[]).sort((a, b) => a.order - b.order),
     }
 
     return {
