@@ -15,13 +15,19 @@ export const RecipeSteps = ({ steps }: RecipeStepsProps) => {
             <Typography variant="h5">Steps:</Typography>
             <Stack spacing={2}>
                 {steps.map((step) => (
-                    <Stack key={step.id} direction="row" spacing={2}>
+                    <Stack
+                        key={step.id}
+                        direction="row"
+                        spacing={2}
+                        alignItems="center"
+                    >
                         <Box
                             display="flex"
                             alignItems="center"
                             justifyContent="center"
                             width="24px"
                             height="24px"
+                            flexShrink={0}
                             sx={{
                                 backgroundColor: 'primary.main',
                                 borderRadius: '100px',
