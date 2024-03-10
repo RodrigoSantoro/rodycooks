@@ -1,11 +1,11 @@
 import { Stack, Typography } from '@mui/material'
-import { supabase } from '@src/lib/supabaseClient'
 import { GetStaticProps } from 'next'
-import { Ingredient, Recipe, Step } from '@src/types/custom'
+import { Recipe } from '@src/types/custom'
 import { ParsedUrlQuery } from 'querystring'
 import { RecipeInfo } from '@src/components/RecipeInfo/RecipeInfo'
 import { RecipeIngredients } from '@src/components/RecipeIngredients/RecipeIngredients'
 import { RecipeSteps } from '@src/components/RecipeSteps/RecipeSteps'
+import { getAllDishesPaths, getRecipeFromUrl } from '@src/utils/database'
 
 interface Props {
     recipe: Recipe
@@ -31,11 +31,7 @@ export default function RecipePage({ recipe }: Props) {
 }
 
 export async function getStaticPaths() {
-    const { data } = await supabase.from('dishes').select('url')
-
-    const paths = (data || []).map((entry) => ({
-        params: { path: entry.url },
-    }))
+    const paths = await getAllDishesPaths()
 
     return { paths, fallback: false }
 }
@@ -47,26 +43,7 @@ interface ContextParams extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps = async (context) => {
     const { path } = context.params as ContextParams
 
-    const { data: data, error: error } = await supabase
-        .rpc('get_dish_ingredients_by_url', {
-            urlparam: path,
-        })
-        .single()
-
-    if (error) {
-        console.error(error.message)
-        return { props: {} }
-    }
-
-    const recipe: Recipe = {
-        id: data.id,
-        name: data.name,
-        servings: data.servings,
-        prepTime: data.prep_time,
-        cookTime: data.cook_time,
-        ingredients: data.ingredients as Ingredient[],
-        steps: ((data.steps || []) as Step[]).sort((a, b) => a.order - b.order),
-    }
+    const recipe = await getRecipeFromUrl(path)
 
     return {
         props: { recipe },
