@@ -160,6 +160,7 @@ export type Database = {
             }
             dishes: {
                 Row: {
+                    calories: number | null
                     cook_time: number | null
                     created_at: string
                     description: string
@@ -171,6 +172,7 @@ export type Database = {
                     url: string
                 }
                 Insert: {
+                    calories?: number | null
                     cook_time?: number | null
                     created_at?: string
                     description: string
@@ -182,6 +184,7 @@ export type Database = {
                     url?: string
                 }
                 Update: {
+                    calories?: number | null
                     cook_time?: number | null
                     created_at?: string
                     description?: string
@@ -237,6 +240,7 @@ export type Database = {
                     servings: number
                     prep_time: number
                     cook_time: number
+                    calories: number
                     steps: Json
                     ingredients: Json
                 }[]

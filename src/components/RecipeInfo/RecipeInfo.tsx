@@ -1,16 +1,10 @@
 import { Paper, Stack, Typography } from '@mui/material'
 
 interface RecipeInfoProps {
-    prepTime: number
-    cookTime: number
-    servings: number
+    children: React.ReactNode
 }
 
-export const RecipeInfo = ({
-    prepTime,
-    cookTime,
-    servings,
-}: RecipeInfoProps) => {
+export const RecipeInfo = ({ children }: RecipeInfoProps) => {
     return (
         <Paper
             sx={{ py: 2 }}
@@ -25,18 +19,7 @@ export const RecipeInfo = ({
                 justifyContent="space-around"
                 height="100%"
             >
-                <Stack>
-                    <Typography fontWeight="bold">Prep Time:</Typography>
-                    <Typography fontSize="20px">{`${prepTime} min`}</Typography>
-                </Stack>
-                <Stack>
-                    <Typography fontWeight="bold">Cook Time:</Typography>
-                    <Typography fontSize="20px">{`${cookTime} min`}</Typography>
-                </Stack>
-                <Stack>
-                    <Typography fontWeight="bold">Servings:</Typography>
-                    <Typography fontSize="20px">{servings}</Typography>
-                </Stack>
+                {children}
             </Stack>
         </Paper>
     )

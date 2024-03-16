@@ -1,4 +1,4 @@
-export type Dish = {
+export interface Dish {
     id: string
     name: string
     url: string
@@ -7,27 +7,26 @@ export type Dish = {
     cookTime: number
 }
 
-export type Dishes = Dish[]
-
-export type Ingredient = {
+export interface Ingredient {
     id: string
     name: string
     unit: string
     amount: string
 }
 
-export type Step = {
+export interface Step {
     id: string
     order: number
     description: string
 }
 
-export type Recipe = {
+export interface Recipe {
     id: string
     name: string
     servings: number
     prepTime: number
     cookTime: number
+    calories: number
     ingredients: Ingredient[]
     steps: Step[]
 }

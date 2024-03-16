@@ -73,8 +73,11 @@ export const getRecipeFromUrl = async (url: string) => {
         servings: data.servings,
         prepTime: data.prep_time,
         cookTime: data.cook_time,
-        ingredients: data.ingredients as Ingredient[],
-        steps: ((data.steps || []) as Step[]).sort((a, b) => a.order - b.order),
+        calories: data.calories,
+        ingredients: data.ingredients as unknown as Ingredient[],
+        steps: ((data.steps || []) as unknown as Step[]).sort(
+            (a, b) => a.order - b.order
+        ),
     }
 
     return recipe
