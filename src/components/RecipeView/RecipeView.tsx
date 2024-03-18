@@ -10,24 +10,30 @@ interface RecipeViewProps {
 }
 
 export const RecipeView = ({ recipe }: RecipeViewProps) => {
+    const caloriesPerServing = recipe.calories / recipe.servings
+
     return (
         <Stack spacing={6}>
             <Typography variant="h4">{recipe.name}</Typography>
-            <RecipeInfo>
-                <RecipeInfoColumn
-                    title="Calories"
-                    value={recipe.calories || 'N/A'}
-                />
-                <RecipeInfoColumn
-                    title="Prep Time"
-                    value={`${recipe.prepTime} min`}
-                />
-                <RecipeInfoColumn
-                    title="Cook Time"
-                    value={`${recipe.cookTime} min`}
-                />
-                <RecipeInfoColumn title="Servings" value={recipe.servings} />
-            </RecipeInfo>
+            <Stack spacing={1}>
+                <RecipeInfo>
+                    <RecipeInfoColumn
+                        title="Prep Time"
+                        value={`${recipe.prepTime} min`}
+                    />
+                    <RecipeInfoColumn
+                        title="Cook Time"
+                        value={`${recipe.cookTime} min`}
+                    />
+                    <RecipeInfoColumn
+                        title="Servings"
+                        value={recipe.servings}
+                    />
+                </RecipeInfo>
+                {!!caloriesPerServing && (
+                    <Typography variant="body2">{`Calories per serving: ${caloriesPerServing}`}</Typography>
+                )}
+            </Stack>
             <RecipeIngredients ingredients={recipe.ingredients} />
             <RecipeSteps steps={recipe.steps} />
         </Stack>

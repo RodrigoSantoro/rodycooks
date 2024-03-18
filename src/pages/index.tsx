@@ -1,10 +1,10 @@
-import { Dishes } from '@src/types/custom'
+import { Dish } from '@src/types/custom'
 import { MaterialReactTable } from 'material-react-table'
 import { useDishesTable } from '@src/hooks/useDishesTable'
 import { getDishesWithCategories } from '@src/utils/database'
 
 interface Props {
-    dishes: Dishes
+    dishes: Dish[]
     categories: string[]
 }
 

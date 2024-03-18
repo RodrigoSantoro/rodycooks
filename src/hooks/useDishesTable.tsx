@@ -1,10 +1,10 @@
-import { Dish, Dishes } from '@src/types/custom'
+import { Dish } from '@src/types/custom'
 import Link from 'next/link'
 import { useMaterialReactTable, type MRT_ColumnDef } from 'material-react-table'
 import { useMemo } from 'react'
 import { Typography } from '@mui/material'
 
-export const useDishesTable = (dishes: Dishes, categories: string[]) => {
+export const useDishesTable = (dishes: Dish[], categories: string[]) => {
     const columns = useMemo<MRT_ColumnDef<Dish>[]>(
         () => [
             {
