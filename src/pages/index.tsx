@@ -2,6 +2,7 @@ import { Dish } from '@src/types/custom'
 import { MaterialReactTable } from 'material-react-table'
 import { useDishesTable } from '@src/hooks/useDishesTable'
 import { getDishesWithCategories } from '@src/utils/database'
+import { NextSeo } from 'next-seo'
 
 interface Props {
     dishes: Dish[]
@@ -11,7 +12,12 @@ interface Props {
 export default function HomePage({ dishes, categories }: Props) {
     const table = useDishesTable(dishes, categories)
 
-    return <MaterialReactTable table={table} />
+    return (
+        <>
+            <NextSeo title="Home" />
+            <MaterialReactTable table={table} />
+        </>
+    )
 }
 
 export async function getStaticProps() {

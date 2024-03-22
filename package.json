@@ -22,6 +22,7 @@
     "eslint-config-next": "13.2.4",
     "material-react-table": "^2.11.2",
     "next": "13.2.4",
+    "next-seo": "^6.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.2"

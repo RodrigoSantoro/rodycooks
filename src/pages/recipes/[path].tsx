@@ -4,6 +4,7 @@ import { Recipe } from '@src/types/custom'
 import { ParsedUrlQuery } from 'querystring'
 import { getAllDishesPaths, getRecipeFromUrl } from '@src/utils/database'
 import { RecipeView } from '@src/components/RecipeView/RecipeView'
+import { NextSeo } from 'next-seo'
 
 interface Props {
     recipe: Recipe
@@ -14,7 +15,12 @@ export default function RecipePage({ recipe }: Props) {
         return <Typography variant="h4">Recipe not found</Typography>
     }
 
-    return <RecipeView recipe={recipe} />
+    return (
+        <>
+            <NextSeo title={recipe.name} />
+            <RecipeView recipe={recipe} />
+        </>
+    )
 }
 
 export async function getStaticPaths() {
