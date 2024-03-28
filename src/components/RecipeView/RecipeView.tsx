@@ -10,8 +10,6 @@ interface RecipeViewProps {
 }
 
 export const RecipeView = ({ recipe }: RecipeViewProps) => {
-    const caloriesPerServing = recipe.calories / recipe.servings
-
     return (
         <Stack spacing={6}>
             <Typography variant="h4">{recipe.name}</Typography>
@@ -30,8 +28,8 @@ export const RecipeView = ({ recipe }: RecipeViewProps) => {
                         value={recipe.servings}
                     />
                 </RecipeInfo>
-                {!!caloriesPerServing && (
-                    <Typography variant="body2">{`Calories per serving: ${caloriesPerServing}`}</Typography>
+                {!!recipe.calories && (
+                    <Typography variant="body2">{`Calories per serving: ${recipe.calories}`}</Typography>
                 )}
             </Stack>
             <RecipeIngredients ingredients={recipe.ingredients} />
