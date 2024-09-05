@@ -1,32 +1,30 @@
 export interface Dish {
-    id: string
-    name: string
-    url: string
-    categories: string[]
-    prepTime: number
-    cookTime: number
+  id: string
+  name: string
+  url: string
+  categories: string[]
+  prepTime: number
+  cookTime: number
 }
 
 export interface Ingredient {
-    id: string
-    name: string
-    unit: string
-    amount: string
+  name: string
+  amount: string
 }
 
 export interface Step {
-    id: string
-    order: number
-    description: string
+  id: string
+  order: number
+  description: string
 }
 
 export interface Recipe {
-    id: string
-    name: string
-    servings: number
-    prepTime: number
-    cookTime: number
-    calories: number
-    ingredients: Ingredient[]
-    steps: Step[]
+  id: string
+  name: string
+  servings: number
+  prepTime: number
+  cookTime: number
+  calories: number
+  ingredients: Ingredient[]
+  steps: string[]
 }
