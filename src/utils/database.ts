@@ -1,5 +1,5 @@
 import { supabase } from "@src/lib/supabaseClient"
-import { Dish, Ingredient, Recipe, Step } from "@src/types/custom"
+import { Dish, Ingredient, Recipe } from "@src/types/custom"
 
 export const getDishesWithCategories = async () => {
   const { data, error } = await supabase.from("recipes").select("*")
