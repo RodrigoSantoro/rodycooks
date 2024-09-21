@@ -44,7 +44,7 @@ export const getAllDishesPaths = async () => {
 }
 
 export const getRecipeFromUrl = async (url: string) => {
-  const { data: data, error: error } = await supabase
+  const { data, error } = await supabase
     .from("recipes")
     .select("*")
     .eq("url", url)
@@ -63,7 +63,7 @@ export const getRecipeFromUrl = async (url: string) => {
     cookTime: data.cook_time,
     calories: data.calories,
     ingredients: data.ingredients as unknown as Ingredient[],
-    steps: data.steps as unknown as string[],
+    steps: data.steps as string[],
   }
 
   return recipe
