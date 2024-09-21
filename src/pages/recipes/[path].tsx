@@ -1,44 +1,44 @@
-import { Typography } from '@mui/material'
-import { GetStaticProps } from 'next'
-import { Recipe } from '@src/types/custom'
-import { ParsedUrlQuery } from 'querystring'
-import { getAllDishesPaths, getRecipeFromUrl } from '@src/utils/database'
-import { RecipeView } from '@src/components/RecipeView/RecipeView'
-import { NextSeo } from 'next-seo'
+import { Typography } from "@mui/material"
+import { GetStaticProps } from "next"
+import { Recipe } from "@src/types/custom"
+import { ParsedUrlQuery } from "querystring"
+import { getAllPaths, getRecipeFromUrl } from "@src/utils/database"
+import { RecipeView } from "@src/components/RecipeView/RecipeView"
+import { NextSeo } from "next-seo"
 
 interface Props {
-    recipe: Recipe
+  recipe: Recipe
 }
 
 export default function RecipePage({ recipe }: Props) {
-    if (!recipe) {
-        return <Typography variant="h4">Recipe not found</Typography>
-    }
+  if (!recipe) {
+    return <Typography variant="h4">Recipe not found</Typography>
+  }
 
-    return (
-        <>
-            <NextSeo title={recipe.name} />
-            <RecipeView recipe={recipe} />
-        </>
-    )
+  return (
+    <>
+      <NextSeo title={recipe.name} />
+      <RecipeView recipe={recipe} />
+    </>
+  )
 }
 
 export async function getStaticPaths() {
-    const paths = await getAllDishesPaths()
+  const paths = await getAllPaths()
 
-    return { paths, fallback: false }
+  return { paths, fallback: false }
 }
 
 interface ContextParams extends ParsedUrlQuery {
-    path: string
+  path: string
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const { path } = context.params as ContextParams
+  const { path } = context.params as ContextParams
 
-    const recipe = await getRecipeFromUrl(path)
+  const recipe = await getRecipeFromUrl(path)
 
-    return {
-        props: { recipe },
-    }
+  return {
+    props: { recipe },
+  }
 }

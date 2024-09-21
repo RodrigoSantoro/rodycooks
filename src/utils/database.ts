@@ -1,39 +1,31 @@
 import { supabase } from "@src/lib/supabaseClient"
-import { Dish, Ingredient, Recipe } from "@src/types/custom"
+import { Ingredient, Recipe } from "@src/types/custom"
 
-export const getDishesWithCategories = async () => {
+export const getAllRecipes = async () => {
   const { data, error } = await supabase.from("recipes").select("*")
 
   if (error) {
     console.error(error.message)
     return {
-      dishes: null,
-      categories: null,
+      recipes: null,
     }
   }
 
-  const categoriesSet = new Set<string>()
-  data.forEach((dish) => {
-    dish.categories.forEach((category: string) => {
-      categoriesSet.add(category)
-    })
-  })
-  const categories = Array.from(categoriesSet)
-
-  const dishes: Dish[] = data.map((dish) => {
+  const recipes: Recipe[] = data.map((recipe) => {
     return {
-      ...dish,
-      prepTime: dish.prep_time,
-      cookTime: dish.cook_time,
+      ...recipe,
+      ingredients: recipe.ingredients as unknown as Ingredient[],
+      prepTime: recipe.prep_time,
+      cookTime: recipe.cook_time,
     }
   })
+
   return {
-    dishes,
-    categories,
+    recipes,
   }
 }
 
-export const getAllDishesPaths = async () => {
+export const getAllPaths = async () => {
   const { data } = await supabase.from("recipes").select("url")
 
   const paths = (data || []).map((entry) => ({
@@ -56,14 +48,10 @@ export const getRecipeFromUrl = async (url: string) => {
   }
 
   const recipe: Recipe = {
-    id: data.id,
-    name: data.name,
-    servings: data.servings,
+    ...data,
     prepTime: data.prep_time,
     cookTime: data.cook_time,
-    calories: data.calories,
     ingredients: data.ingredients as unknown as Ingredient[],
-    steps: data.steps as string[],
   }
 
   return recipe

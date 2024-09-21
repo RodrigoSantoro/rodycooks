@@ -1,5 +1,4 @@
 import { Box, Stack, Typography } from "@mui/material"
-import { Step } from "@src/types/custom"
 
 interface RecipeStepsProps {
   steps: string[]

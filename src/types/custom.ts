@@ -1,21 +1,6 @@
-export interface Dish {
-  id: string
-  name: string
-  url: string
-  categories: string[]
-  prepTime: number
-  cookTime: number
-}
-
 export interface Ingredient {
   name: string
   amount: string
-}
-
-export interface Step {
-  id: string
-  order: number
-  description: string
 }
 
 export interface Recipe {
@@ -27,4 +12,6 @@ export interface Recipe {
   calories: number
   ingredients: Ingredient[]
   steps: string[]
+  url: string
+  categories: string[]
 }

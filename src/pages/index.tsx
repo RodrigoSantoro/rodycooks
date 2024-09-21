@@ -1,32 +1,30 @@
-import { Dish } from '@src/types/custom'
-import { MaterialReactTable } from 'material-react-table'
-import { useDishesTable } from '@src/hooks/useDishesTable'
-import { getDishesWithCategories } from '@src/utils/database'
-import { NextSeo } from 'next-seo'
+import { MaterialReactTable } from "material-react-table"
+import { useRecipesTable } from "@src/hooks/useRecipesTable"
+import { getAllRecipes } from "@src/utils/database"
+import { NextSeo } from "next-seo"
+import { Recipe } from "@src/types/custom"
 
 interface Props {
-    dishes: Dish[]
-    categories: string[]
+  recipes: Recipe[]
 }
 
-export default function HomePage({ dishes, categories }: Props) {
-    const table = useDishesTable(dishes, categories)
+export default function HomePage({ recipes }: Props) {
+  const table = useRecipesTable(recipes)
 
-    return (
-        <>
-            <NextSeo title="Home" />
-            <MaterialReactTable table={table} />
-        </>
-    )
+  return (
+    <>
+      <NextSeo title="Home" />
+      <MaterialReactTable table={table} />
+    </>
+  )
 }
 
 export async function getStaticProps() {
-    const { dishes, categories } = await getDishesWithCategories()
+  const { recipes } = await getAllRecipes()
 
-    return {
-        props: {
-            dishes,
-            categories,
-        },
-    }
+  return {
+    props: {
+      recipes,
+    },
+  }
 }
