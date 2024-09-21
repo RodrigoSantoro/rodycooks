@@ -34,7 +34,7 @@ export const getDishesWithCategories = async () => {
 }
 
 export const getAllDishesPaths = async () => {
-  const { data } = await supabase.from("dishes").select("url")
+  const { data } = await supabase.from("recipes").select("url")
 
   const paths = (data || []).map((entry) => ({
     params: { path: entry.url },
