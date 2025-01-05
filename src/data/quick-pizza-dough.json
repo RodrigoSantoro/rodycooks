@@ -1,0 +1,35 @@
+{
+  "id": "2e325254-88f2-4f03-8ba7-97aeda954ede",
+  "name": "Quick Pizza",
+  "categories": ["Pizza"],
+  "prepTime": 20,
+  "cookTime": 0,
+  "servings": 4,
+  "calories": 1200,
+  "url": "quick-pizza-dough",
+  "steps": [
+    "Mix all the ingredients with a wooden spoon until combined. You will see the dough will form a ball.",
+    "Cut it into 4 and roll into a pizza shape.",
+    "Cook one side in a pan until golden brown.",
+    "Flip it and add the toppings to the cooked side while the other side is cooking.",
+    "Cover and cook it until the crust is cooked through and crunchy."
+  ],
+  "ingredients": [
+    {
+      "name": "Flour",
+      "amount": "250g"
+    },
+    {
+      "name": "Water",
+      "amount": "120ml"
+    },
+    {
+      "name": "Salt",
+      "amount": "5g"
+    },
+    {
+      "name": "Olive Oil",
+      "amount": "35ml"
+    }
+  ]
+}
