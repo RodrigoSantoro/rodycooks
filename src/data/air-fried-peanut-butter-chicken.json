@@ -1,0 +1,65 @@
+{
+  "id": "06520bdb-c2d3-4975-9970-a6b5722073cf",
+  "created_at": "2024-09-05T04:36:38.551678+00:00",
+  "name": "Air Fried Peanut Butter Chicken",
+  "categories": ["Chicken", "AirFryer"],
+  "prepTime": 5,
+  "cookTime": 20,
+  "servings": 4,
+  "calories": 1360,
+  "url": "air-fried-peanut-butter-chicken",
+  "steps": [
+    "Add all ingredients to a bowl and mix. Cover and let it marinate for 1 to 2 hours.",
+    "Cook it in the air fryer for 20 minutes at 200°C or 400°F."
+  ],
+  "ingredients": [
+    {
+      "name": "Soy Sauce",
+      "amount": "45ml"
+    },
+    {
+      "name": "Ginger Powder",
+      "amount": "5g"
+    },
+    {
+      "name": "Black Pepper",
+      "amount": "5g"
+    },
+    {
+      "name": "Water",
+      "amount": "30ml"
+    },
+    {
+      "name": "Red Pepper Flakes",
+      "amount": "5g"
+    },
+    {
+      "name": "Avocado Oil",
+      "amount": "15ml"
+    },
+    {
+      "name": "Salt",
+      "amount": "to taste"
+    },
+    {
+      "name": "Chicken Thigh",
+      "amount": "8"
+    },
+    {
+      "name": "Brown Sugar",
+      "amount": "15g"
+    },
+    {
+      "name": "Garlic Powder",
+      "amount": "5g"
+    },
+    {
+      "name": "Onion Powder",
+      "amount": "5g"
+    },
+    {
+      "name": "Peanut Butter",
+      "amount": "60ml"
+    }
+  ]
+}

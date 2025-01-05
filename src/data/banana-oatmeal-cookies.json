@@ -1,0 +1,26 @@
+{
+  "id": "b178c485-a669-4f8d-8642-8eddaf44552f",
+  "created_at": "2024-09-21T00:08:15.496349+00:00",
+  "name": "Banana Oatmeal Cookies",
+  "categories": ["Dessert", "Vegan", "AirFryer"],
+  "prepTime": 5,
+  "cookTime": 15,
+  "servings": 6,
+  "calories": 540,
+  "url": "banana-oatmeal-cookies",
+  "steps": [
+    "Add all ingredients to a bowl and mix.",
+    "Make 6 small cookies.",
+    "Air fry for 15 minute at 350°F or 180°C."
+  ],
+  "ingredients": [
+    {
+      "name": "Quick Oats",
+      "amount": "130g"
+    },
+    {
+      "name": "Banana",
+      "amount": "2"
+    }
+  ]
+}

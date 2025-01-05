@@ -1,0 +1,30 @@
+{
+  "id": "7b145c39-d38d-439f-858b-8da7141dcb98",
+  "created_at": "2024-08-18T19:09:30.579833+00:00",
+  "name": "Gochujang and Maple Syrup Sauce\n",
+  "categories": ["Sauce", "Vegan"],
+  "prepTime": 5,
+  "cookTime": 0,
+  "servings": 4,
+  "calories": 250,
+  "url": "gochujang-and-maple-syrup-sauce",
+  "steps": ["Add all ingredients to a bowl and mix."],
+  "ingredients": [
+    {
+      "name": "Gochujang",
+      "amount": "50g"
+    },
+    {
+      "name": "Sesame Oil",
+      "amount": "10ml"
+    },
+    {
+      "name": "Maple Syrup",
+      "amount": "20ml"
+    },
+    {
+      "name": "Rice Vinegar",
+      "amount": "15ml"
+    }
+  ]
+}

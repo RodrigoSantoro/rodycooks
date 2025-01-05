@@ -1,0 +1,42 @@
+{
+  "id": "b1f7b453-9a99-422f-b07b-a613a6b5b88e",
+  "created_at": "2024-09-05T04:33:44.308348+00:00",
+  "name": "Peanut Butter Stir Fry Sauce",
+  "categories": ["Sauce", "Vegan"],
+  "prepTime": 5,
+  "cookTime": 0,
+  "servings": 4,
+  "calories": 800,
+  "url": "peanut-butter-stir-fry-sauce",
+  "steps": ["Add all ingredients to a bowl and mix."],
+  "ingredients": [
+    {
+      "name": "Water",
+      "amount": "240ml"
+    },
+    {
+      "name": "Lime Juice",
+      "amount": "60ml"
+    },
+    {
+      "name": "Red Curry Paste",
+      "amount": "30ml"
+    },
+    {
+      "name": "Garlic",
+      "amount": "2cloves"
+    },
+    {
+      "name": "Peanut Butter",
+      "amount": "120ml"
+    },
+    {
+      "name": "Soy Sauce",
+      "amount": "60ml"
+    },
+    {
+      "name": "Apple Cider Vinegar",
+      "amount": "30ml"
+    }
+  ]
+}

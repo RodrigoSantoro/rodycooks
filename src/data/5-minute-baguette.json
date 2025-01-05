@@ -1,0 +1,37 @@
+{
+  "id": "cf8fccd4-816e-4b6f-b053-1ff3a8bd9c29",
+  "created_at": "2024-09-05T04:32:44.201817+00:00",
+  "name": "5-Minute Baguette",
+  "categories": ["Bread"],
+  "prepTime": 5,
+  "cookTime": 25,
+  "servings": 4,
+  "calories": 3440,
+  "url": "5-minute-baguette",
+  "steps": [
+    "Mix all the ingredients with a wooden spoon until combined. You will see the dough will form a ball.",
+    "Cover and let it rise for 8 to 10 hours at room temperature.",
+    "Preheat the oven to 250°C or 480°F.",
+    "Sprinkle some flour on the counter, place the dough on it, and sprinkle more flour on top of the dough to avoid sticking. ",
+    "Cut the dough into 4 pieces, stretch each piece gently into a baguette shape, and put it on a baking tray.",
+    "Bake it for approximately 25 minutes depending on how golden you want them."
+  ],
+  "ingredients": [
+    {
+      "name": "Bread Flour",
+      "amount": "950g"
+    },
+    {
+      "name": "Salt",
+      "amount": "16g"
+    },
+    {
+      "name": "Active Dry Yeast",
+      "amount": "2g"
+    },
+    {
+      "name": "Water",
+      "amount": "730ml"
+    }
+  ]
+}

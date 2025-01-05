@@ -1,0 +1,43 @@
+{
+  "id": "8d3bd63f-0500-48c6-8296-c525c990ef44",
+  "created_at": "2024-09-22T19:30:55.619214+00:00",
+  "name": "Protein Pancakes",
+  "categories": ["Breakfast"],
+  "prepTime": 5,
+  "cookTime": 5,
+  "servings": 4,
+  "calories": 620,
+  "url": "protein-pancakes",
+  "steps": [
+    "Add all ingredients dry ingredients to a bowl and mix.",
+    "Add all the wet ingredients to the bowl and mix.",
+    "Heat a non-stick pan over medium-low heat.",
+    "Cook until bubbles start to appear and the edges of each pancake look dry and firm."
+  ],
+  "ingredients": [
+    {
+      "name": "All-Purpose Flour",
+      "amount": "120g"
+    },
+    {
+      "name": "Protein Powder",
+      "amount": "28g"
+    },
+    {
+      "name": "Baking Powder",
+      "amount": "1 tsp"
+    },
+    {
+      "name": "Salt",
+      "amount": "1 tsp"
+    },
+    {
+      "name": "Honey or Maple Syrup",
+      "amount": "20ml"
+    },
+    {
+      "name": "Water",
+      "amount": "240ml"
+    }
+  ]
+}
