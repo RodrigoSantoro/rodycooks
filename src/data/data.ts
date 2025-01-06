@@ -9,6 +9,7 @@ import peanutbutterstirfrysauce from "./peanut-butter-stir-fry-sauce.json"
 import proteinpancakes from "./protein-pancakes.json"
 import strawberryfrozenyogurt from "./strawberry-frozen-yogurt.json"
 import quickpizzadough from "./quick-pizza-dough.json"
+import onepotsausagerice from "./one-pot-sausage-rice.json"
 
 export const data: Array<Recipe> = [
   fiveminutebaguette,
@@ -21,4 +22,5 @@ export const data: Array<Recipe> = [
   proteinpancakes,
   strawberryfrozenyogurt,
   quickpizzadough,
+  onepotsausagerice,
 ]

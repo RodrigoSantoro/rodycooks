@@ -1,0 +1,48 @@
+{
+  "id": "bc8e47c9-b9f0-447e-bd25-8e2df7a86306",
+  "name": "One Pot Sausage Rice",
+  "categories": ["Pork", "One Pot"],
+  "prepTime": 5,
+  "cookTime": 25,
+  "servings": 6,
+  "calories": 3000,
+  "url": "one-pot-sausage-rice",
+  "steps": [
+    "Dice the onions and cut the sausage into small pieces.",
+    "Brown the sausages in a pot with olive oil.",
+    "Add the onions and cook until soft and transparent.",
+    "Add the rice, diced tomatoes, beef stock, and salt.",
+    "Add water until everything in the pot is submerged.",
+    "Cover and simmer it until the rice is cooked, around 20 minutes."
+  ],
+  "ingredients": [
+    {
+      "name": "Olive oil",
+      "amount": "15ml"
+    },
+    {
+      "name": "Onion",
+      "amount": "1"
+    },
+    {
+      "name": "Pork Sausage",
+      "amount": "300g"
+    },
+    {
+      "name": "White Rice",
+      "amount": "500g"
+    },
+    {
+      "name": "Diced Tomatoes",
+      "amount": "1 can"
+    },
+    {
+      "name": "Beef Stock",
+      "amount": "250 ml"
+    },
+    {
+      "name": "Salt",
+      "amount": "to taste"
+    }
+  ]
+}
