@@ -1,0 +1,49 @@
+{
+  "id": "2f18df5b-1a1e-4f6f-a876-2f649ccab7bf",
+  "name": "Oatmeal Cups",
+  "categories": ["breakfast", "snack"],
+  "prepTime": 5,
+  "cookTime": 30,
+  "servings": 20,
+  "calories": 1600,
+  "url": "oatmeal-cups",
+  "steps": [
+    "Mix all the ingredients in a bowl.",
+    "Grease a muffin tin and fill half of each cup with the mixture.",
+    "Bake at 350°F (180°C) for 30 minutes or until golden brown."
+  ],
+  "ingredients": [
+    {
+      "name": "Eggs",
+      "amount": "2"
+    },
+    {
+      "name": "Milk",
+      "amount": "350ml"
+    },
+    {
+      "name": "Unsweetened Applesauce",
+      "amount": "180ml"
+    },
+    {
+      "name": "Mapple Syrup",
+      "amount": "60ml"
+    },
+    {
+      "name": "Quick Oats",
+      "amount": "270g"
+    },
+    {
+      "name": "Baking Powder",
+      "amount": "1 tsp"
+    },
+    {
+      "name": "Cinnamon Powder",
+      "amount": "1 tsp"
+    },
+    {
+      "name": "Salt",
+      "amount": "1/2 tsp"
+    }
+  ]
+}
