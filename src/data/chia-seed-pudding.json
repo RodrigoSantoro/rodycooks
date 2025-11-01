@@ -5,7 +5,7 @@
   "prepTime": 5,
   "cookTime": 0,
   "servings": 1,
-  "calories": 150,
+  "calories": 350,
   "url": "chia-seed-pudding",
   "steps": [
     "Add all ingredients to a mason jar, mix them well, close it, and leave it in the fridge overnight."
@@ -13,23 +13,23 @@
   "ingredients": [
     {
       "name": "Chia Seed",
-      "amount": "15g"
+      "amount": "30g"
     },
     {
-      "name": "Almond Milk",
-      "amount": "125ml"
+      "name": "Oat Milk",
+      "amount": "250ml"
     },
     {
-      "name": "Vanilla Extract",
-      "amount": "2ml"
+      "name": "Quick Oats",
+      "amount": "20g"
+    },
+    {
+      "name": "Cinnamon Powder",
+      "amount": "1g"
     },
     {
       "name": "Maple Syrup",
       "amount": "10ml"
-    },
-    {
-      "name": "Frozen Berries",
-      "amount": "45g"
     }
   ]
 }
