@@ -1,0 +1,288 @@
+{
+  "month": "2026-06",
+  "label": "June 2026",
+  "title": "2-Week Weekday Meal Prep",
+  "description": "Mon–Fri · man & woman portions · plated weights per meal, raw weights on the grocery list.",
+  "targets": {
+    "note": "Mon–Thu land within ~5% of target. Friday is lighter (no dinner). Pick any one snack per day — all are balanced to roughly the same macros.",
+    "people": [
+      {
+        "label": "Man",
+        "symbol": "♂",
+        "calories": "2300 kcal",
+        "protein": "150 g",
+        "fat": "75 g",
+        "carbs": "~256 g"
+      },
+      {
+        "label": "Woman",
+        "symbol": "♀",
+        "calories": "1600 kcal",
+        "protein": "120 g",
+        "fat": "60 g",
+        "carbs": "~145 g"
+      }
+    ]
+  },
+  "weeks": [
+    {
+      "name": "Week 1",
+      "legend": "♂ = man · ♀ = woman · weights are as served on the plate (cooked where applicable).",
+      "ataGlance": [
+        {
+          "day": "Monday & Tuesday",
+          "breakfast": "Yogurt-granola bowl",
+          "lunch": "Chicken & rice bowl",
+          "dinner": "Beef & potato + broccoli"
+        },
+        {
+          "day": "Wednesday & Thursday",
+          "breakfast": "Yogurt-granola bowl",
+          "lunch": "Chicken & rice bowl",
+          "dinner": "Turkey & rice"
+        },
+        {
+          "day": "Friday",
+          "breakfast": "Yogurt-granola bowl",
+          "lunch": "Chicken & rice bowl",
+          "dinner": "— no dinner —"
+        }
+      ],
+      "meals": [
+        {
+          "title": "Breakfast — Greek yogurt & granola bowl with berries",
+          "ingredients": [
+            { "name": "Greek yogurt (2%)", "rawMan": "200 g", "rawWoman": "150 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Low-sugar granola", "rawMan": "43 g", "rawWoman": "33 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Blueberries", "rawMan": "90 g", "rawWoman": "70 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Banana", "rawMan": "90 g", "rawWoman": "70 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Almonds", "rawMan": "18 g", "rawWoman": "15 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Honey", "rawMan": "10 g", "rawWoman": "6 g", "cookedMan": "same", "cookedWoman": "same" }
+          ],
+          "macrosMan": "601 kcal · P27 · F21 · C75",
+          "macrosWoman": "462 kcal · P21 · F16 · C56"
+        },
+        {
+          "title": "Lunch — Chicken & rice bowl with zucchini & carrot",
+          "ingredients": [
+            { "name": "Chicken breast", "rawMan": "236 g", "rawWoman": "171 g", "cookedMan": "165 g", "cookedWoman": "120 g" },
+            { "name": "White rice", "rawMan": "74 g", "rawWoman": "30 g", "cookedMan": "200 g", "cookedWoman": "80 g" },
+            { "name": "Zucchini", "rawMan": "171 g", "rawWoman": "143 g", "cookedMan": "120 g", "cookedWoman": "100 g" },
+            { "name": "Carrot", "rawMan": "125 g", "rawWoman": "100 g", "cookedMan": "100 g", "cookedWoman": "80 g" },
+            { "name": "Olive oil", "rawMan": "13 g", "rawWoman": "12 g", "cookedMan": "same", "cookedWoman": "same" }
+          ],
+          "macrosMan": "712 kcal · P59 · F20 · C71",
+          "macrosWoman": "461 kcal · P41 · F17 · C34"
+        },
+        {
+          "title": "Dinner A (Mon/Tue) — Lean beef & potato with broccoli",
+          "ingredients": [
+            { "name": "Lean beef mince (5%)", "rawMan": "214 g", "rawWoman": "164 g", "cookedMan": "150 g", "cookedWoman": "115 g" },
+            { "name": "Potato", "rawMan": "284 g", "rawWoman": "126 g", "cookedMan": "270 g", "cookedWoman": "120 g" },
+            { "name": "Olive oil", "rawMan": "11 g", "rawWoman": "9 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Broccoli", "rawMan": "176 g", "rawWoman": "141 g", "cookedMan": "150 g", "cookedWoman": "120 g" }
+          ],
+          "macrosMan": "658 kcal · P48 · F24 · C64",
+          "macrosWoman": "435 kcal · P35 · F19 · C32"
+        },
+        {
+          "title": "Dinner B (Wed/Thu) — Turkey & rice with carrot & zucchini",
+          "ingredients": [
+            { "name": "Turkey mince (7%)", "rawMan": "229 g", "rawWoman": "164 g", "cookedMan": "160 g", "cookedWoman": "115 g" },
+            { "name": "White rice", "rawMan": "74 g", "rawWoman": "31 g", "cookedMan": "200 g", "cookedWoman": "85 g" },
+            { "name": "Carrot", "rawMan": "150 g", "rawWoman": "112 g", "cookedMan": "120 g", "cookedWoman": "90 g" },
+            { "name": "Zucchini", "rawMan": "171 g", "rawWoman": "129 g", "cookedMan": "120 g", "cookedWoman": "90 g" },
+            { "name": "Olive oil", "rawMan": "7 g", "rawWoman": "7 g", "cookedMan": "same", "cookedWoman": "same" }
+          ],
+          "macrosMan": "715 kcal · P51 · F24 · C73",
+          "macrosWoman": "457 kcal · P35 · F19 · C36"
+        }
+      ]
+    },
+    {
+      "name": "Week 2",
+      "legend": "♂ = man · ♀ = woman · weights are as served on the plate (cooked where applicable).",
+      "ataGlance": [
+        {
+          "day": "Monday & Tuesday",
+          "breakfast": "Overnight oats",
+          "lunch": "Chicken & sweet potato",
+          "dinner": "Chicken & basmati"
+        },
+        {
+          "day": "Wednesday & Thursday",
+          "breakfast": "Overnight oats",
+          "lunch": "Chicken & sweet potato",
+          "dinner": "Beef strips & sweet potato"
+        },
+        {
+          "day": "Friday",
+          "breakfast": "Overnight oats",
+          "lunch": "Chicken & sweet potato",
+          "dinner": "— no dinner —"
+        }
+      ],
+      "meals": [
+        {
+          "title": "Breakfast — Overnight oats with banana & peanut butter",
+          "ingredients": [
+            { "name": "Rolled oats", "rawMan": "55 g", "rawWoman": "40 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Milk", "rawMan": "150 g", "rawWoman": "120 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Greek yogurt (2%)", "rawMan": "150 g", "rawWoman": "120 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Banana", "rawMan": "90 g", "rawWoman": "70 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Peanut butter", "rawMan": "18 g", "rawWoman": "14 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Honey", "rawMan": "8 g", "rawWoman": "5 g", "cookedMan": "same", "cookedWoman": "same" }
+          ],
+          "macrosMan": "604 kcal · P32 · F19 · C81",
+          "macrosWoman": "459 kcal · P25 · F14 · C60"
+        },
+        {
+          "title": "Lunch — Chicken & sweet potato with broccoli",
+          "ingredients": [
+            { "name": "Chicken breast", "rawMan": "243 g", "rawWoman": "186 g", "cookedMan": "170 g", "cookedWoman": "130 g" },
+            { "name": "Sweet potato", "rawMan": "300 g", "rawWoman": "150 g", "cookedMan": "240 g", "cookedWoman": "120 g" },
+            { "name": "Broccoli", "rawMan": "176 g", "rawWoman": "141 g", "cookedMan": "150 g", "cookedWoman": "120 g" },
+            { "name": "Olive oil", "rawMan": "15 g", "rawWoman": "13 g", "cookedMan": "same", "cookedWoman": "same" }
+          ],
+          "macrosMan": "706 kcal · P61 · F22 · C68",
+          "macrosWoman": "491 kcal · P46 · F18 · C37"
+        },
+        {
+          "title": "Dinner A (Mon/Tue) — Chicken & basmati with peppers & carrot",
+          "ingredients": [
+            { "name": "Chicken breast", "rawMan": "236 g", "rawWoman": "179 g", "cookedMan": "165 g", "cookedWoman": "125 g" },
+            { "name": "Basmati rice", "rawMan": "74 g", "rawWoman": "31 g", "cookedMan": "200 g", "cookedWoman": "85 g" },
+            { "name": "Bell pepper", "rawMan": "160 g", "rawWoman": "120 g", "cookedMan": "120 g", "cookedWoman": "90 g" },
+            { "name": "Carrot", "rawMan": "125 g", "rawWoman": "100 g", "cookedMan": "100 g", "cookedWoman": "80 g" },
+            { "name": "Olive oil", "rawMan": "13 g", "rawWoman": "11 g", "cookedMan": "same", "cookedWoman": "same" }
+          ],
+          "macrosMan": "725 kcal · P59 · F20 · C73",
+          "macrosWoman": "475 kcal · P43 · F16 · C37"
+        },
+        {
+          "title": "Dinner B (Wed/Thu) — Lean beef strips & sweet potato with broccoli",
+          "ingredients": [
+            { "name": "Lean beef strips", "rawMan": "221 g", "rawWoman": "164 g", "cookedMan": "155 g", "cookedWoman": "115 g" },
+            { "name": "Sweet potato", "rawMan": "325 g", "rawWoman": "162 g", "cookedMan": "260 g", "cookedWoman": "130 g" },
+            { "name": "Olive oil", "rawMan": "9 g", "rawWoman": "8 g", "cookedMan": "same", "cookedWoman": "same" },
+            { "name": "Broccoli", "rawMan": "176 g", "rawWoman": "141 g", "cookedMan": "150 g", "cookedWoman": "120 g" }
+          ],
+          "macrosMan": "702 kcal · P55 · F23 · C73",
+          "macrosWoman": "473 kcal · P40 · F18 · C40"
+        }
+      ]
+    }
+  ],
+  "snacks": {
+    "note": "All ≈ same macros (♂ ~320 kcal / 20 g P · ♀ ~230 kcal / 16 g P), so daily totals hold whichever you choose.",
+    "items": [
+      {
+        "title": "Option 1 — Greek yogurt, apple & almonds",
+        "ingredients": [
+          { "name": "Greek yogurt (2%)", "rawMan": "180 g", "rawWoman": "140 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Apple", "rawMan": "150 g", "rawWoman": "110 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Almonds", "rawMan": "20 g", "rawWoman": "14 g", "cookedMan": "same", "cookedWoman": "same" }
+        ],
+        "macrosMan": "325 kcal · P22 · F14 · C32",
+        "macrosWoman": "240 kcal · P17 · F10 · C24"
+      },
+      {
+        "title": "Option 2 — Yogurt, strawberries, walnuts & honey",
+        "ingredients": [
+          { "name": "Greek yogurt (2%)", "rawMan": "180 g", "rawWoman": "140 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Strawberries", "rawMan": "150 g", "rawWoman": "130 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Walnuts", "rawMan": "18 g", "rawWoman": "13 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Honey", "rawMan": "12 g", "rawWoman": "6 g", "cookedMan": "same", "cookedWoman": "same" }
+        ],
+        "macrosMan": "335 kcal · P21 · F16 · C31",
+        "macrosWoman": "248 kcal · P16 · F12 · C23"
+      },
+      {
+        "title": "Option 3 — Greek yogurt, banana & peanut butter",
+        "ingredients": [
+          { "name": "Greek yogurt (2%)", "rawMan": "150 g", "rawWoman": "120 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Banana", "rawMan": "110 g", "rawWoman": "80 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Peanut butter", "rawMan": "20 g", "rawWoman": "14 g", "cookedMan": "same", "cookedWoman": "same" }
+        ],
+        "macrosMan": "325 kcal · P21 · F13 · C35",
+        "macrosWoman": "241 kcal · P16 · F10 · C26"
+      },
+      {
+        "title": "Option 4 — Boiled eggs, apple & almonds",
+        "ingredients": [
+          { "name": "Eggs", "rawMan": "2 (100 g)", "rawWoman": "2 (75 g)", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Apple", "rawMan": "180 g", "rawWoman": "140 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Almonds", "rawMan": "12 g", "rawWoman": "8 g", "cookedMan": "same", "cookedWoman": "same" }
+        ],
+        "macrosMan": "318 kcal · P16 · F17 · C29",
+        "macrosWoman": "235 kcal · P12 · F13 · C22"
+      },
+      {
+        "title": "Option 5 — Chicken & rice cakes with tomatoes",
+        "ingredients": [
+          { "name": "Chicken breast", "rawMan": "129 g", "rawWoman": "93 g", "cookedMan": "90 g", "cookedWoman": "65 g" },
+          { "name": "Rice cakes", "rawMan": "27 g", "rawWoman": "18 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Cherry tomatoes", "rawMan": "120 g", "rawWoman": "90 g", "cookedMan": "same", "cookedWoman": "same" },
+          { "name": "Olive oil", "rawMan": "6 g", "rawWoman": "5 g", "cookedMan": "same", "cookedWoman": "same" }
+        ],
+        "macrosMan": "328 kcal · P31 · F10 · C27",
+        "macrosWoman": "237 kcal · P22 · F8 · C18"
+      }
+    ]
+  },
+  "grocery": [
+    {
+      "title": "Week 1",
+      "note": "Raw weights · both people · full week · excludes snacks.",
+      "items": [
+        { "name": "Chicken breast", "amount": "2.04 kg" },
+        { "name": "Turkey mince (7%)", "amount": "786 g" },
+        { "name": "Lean beef mince (5%)", "amount": "757 g" },
+        { "name": "Greek yogurt (2%)", "amount": "1.75 kg" },
+        { "name": "White rice (dry)", "amount": "730 g" },
+        { "name": "Potatoes", "amount": "821 g" },
+        { "name": "Low-sugar granola", "amount": "380 g" },
+        { "name": "Zucchini", "amount": "2.17 kg" },
+        { "name": "Carrot", "amount": "1.65 kg" },
+        { "name": "Broccoli", "amount": "635 g" },
+        { "name": "Bananas", "amount": "800 g" },
+        { "name": "Blueberries", "amount": "800 g" },
+        { "name": "Almonds", "amount": "165 g" },
+        { "name": "Honey", "amount": "80 g" },
+        { "name": "Olive oil", "amount": "193 g" }
+      ]
+    },
+    {
+      "title": "Week 2",
+      "note": "Raw weights · both people · full week · excludes snacks.",
+      "items": [
+        { "name": "Chicken breast", "amount": "2.97 kg" },
+        { "name": "Lean beef strips", "amount": "771 g" },
+        { "name": "Greek yogurt (2%)", "amount": "1.35 kg" },
+        { "name": "Milk (semi-skim)", "amount": "1.35 kg" },
+        { "name": "Basmati rice (dry)", "amount": "211 g" },
+        { "name": "Sweet potatoes", "amount": "3.23 kg" },
+        { "name": "Rolled oats", "amount": "475 g" },
+        { "name": "Carrot", "amount": "450 g" },
+        { "name": "Broccoli", "amount": "2.22 kg" },
+        { "name": "Bell pepper", "amount": "560 g" },
+        { "name": "Bananas", "amount": "800 g" },
+        { "name": "Peanut butter", "amount": "160 g" },
+        { "name": "Honey", "amount": "65 g" },
+        { "name": "Olive oil", "amount": "222 g" }
+      ]
+    },
+    {
+      "title": "Snacks — buy staples",
+      "note": "You need ~10 snacks/week (5 each). Stock these and mix freely.",
+      "items": [
+        { "name": "Greek yogurt (2%)", "amount": "~1.5 kg" },
+        { "name": "Mixed fruit (apple/banana/strawberry)", "amount": "~1.5 kg" },
+        { "name": "Almonds + walnuts", "amount": "~200 g" },
+        { "name": "Peanut butter", "amount": "1 jar" },
+        { "name": "Eggs", "amount": "1 dozen" },
+        { "name": "Rice cakes + cherry tomatoes", "amount": "1 pack each" }
+      ]
+    }
+  ]
+}
