@@ -109,7 +109,11 @@ export const DietPlanView = ({ plan }: DietPlanViewProps) => {
       <TabPanel value={tab} index={groceryIndex}>
         <Stack spacing={3}>
           {plan.grocery.map((section) => (
-            <GroceryList key={section.title} section={section} />
+            <GroceryList
+              key={section.title}
+              section={section}
+              month={plan.month}
+            />
           ))}
         </Stack>
       </TabPanel>
