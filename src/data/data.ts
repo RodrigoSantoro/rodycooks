@@ -1,5 +1,6 @@
 import { Recipe } from "@src/types/custom"
 import fiveminutebaguette from "./5-minute-baguette.json"
+import nokneadbread from "./no-knead-bread.json"
 import airfriedpeanutbutterchicken from "./air-fried-peanut-butter-chicken.json"
 import bananaoatmealcookies from "./banana-oatmeal-cookies.json"
 import chiaseedpudding from "./chia-seed-pudding.json"
@@ -14,6 +15,7 @@ import oatmealCups from "./oatmeal-cups.json"
 
 export const data: Array<Recipe> = [
   fiveminutebaguette,
+  nokneadbread,
   airfriedpeanutbutterchicken,
   bananaoatmealcookies,
   chiaseedpudding,

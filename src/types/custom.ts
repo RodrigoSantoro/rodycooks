@@ -14,5 +14,6 @@ export interface Recipe {
   steps: string[]
   url: string
   categories: string[]
+  imageUrl?: string
 }
 

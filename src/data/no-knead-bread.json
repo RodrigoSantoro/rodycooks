@@ -1,0 +1,42 @@
+{
+  "id": "2999e247-6f99-4743-ae91-09a6a77bf32a",
+  "name": "No-Knead Bread",
+  "categories": ["Bread"],
+  "prepTime": 30,
+  "cookTime": 40,
+  "servings": 8,
+  "calories": 1450,
+  "url": "no-knead-bread",
+  "steps": [
+    "Set a large bowl on a digital scale. Weigh in the bread flour, then add the yeast and salt.",
+    "Mix the flour, yeast, and salt with your fingertips until evenly combined.",
+    "Add the warm water (38°C or 100°F). Mix with your fingertips just until it forms one shaggy ball. Do not knead.",
+    "Cover the bowl and let the dough rest.",
+    "Over the next couple of hours, do 4 to 5 stretch-and-folds. Re-cover and repeat every 15 to 20 minutes.",
+    "Optional but recommended: cover and refrigerate the dough overnight for better flavor and texture.",
+    "Take the dough out of the fridge and let it sit at room temperature for at least 1 hour (up to 6).",
+    "30 minutes before baking, set a rack in the lower-middle and preheat the oven to 260°C or 500°F with an empty dutch oven inside it.",
+    "Place the dough on a large piece of parchment paper and shape it into a round loaf. Sprinkle the top with flour.",
+    "Once the oven is preheated, carefully remove it from the oven and place the dough inside with the parchment paper. Cover with the lid and bake for 20 minutes at 230°C or 450°F.",
+    "Remove the lid (use oven mitts) and bake uncovered until the crust is deep golden brown, 15 to 20 minutes more, or until the internal temperature reaches 90°C or 195°F.",
+    "Let the loaf cool before slicing."
+  ],
+  "ingredients": [
+    {
+      "name": "Bread Flour",
+      "amount": "400g"
+    },
+    {
+      "name": "Instant Yeast",
+      "amount": "2g"
+    },
+    {
+      "name": "Salt",
+      "amount": "8g"
+    },
+    {
+      "name": "Warm Water",
+      "amount": "300ml"
+    }
+  ]
+}

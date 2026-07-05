@@ -1,20 +1,17 @@
-import { MaterialReactTable } from "material-react-table"
-import { useRecipesTable } from "@src/hooks/useRecipesTable"
 import { getAllRecipes } from "@src/utils/database"
 import { NextSeo } from "next-seo"
 import { Recipe } from "@src/types/custom"
+import { RecipeGrid } from "@src/components/RecipeGrid/RecipeGrid"
 
 interface Props {
   recipes: Recipe[]
 }
 
 export default function HomePage({ recipes }: Props) {
-  const table = useRecipesTable(recipes)
-
   return (
     <>
       <NextSeo title="Home" />
-      <MaterialReactTable table={table} />
+      <RecipeGrid recipes={recipes} />
     </>
   )
 }
