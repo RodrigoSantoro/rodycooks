@@ -1,0 +1,9 @@
+{
+  "id": "a1f3c9d2-1111-4a2b-9c3d-000000000001",
+  "name": "Chateau De Courteillac Bordeaux",
+  "winery": "Chateau De Courteillac",
+  "country": "France",
+  "grapes": ["Cabernet Sauvignon", "Merlot"],
+  "notes": "",
+  "imageUrl": "/images/wines/chateau-de-courteillac-bordeaux.webp"
+}

@@ -17,3 +17,13 @@ export interface Recipe {
   imageUrl?: string
 }
 
+export interface Wine {
+  id: string
+  name: string
+  winery: string
+  country: string
+  grapes: string[]
+  notes: string
+  imageUrl?: string
+}
+
