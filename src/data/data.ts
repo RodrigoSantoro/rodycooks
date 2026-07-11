@@ -7,6 +7,7 @@ import proteinpancakes from "./protein-pancakes.json"
 import strawberryfrozenyogurt from "./strawberry-frozen-yogurt.json"
 import quickpizzadough from "./quick-pizza-dough.json"
 import oatmealCups from "./oatmeal-cups.json"
+import pourovercoffee from "./pour-over-coffee.json"
 
 export const data: Array<Recipe> = [
   fiveminutebaguette,
@@ -17,4 +18,5 @@ export const data: Array<Recipe> = [
   strawberryfrozenyogurt,
   quickpizzadough,
   oatmealCups,
+  pourovercoffee,
 ]

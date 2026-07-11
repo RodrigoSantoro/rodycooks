@@ -1,0 +1,33 @@
+{
+  "id": "ec5dc87f-11fd-4b28-949d-5c65fb2115d1",
+  "name": "Simple Pour-Over Coffee",
+  "categories": ["Coffee", "Breakfast"],
+  "prepTime": 2,
+  "cookTime": 3,
+  "servings": 1,
+  "calories": 5,
+  "url": "pour-over-coffee",
+  "steps": [
+    "Rinse the paper filter with hot water to preheat the brewer, then pour the water out.",
+    "Add the ground coffee and make a small dip in the center of the grounds.",
+    "Place the brewer on a scale and zero it. Boil the water.",
+    "0:00 — Pour to 50g to bloom the coffee.",
+    "0:10 to 0:15 — Gently swirl to settle the grounds, then let it bloom until 0:45.",
+    "0:45 to 1:00 — Pour up to 100g total, then pause.",
+    "1:10 to 1:20 — Pour up to 150g total, then pause.",
+    "1:30 to 1:40 — Pour up to 200g total, then pause.",
+    "1:50 to 2:00 — Pour up to 250g total.",
+    "2:00 — Gently swirl and wait for the coffee to finish draining, around 3:00 total.",
+    "Aim to finish draining near 3:00. If it tastes sour or brews too fast, grind finer. If it tastes bitter or brews too slow, grind coarser."
+  ],
+  "ingredients": [
+    {
+      "name": "Ground Coffee (medium)",
+      "amount": "15g"
+    },
+    {
+      "name": "Water, just off the boil",
+      "amount": "250g"
+    }
+  ]
+}
