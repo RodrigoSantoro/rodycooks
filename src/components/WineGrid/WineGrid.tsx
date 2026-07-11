@@ -2,7 +2,6 @@ import { Wine } from "@src/types/custom"
 import { useMemo, useState } from "react"
 import {
   Box,
-  Grid,
   InputAdornment,
   Stack,
   TextField,
@@ -56,13 +55,21 @@ export const WineGrid = ({ wines }: WineGridProps) => {
       />
 
       {filteredWines.length > 0 ? (
-        <Grid container spacing={3}>
+        <Box
+          sx={{
+            display: "grid",
+            gap: { xs: 2, sm: 3 },
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
+            },
+          }}
+        >
           {filteredWines.map((wine) => (
-            <Grid item key={wine.id} xs={12} sm={6} md={4}>
-              <WineCard wine={wine} />
-            </Grid>
+            <WineCard key={wine.id} wine={wine} />
           ))}
-        </Grid>
+        </Box>
       ) : (
         <Typography
           variant="body1"

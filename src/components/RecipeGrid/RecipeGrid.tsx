@@ -3,7 +3,6 @@ import { useMemo, useState } from "react"
 import {
   Box,
   Chip,
-  Grid,
   InputAdornment,
   Stack,
   TextField,
@@ -98,13 +97,21 @@ export const RecipeGrid = ({ recipes }: RecipeGridProps) => {
       </Stack>
 
       {filteredRecipes.length > 0 ? (
-        <Grid container spacing={3}>
+        <Box
+          sx={{
+            display: "grid",
+            gap: { xs: 2, sm: 3 },
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
+            },
+          }}
+        >
           {filteredRecipes.map((recipe) => (
-            <Grid item key={recipe.id} xs={12} sm={6} md={4}>
-              <RecipeCard recipe={recipe} />
-            </Grid>
+            <RecipeCard key={recipe.id} recipe={recipe} />
           ))}
-        </Grid>
+        </Box>
       ) : (
         <Typography
           variant="body1"

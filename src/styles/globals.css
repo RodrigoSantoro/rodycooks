@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+    /* Make width/height include padding & border so `width: 100%` + padding
+       never overflows its parent. (Normally provided by MUI's CssBaseline.) */
+    box-sizing: border-box;
+}
+
+html,
 body {
     margin: 0;
+    max-width: 100%;
+    /* Safety net against any stray element causing horizontal scroll on mobile. */
+    overflow-x: hidden;
 }

@@ -1,9 +1,0 @@
-{
-  "id": "a1f3c9d2-3333-4a2b-9c3d-000000000003",
-  "name": "Placeholder Sparkling",
-  "winery": "Example Winery",
-  "country": "France",
-  "grapes": ["Pinot Noir", "Chardonnay"],
-  "notes": "Placeholder tasting notes — replace with real notes later.",
-  "imageUrl": ""
-}

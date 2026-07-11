@@ -33,16 +33,12 @@ export const Navbar = () => {
     }
 
     return (
-        <AppBar
-            position="static"
-            style={{
-                height: 120,
-                backgroundColor: 'primary.main',
-                justifyContent: 'center',
-            }}
-        >
+        <AppBar position="static" color="primary">
             <Container>
-                <Toolbar disableGutters>
+                <Toolbar
+                    disableGutters
+                    sx={{ minHeight: { xs: 64, md: 96 } }}
+                >
                     <LocalDiningIcon
                         sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
                     />

@@ -1,6 +1,6 @@
-import { createTheme } from '@mui/material/styles'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
-export const rodyCooksTheme = createTheme({
+const baseTheme = createTheme({
     typography: {
         fontFamily: 'Lato',
         allVariants: {
@@ -13,3 +13,6 @@ export const rodyCooksTheme = createTheme({
         },
     },
 })
+
+// Automatically scales heading sizes down on smaller screens.
+export const rodyCooksTheme = responsiveFontSizes(baseTheme)
