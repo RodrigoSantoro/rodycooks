@@ -22,9 +22,11 @@ import CloseIcon from "@mui/icons-material/Close"
 import LocalDiningIcon from "@mui/icons-material/LocalDining"
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded"
 import WineBarRoundedIcon from "@mui/icons-material/WineBarRounded"
+import RestaurantMenuRoundedIcon from "@mui/icons-material/RestaurantMenuRounded"
 
 const pages = [
   { label: "Home", path: "/", icon: <HomeRoundedIcon /> },
+  { label: "Meal Plan", path: "/mealplans", icon: <RestaurantMenuRoundedIcon /> },
   { label: "Wines", path: "/wines", icon: <WineBarRoundedIcon /> },
 ]
 

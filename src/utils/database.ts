@@ -1,4 +1,4 @@
-import { data, wines } from "@src/data"
+import { data, wines, mealPlans } from "@src/data"
 
 export const getAllRecipes = async () => {
   return {
@@ -38,4 +38,24 @@ export const getWineFromId = async (id: string) => {
   const wine = wines.find((wine) => wine.id === id)
 
   return wine
+}
+
+export const getAllMealPlans = async () => {
+  return {
+    mealPlans,
+  }
+}
+
+export const getAllMealPlanPaths = async () => {
+  const paths = mealPlans.map((plan) => ({
+    params: { id: plan.mealPlan.id },
+  }))
+
+  return paths
+}
+
+export const getMealPlanFromId = async (id: string) => {
+  const plan = mealPlans.find((plan) => plan.mealPlan.id === id)
+
+  return plan
 }
