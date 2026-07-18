@@ -344,23 +344,6 @@
         }
       },
       {
-        "id": "wknd-6",
-        "type": "plated",
-        "name": "Lentil bolognese over whole wheat pasta",
-        "vegetarian": true,
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Whole wheat pasta", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 70, "cookedWeightG": 160 }, "her": { "rawWeightG": 50, "cookedWeightG": 115 } } },
-          { "item": "Green/brown lentils", "note": "dry to cooked, or canned", "portions": { "him": { "rawWeightG": 60, "cookedWeightG": 150 }, "her": { "rawWeightG": 45, "cookedWeightG": 112 } } },
-          { "item": "Crushed tomato, garlic, herbs", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
-        ],
-        "macros": {
-          "him": { "calories": 520, "proteinG": 26, "fatG": 8, "saturatedFatG": 1.0, "carbsG": 88 },
-          "her": { "calories": 405, "proteinG": 20, "fatG": 6, "saturatedFatG": 0.8, "carbsG": 70 }
-        }
-      },
-      {
         "id": "wknd-7",
         "type": "plated",
         "name": "Turkey & quinoa stuffed peppers",
@@ -391,6 +374,58 @@
         "macros": {
           "him": { "calories": 520, "proteinG": 52, "fatG": 12, "saturatedFatG": 2.5, "carbsG": 45 },
           "her": { "calories": 425, "proteinG": 47, "fatG": 7, "saturatedFatG": 1.0, "carbsG": 41 }
+        }
+      },
+      {
+        "id": "wknd-9",
+        "type": "plated",
+        "name": "White bean & vegetable minestrone with whole-grain bread",
+        "vegetarian": true,
+        "servingsBasis": 1,
+        "ingredients": [
+          { "item": "Canned cannellini/white beans, drained", "note": "already cooked", "portions": { "him": { "rawWeightG": 180, "cookedWeightG": 180 }, "her": { "rawWeightG": 130, "cookedWeightG": 130 } } },
+          { "item": "Whole wheat bread (no added sugar)", "note": "for dipping", "portions": { "him": { "rawWeightG": 60, "cookedWeightG": null }, "her": { "rawWeightG": 40, "cookedWeightG": null } } },
+          { "item": "Crushed tomato, carrot, celery, onion, spinach, herbs", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
+          { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
+        ],
+        "macros": {
+          "him": { "calories": 490, "proteinG": 24, "fatG": 8, "saturatedFatG": 1.2, "carbsG": 82 },
+          "her": { "calories": 400, "proteinG": 20, "fatG": 6, "saturatedFatG": 1.0, "carbsG": 68 }
+        }
+      },
+      {
+        "id": "wknd-10",
+        "type": "plated",
+        "name": "Tofu & spinach curry over quinoa",
+        "vegetarian": true,
+        "servingsBasis": 1,
+        "ingredients": [
+          { "item": "Firm tofu", "note": "pressed & seared", "portions": { "him": { "rawWeightG": 200, "cookedWeightG": 170 }, "her": { "rawWeightG": 160, "cookedWeightG": 136 } } },
+          { "item": "Quinoa", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 47, "cookedWeightG": 140 }, "her": { "rawWeightG": 33, "cookedWeightG": 100 } } },
+          { "item": "Spinach", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 50 }, "her": { "rawWeightG": 150, "cookedWeightG": 50 } } },
+          { "item": "Crushed tomato", "note": "tomato-based, no coconut milk", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 150 }, "her": { "rawWeightG": 120, "cookedWeightG": 120 } } },
+          { "item": "Curry spices, garlic, ginger", "note": "no added sugar", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
+          { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
+        ],
+        "macros": {
+          "him": { "calories": 420, "proteinG": 26, "fatG": 16, "saturatedFatG": 2.3, "carbsG": 48 },
+          "her": { "calories": 360, "proteinG": 26, "fatG": 14, "saturatedFatG": 2.0, "carbsG": 40 }
+        }
+      },
+      {
+        "id": "wknd-11",
+        "type": "plated",
+        "name": "Chicken & vegetable whole-wheat pasta primavera",
+        "servingsBasis": 1,
+        "ingredients": [
+          { "item": "Chicken breast", "portions": { "him": { "rawWeightG": 140, "cookedWeightG": 100 }, "her": { "rawWeightG": 100, "cookedWeightG": 72 } } },
+          { "item": "Whole wheat pasta", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 60, "cookedWeightG": 135 }, "her": { "rawWeightG": 45, "cookedWeightG": 100 } } },
+          { "item": "Zucchini, bell peppers, cherry tomato, garlic", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
+          { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
+        ],
+        "macros": {
+          "him": { "calories": 480, "proteinG": 44, "fatG": 11, "saturatedFatG": 2.0, "carbsG": 57 },
+          "her": { "calories": 390, "proteinG": 34, "fatG": 9, "saturatedFatG": 1.5, "carbsG": 50 }
         }
       }
     ],
@@ -568,16 +603,6 @@
           ]
         },
         {
-          "optionId": "wknd-6",
-          "name": "Lentil bolognese over whole wheat pasta",
-          "items": [
-            { "name": "Whole wheat pasta", "quantity": 120, "unit": "g", "note": "dry" },
-            { "name": "Lentils", "quantity": 105, "unit": "g", "note": "dry, or 1 can" },
-            { "name": "Crushed tomato", "quantity": 1, "unit": "can" },
-            { "name": "Garlic, olive oil", "quantity": 1, "unit": "set" }
-          ]
-        },
-        {
           "optionId": "wknd-7",
           "name": "Turkey & quinoa stuffed peppers",
           "items": [
@@ -596,6 +621,38 @@
             { "name": "Cucumber, tomato, garlic", "quantity": 1, "unit": "set" },
             { "name": "Nonfat Greek yogurt", "quantity": 180, "unit": "g", "note": "for tzatziki" },
             { "name": "Quinoa", "quantity": 80, "unit": "g", "note": "dry" }
+          ]
+        },
+        {
+          "optionId": "wknd-9",
+          "name": "White bean & vegetable minestrone with whole-grain bread",
+          "items": [
+            { "name": "Canned cannellini/white beans", "quantity": 1, "unit": "can" },
+            { "name": "Whole wheat bread (no added sugar)", "quantity": 5, "unit": "slices" },
+            { "name": "Crushed tomato", "quantity": 1, "unit": "can" },
+            { "name": "Carrot, celery, onion, spinach", "quantity": 1, "unit": "set" },
+            { "name": "Olive oil", "quantity": 1, "unit": "set" }
+          ]
+        },
+        {
+          "optionId": "wknd-10",
+          "name": "Tofu & spinach curry over quinoa",
+          "items": [
+            { "name": "Firm tofu", "quantity": 360, "unit": "g" },
+            { "name": "Quinoa", "quantity": 80, "unit": "g", "note": "dry" },
+            { "name": "Spinach", "quantity": 300, "unit": "g" },
+            { "name": "Crushed tomato", "quantity": 1, "unit": "can" },
+            { "name": "Curry spices, garlic, ginger, olive oil", "quantity": 1, "unit": "set" }
+          ]
+        },
+        {
+          "optionId": "wknd-11",
+          "name": "Chicken & vegetable whole-wheat pasta primavera",
+          "items": [
+            { "name": "Chicken breast", "quantity": 240, "unit": "g" },
+            { "name": "Whole wheat pasta", "quantity": 105, "unit": "g", "note": "dry" },
+            { "name": "Zucchini, bell peppers, cherry tomato, garlic", "quantity": 1, "unit": "set" },
+            { "name": "Olive oil", "quantity": 1, "unit": "set" }
           ]
         }
       ]
