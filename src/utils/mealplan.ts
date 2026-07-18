@@ -1,4 +1,4 @@
-import { MealIngredient } from "@src/types/custom"
+import { PersonPortion } from "@src/types/custom"
 
 const DAY_ORDER = [
   "monday",
@@ -46,11 +46,13 @@ export const summarizeDays = (days: string[]): string => {
 }
 
 /**
- * Human-readable portion string for an ingredient, favouring the cooked
- * weight (what ends up on the plate) and noting the raw weight for prep.
+ * Human-readable portion string for one person's portion of an ingredient,
+ * favouring the cooked weight (what ends up on the plate) and noting the raw
+ * weight for prep. A missing portion (person not served) renders as "—".
  */
-export const formatPortion = (ingredient: MealIngredient): string => {
-  const { rawWeightG, cookedWeightG } = ingredient
+export const formatPortion = (portion?: PersonPortion): string => {
+  if (!portion) return "—"
+  const { rawWeightG, cookedWeightG } = portion
 
   if (cookedWeightG != null && rawWeightG != null) {
     if (cookedWeightG === rawWeightG) return `${cookedWeightG} g`

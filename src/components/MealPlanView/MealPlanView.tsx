@@ -24,14 +24,11 @@ const constraintChips = (plan: MealPlan): string[] => {
   const { constraints } = plan.mealPlan.dietaryProfile
   const chips: string[] = []
 
-  if (constraints.caloriesPerDay) {
+  plan.mealPlan.people.forEach((person) => {
     chips.push(
-      `${constraints.caloriesPerDay.min}–${constraints.caloriesPerDay.max} kcal/day`
+      `${person.label}: ${person.caloriesPerDay.min}–${person.caloriesPerDay.max} kcal · ${person.proteinTargetGramsPerDay} g protein`
     )
-  }
-  if (constraints.proteinTargetGramsPerDay) {
-    chips.push(`${constraints.proteinTargetGramsPerDay} g protein/day`)
-  }
+  })
   if (constraints.maxSaturatedFatGramsPerDay) {
     chips.push(`≤ ${constraints.maxSaturatedFatGramsPerDay} g sat fat/day`)
   }
@@ -46,6 +43,7 @@ const constraintChips = (plan: MealPlan): string[] => {
 export const MealPlanView = ({ plan }: MealPlanViewProps) => {
   const [tab, setTab] = useState(0)
   const details = plan.mealPlan
+  const [personId, setPersonId] = useState(details.people[0]?.id ?? "")
   const chips = constraintChips(plan)
 
   return (
@@ -87,7 +85,13 @@ export const MealPlanView = ({ plan }: MealPlanViewProps) => {
       </Box>
 
       <Box role="tabpanel" hidden={tab !== 0}>
-        {tab === 0 && <MealsTab plan={details} />}
+        {tab === 0 && (
+          <MealsTab
+            plan={details}
+            personId={personId}
+            onPersonChange={setPersonId}
+          />
+        )}
       </Box>
       <Box role="tabpanel" hidden={tab !== 1}>
         {tab === 1 && (
@@ -95,7 +99,13 @@ export const MealPlanView = ({ plan }: MealPlanViewProps) => {
         )}
       </Box>
       <Box role="tabpanel" hidden={tab !== 2}>
-        {tab === 2 && <ExtrasTab plan={details} />}
+        {tab === 2 && (
+          <ExtrasTab
+            plan={details}
+            personId={personId}
+            onPersonChange={setPersonId}
+          />
+        )}
       </Box>
     </Stack>
   )

@@ -37,11 +37,22 @@ export interface Macros {
   carbsG: number
 }
 
-export interface MealIngredient {
-  item: string
+/** A single person's portion of an ingredient (raw + cooked weight). */
+export interface PersonPortion {
   rawWeightG: number | null
   cookedWeightG: number | null
+}
+
+/** Portions keyed by person id (e.g. "him", "her"). */
+export type PersonPortions = Record<string, PersonPortion>
+
+/** Macros keyed by person id (e.g. "him", "her"). */
+export type PersonMacros = Record<string, Macros>
+
+export interface MealIngredient {
+  item: string
   note?: string
+  portions: PersonPortions
 }
 
 export interface Meal {
@@ -53,12 +64,12 @@ export interface Meal {
   seasoningBlendRef?: string
   swappableWith?: string
   ingredients: MealIngredient[]
-  macros: Macros
+  macros: PersonMacros
 }
 
 export interface MealWeek {
   week: number
-  dailyTotals: Macros
+  dailyTotals: PersonMacros
   meals: Meal[]
 }
 
@@ -69,7 +80,7 @@ export interface WeekendDinnerOption {
   vegetarian?: boolean
   servingsBasis: number
   ingredients: MealIngredient[]
-  macros: Macros
+  macros: PersonMacros
 }
 
 export interface SeasoningBlend {
@@ -84,8 +95,6 @@ export interface DietaryConstraints {
   noAddedSugar?: boolean
   maxSaturatedFatGramsPerDay?: number
   maxTotalFatGramsPerDay?: number
-  caloriesPerDay?: { min: number; max: number }
-  proteinTargetGramsPerDay?: number
   carbs?: string
   excludedFoods?: string[]
   notableInclusions?: string[]
@@ -94,6 +103,14 @@ export interface DietaryConstraints {
 export interface DietaryProfile {
   targetCondition: string
   constraints: DietaryConstraints
+}
+
+/** One person the plan is portioned for (calorie/protein targets differ). */
+export interface Person {
+  id: string
+  label: string
+  caloriesPerDay: { min: number; max: number }
+  proteinTargetGramsPerDay: number
 }
 
 export interface GroceryItem {
@@ -126,6 +143,7 @@ export interface MealPlanDetails {
   id: string
   name: string
   description: string
+  people: Person[]
   dietaryProfile: DietaryProfile
   notes: string[]
   mealSlots: string[]

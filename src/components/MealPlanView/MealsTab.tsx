@@ -13,7 +13,11 @@ import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded"
 import BlenderRoundedIcon from "@mui/icons-material/BlenderRounded"
 import { MealPlanDetails, Meal } from "@src/types/custom"
 import { summarizeDays } from "@src/utils/mealplan"
-import { IngredientPortions, MacroSummary } from "./MealPlanShared"
+import {
+  IngredientPortions,
+  MacroSummary,
+  PersonToggle,
+} from "./MealPlanShared"
 
 const SLOT_LABELS: Record<string, string> = {
   breakfast: "Breakfast",
@@ -35,7 +39,7 @@ const orderMeals = (meals: Meal[], slotOrder: string[]): Meal[] => {
   })
 }
 
-const MealCard = ({ meal }: { meal: Meal }) => {
+const MealCard = ({ meal, personId }: { meal: Meal; personId: string }) => {
   return (
     <Card variant="outlined" sx={{ borderRadius: 3 }}>
       <CardContent>
@@ -82,16 +86,25 @@ const MealCard = ({ meal }: { meal: Meal }) => {
             </Stack>
           </Box>
 
-          <IngredientPortions ingredients={meal.ingredients} />
+          <IngredientPortions
+            ingredients={meal.ingredients}
+            personId={personId}
+          />
 
-          <MacroSummary macros={meal.macros} />
+          <MacroSummary macros={meal.macros[personId]} />
         </Stack>
       </CardContent>
     </Card>
   )
 }
 
-export const MealsTab = ({ plan }: { plan: MealPlanDetails }) => {
+interface MealsTabProps {
+  plan: MealPlanDetails
+  personId: string
+  onPersonChange: (id: string) => void
+}
+
+export const MealsTab = ({ plan, personId, onPersonChange }: MealsTabProps) => {
   const [weekIndex, setWeekIndex] = useState(0)
   const week = plan.weeks[weekIndex]
 
@@ -102,24 +115,39 @@ export const MealsTab = ({ plan }: { plan: MealPlanDetails }) => {
 
   return (
     <Stack spacing={2.5}>
-      {plan.weeks.length > 1 && (
-        <ToggleButtonGroup
-          exclusive
-          color="primary"
-          size="small"
-          value={weekIndex}
-          onChange={(_event, value) => {
-            if (value !== null) setWeekIndex(value)
-          }}
-          aria-label="Select week"
-        >
-          {plan.weeks.map((weekOption, index) => (
-            <ToggleButton key={weekOption.week} value={index}>
-              Week {weekOption.week}
-            </ToggleButton>
-          ))}
-        </ToggleButtonGroup>
-      )}
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 1.5,
+          justifyContent: "space-between",
+        }}
+      >
+        {plan.weeks.length > 1 && (
+          <ToggleButtonGroup
+            exclusive
+            color="primary"
+            size="small"
+            value={weekIndex}
+            onChange={(_event, value) => {
+              if (value !== null) setWeekIndex(value)
+            }}
+            aria-label="Select week"
+          >
+            {plan.weeks.map((weekOption, index) => (
+              <ToggleButton key={weekOption.week} value={index}>
+                Week {weekOption.week}
+              </ToggleButton>
+            ))}
+          </ToggleButtonGroup>
+        )}
+
+        <PersonToggle
+          people={plan.people}
+          personId={personId}
+          onChange={onPersonChange}
+        />
+      </Box>
 
       <Card sx={{ borderRadius: 3, backgroundColor: "rgba(0, 70, 134, 0.04)" }}>
         <CardContent>
@@ -130,13 +158,17 @@ export const MealsTab = ({ plan }: { plan: MealPlanDetails }) => {
           >
             Daily totals
           </Typography>
-          <MacroSummary macros={week.dailyTotals} variant="day" />
+          <MacroSummary macros={week.dailyTotals[personId]} variant="day" />
         </CardContent>
       </Card>
 
       <Stack spacing={2}>
         {orderedMeals.map((meal, index) => (
-          <MealCard key={`${meal.slot}-${meal.variant ?? index}`} meal={meal} />
+          <MealCard
+            key={`${meal.slot}-${meal.variant ?? index}`}
+            meal={meal}
+            personId={personId}
+          />
         ))}
       </Stack>
     </Stack>

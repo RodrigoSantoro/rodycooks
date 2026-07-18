@@ -8,15 +8,46 @@ import {
   Typography,
 } from "@mui/material"
 import { MealPlanDetails } from "@src/types/custom"
-import { IngredientPortions, MacroSummary, VegChip } from "./MealPlanShared"
+import {
+  IngredientPortions,
+  MacroSummary,
+  PersonToggle,
+  VegChip,
+} from "./MealPlanShared"
 
-export const ExtrasTab = ({ plan }: { plan: MealPlanDetails }) => {
+interface ExtrasTabProps {
+  plan: MealPlanDetails
+  personId: string
+  onPersonChange: (id: string) => void
+}
+
+export const ExtrasTab = ({
+  plan,
+  personId,
+  onPersonChange,
+}: ExtrasTabProps) => {
   return (
     <Stack spacing={4}>
       <Box>
-        <Typography variant="h5" sx={{ fontWeight: 700, mb: 0.5 }}>
-          Weekend dinner options
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            alignItems: "flex-start",
+            justifyContent: "space-between",
+            gap: 1.5,
+            mb: 0.5,
+          }}
+        >
+          <Typography variant="h5" sx={{ fontWeight: 700 }}>
+            Weekend dinner options
+          </Typography>
+          <PersonToggle
+            people={plan.people}
+            personId={personId}
+            onChange={onPersonChange}
+          />
+        </Box>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
           Swap-in dinners for the weekend — each is one serving.
         </Typography>
@@ -54,8 +85,11 @@ export const ExtrasTab = ({ plan }: { plan: MealPlanDetails }) => {
                       {option.vegetarian && <VegChip />}
                     </Stack>
                   </Box>
-                  <IngredientPortions ingredients={option.ingredients} />
-                  <MacroSummary macros={option.macros} />
+                  <IngredientPortions
+                    ingredients={option.ingredients}
+                    personId={personId}
+                  />
+                  <MacroSummary macros={option.macros[personId]} />
                 </Stack>
               </CardContent>
             </Card>

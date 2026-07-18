@@ -1,6 +1,44 @@
-import { Box, Chip, Stack, Typography } from "@mui/material"
-import { Macros, MealIngredient } from "@src/types/custom"
+import {
+  Box,
+  Chip,
+  Stack,
+  ToggleButton,
+  ToggleButtonGroup,
+  Typography,
+} from "@mui/material"
+import { Macros, MealIngredient, Person } from "@src/types/custom"
 import { formatPortion } from "@src/utils/mealplan"
+
+/** Him / Her (or any person) selector shared by the portion-aware tabs. */
+export const PersonToggle = ({
+  people,
+  personId,
+  onChange,
+}: {
+  people: Person[]
+  personId: string
+  onChange: (id: string) => void
+}) => {
+  if (people.length < 2) return null
+  return (
+    <ToggleButtonGroup
+      exclusive
+      color="primary"
+      size="small"
+      value={personId}
+      onChange={(_event, value) => {
+        if (value !== null) onChange(value)
+      }}
+      aria-label="Select person"
+    >
+      {people.map((person) => (
+        <ToggleButton key={person.id} value={person.id}>
+          {person.label}
+        </ToggleButton>
+      ))}
+    </ToggleButtonGroup>
+  )
+}
 
 /** A compact macro readout used for meals and daily totals. */
 export const MacroSummary = ({
@@ -71,13 +109,15 @@ export const MacroSummary = ({
  */
 export const IngredientPortions = ({
   ingredients,
+  personId,
 }: {
   ingredients: MealIngredient[]
+  personId: string
 }) => {
   return (
     <Stack divider={<Box sx={{ borderBottom: "1px solid #eee" }} />}>
       {ingredients.map((ingredient, index) => {
-        const portion = formatPortion(ingredient)
+        const portion = formatPortion(ingredient.portions[personId])
         // Avoid repeating the same text on both sides (e.g. Cinnamon → "to taste").
         const showNote = ingredient.note && ingredient.note !== portion
         return (
