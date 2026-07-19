@@ -15,12 +15,13 @@
   "cookTime": 15,
   "servings": 1,
   "baseMacros": {
-    "calories": 480,
+    "calories": 520,
     "proteinG": 20,
     "fatG": 16,
     "saturatedFatG": 2,
-    "carbsG": 62
+    "carbsG": 74
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cook the quinoa and let it cool.",
     "Combine with the chickpeas, chopped parsley, tomato and cucumber.",

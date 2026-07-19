@@ -21,6 +21,7 @@
     "saturatedFatG": 1.5,
     "carbsG": 64
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cook the steel-cut oats in water (microwave or stovetop) until tender.",
     "Stir in the fibre blend and yogurt.",

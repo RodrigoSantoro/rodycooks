@@ -24,6 +24,7 @@
     "saturatedFatG": 0.3,
     "carbsG": 24
   },
+  "cholesterolRating": "green",
   "steps": [
     "Spoon the yogurt into a bowl.",
     "Top with mixed berries and a dusting of cinnamon."

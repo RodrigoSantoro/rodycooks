@@ -23,6 +23,7 @@
     "saturatedFatG": 0.4,
     "carbsG": 14
   },
+  "cholesterolRating": "green",
   "steps": [
     "Mix all the ingredients in a bowl.",
     "Grease a muffin tin and fill half of each cup with the mixture.",

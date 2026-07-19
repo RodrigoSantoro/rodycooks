@@ -22,6 +22,7 @@
     "saturatedFatG": 1.5,
     "carbsG": 30
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cut the carrot, cucumber and pepper into sticks.",
     "Serve with the hummus and oatcakes for dipping."

@@ -21,6 +21,7 @@
     "saturatedFatG": 2.1,
     "carbsG": 74
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cook the brown rice according to package directions.",
     "Season the chicken breast and pan-sear in the olive oil until cooked through, then slice.",

@@ -15,12 +15,13 @@
   "cookTime": 30,
   "servings": 1,
   "baseMacros": {
-    "calories": 515,
+    "calories": 575,
     "proteinG": 52,
     "fatG": 10,
     "saturatedFatG": 2.1,
-    "carbsG": 55
+    "carbsG": 69
   },
+  "cholesterolRating": "green",
   "steps": [
     "Roast the sweet potato at 200°C (400°F) until tender, about 30 minutes.",
     "Season and cook the chicken breast in the olive oil, then slice.",

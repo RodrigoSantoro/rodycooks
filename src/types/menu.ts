@@ -80,6 +80,13 @@ export interface CatalogDish {
   servings: number
   /** Macros for one serving. */
   baseMacros: Macros
+  /**
+   * Suitability for a high-cholesterol / LDL-lowering diet, per a dietitian +
+   * cardiologist panel review. "green" = actively LDL-lowering or clearly
+   * appropriate; "yellow" = acceptable/neutral but not actively lowering, or a
+   * minor red flag (added sugar, processed meat, small sat-fat contributor).
+   */
+  cholesterolRating?: 'green' | 'yellow'
   /** Cooking instructions. */
   steps: string[]
   ingredients: CatalogIngredient[]

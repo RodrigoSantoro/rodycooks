@@ -2,26 +2,21 @@
   "id": "apple-almond-butter",
   "name": "Apple slices with almond butter",
   "url": "apple-almond-butter",
-  "categories": [
-    "Snack",
-    "Vegetarian"
-  ],
-  "slots": [
-    "snack1",
-    "snack2"
-  ],
+  "categories": ["Snack", "Vegetarian"],
+  "slots": ["snack1", "snack2"],
   "requiresCooking": false,
   "vegetarian": true,
   "prepTime": 3,
   "cookTime": 0,
   "servings": 1,
   "baseMacros": {
-    "calories": 250,
-    "proteinG": 6,
-    "fatG": 16,
-    "saturatedFatG": 1.5,
+    "calories": 225,
+    "proteinG": 5,
+    "fatG": 11,
+    "saturatedFatG": 1,
     "carbsG": 26
   },
+  "cholesterolRating": "green",
   "steps": [
     "Core and slice the apple.",
     "Serve with the almond butter for dipping."

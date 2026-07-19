@@ -18,12 +18,13 @@
   "cookTime": 15,
   "servings": 6,
   "baseMacros": {
-    "calories": 90,
+    "calories": 115,
     "proteinG": 3,
     "fatG": 1.5,
     "saturatedFatG": 0.3,
-    "carbsG": 17
+    "carbsG": 23
   },
+  "cholesterolRating": "green",
   "steps": [
     "Add all ingredients to a bowl and mix.",
     "Make 6 small cookies.",

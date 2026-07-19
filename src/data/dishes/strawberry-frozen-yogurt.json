@@ -22,6 +22,7 @@
     "saturatedFatG": 1.5,
     "carbsG": 17
   },
+  "cholesterolRating": "yellow",
   "steps": [
     "Add all ingredients to a blender and blend until smooth."
   ],

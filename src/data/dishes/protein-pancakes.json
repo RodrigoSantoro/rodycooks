@@ -14,12 +14,13 @@
   "cookTime": 5,
   "servings": 4,
   "baseMacros": {
-    "calories": 155,
-    "proteinG": 11,
+    "calories": 150,
+    "proteinG": 9,
     "fatG": 2,
     "saturatedFatG": 0.4,
     "carbsG": 24
   },
+  "cholesterolRating": "green",
   "steps": [
     "Add all ingredients dry ingredients to a bowl and mix.",
     "Add all the wet ingredients to the bowl and mix.",

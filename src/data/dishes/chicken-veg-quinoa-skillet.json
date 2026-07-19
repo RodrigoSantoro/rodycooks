@@ -21,6 +21,7 @@
     "saturatedFatG": 2.2,
     "carbsG": 48
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cook the quinoa according to package directions.",
     "Sauté the diced chicken in the olive oil with garlic until cooked through.",
