@@ -63,6 +63,16 @@ export const formatPortion = (portion?: PersonPortion): string => {
   return "to taste"
 }
 
+/**
+ * Formats a gram amount for batch quantities, promoting to kg at ≥ 1 kg and
+ * trimming trailing zeros (e.g. 1400 → "1.4 kg", 500 → "500 g"). Null → "—".
+ */
+export const formatGrams = (grams: number | null): string => {
+  if (grams == null) return "—"
+  if (grams >= 1000) return `${parseFloat((grams / 1000).toFixed(2))} kg`
+  return `${grams} g`
+}
+
 /** Formats a grocery quantity + unit, e.g. "1.2 kg" or "7 count". */
 export const formatQuantity = (quantity?: number, unit?: string): string => {
   if (quantity == null && !unit) return ""

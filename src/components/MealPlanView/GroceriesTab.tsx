@@ -126,16 +126,12 @@ export const GroceriesTab = ({ planId, groceryLists }: GroceriesTabProps) => {
   return (
     <Stack spacing={1.5}>
       {groceryLists.map((list, listIndex) => {
-        const groups: Array<{ heading: string; items: GroceryItem[] }> = [
-          ...(list.categories ?? []).map((category) => ({
-            heading: category.category,
-            items: category.items,
-          })),
-          ...(list.optionLists ?? []).map((option) => ({
-            heading: option.name,
-            items: option.items,
-          })),
-        ]
+        const groups: Array<{ heading: string; items: GroceryItem[] }> = (
+          list.categories ?? []
+        ).map((category) => ({
+          heading: category.category,
+          items: category.items,
+        }))
 
         const allItems = groups.flatMap((group) =>
           group.items.map((item) => itemKey(list.id, group.heading, item.name))

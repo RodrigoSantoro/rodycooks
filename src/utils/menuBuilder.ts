@@ -3,6 +3,8 @@ import {
   CatalogDish,
   GroceryGroup,
   GroceryLine,
+  MealPrepBatch,
+  MealPrepItem,
   MealSlot,
   MenuConfig,
   MenuDay,
@@ -420,6 +422,113 @@ export const buildGroceryList = (
   })
 
   return groups
+}
+
+// --- Batch meal-prep aggregation ---
+
+interface PrepAccumulator {
+  dish: CatalogDish
+  slots: Set<MealSlot>
+  days: Set<WeekDay>
+  servings: number
+  // Keyed on name + unit so grams never merge with counts; insertion order
+  // follows the dish's ingredient list.
+  ingredients: Map<string, { name: string; unit: string; note?: string; amount: number | null }>
+}
+
+/**
+ * Groups the week's cook-requiring dishes into batch-cook sessions. For each
+ * such dish, sums the raw ingredient amounts across every person and every day
+ * it appears (using the same per-person day scaling as the grocery list), so a
+ * user can cook one batch per dish without doing the maths themselves. No-cook
+ * dishes (assembled fresh) are skipped. Sessions are ordered by their earliest
+ * meal slot, then dish name.
+ */
+export const buildMealPrepPlan = (
+  selection: MenuSelection,
+  config: MenuConfig,
+  catalog: CatalogDish[]
+): MealPrepBatch[] => {
+  const catalogById = indexCatalog(catalog)
+  const acc = new Map<string, PrepAccumulator>()
+
+  WEEK_DAYS.forEach((day) => {
+    const dishes = dishesForDay(selection, day, config.activeSlots, catalogById)
+    if (dishes.length === 0) return
+
+    const factors = config.people.map((person) =>
+      dayScaleFactor(dishes, person)
+    )
+
+    dishes.forEach(({ slot, dish }) => {
+      if (!dish.requiresCooking) return
+
+      let entry = acc.get(dish.id)
+      if (!entry) {
+        entry = {
+          dish,
+          slots: new Set(),
+          days: new Set(),
+          servings: 0,
+          ingredients: new Map(),
+        }
+        acc.set(dish.id, entry)
+      }
+      entry.slots.add(slot)
+      entry.days.add(day)
+
+      const servings = dish.servings || 1
+      config.people.forEach((_person, personIndex) => {
+        entry!.servings += 1
+        const factor = factors[personIndex]
+        dish.ingredients.forEach((ing) => {
+          const key = `${ing.name}__${ing.unit}`
+          const scaled =
+            ing.amount == null ? null : (ing.amount / servings) * factor
+          const existing = entry!.ingredients.get(key)
+          if (!existing) {
+            entry!.ingredients.set(key, {
+              name: ing.name,
+              unit: ing.unit,
+              note: ing.note,
+              amount: scaled,
+            })
+          } else if (scaled != null) {
+            existing.amount = (existing.amount ?? 0) + scaled
+          }
+        })
+      })
+    })
+  })
+
+  const batches: MealPrepBatch[] = Array.from(acc.values()).map((entry) => {
+    const ingredients: MealPrepItem[] = Array.from(
+      entry.ingredients.values()
+    ).map((ing) => ({
+      name: ing.name,
+      amount: ing.amount == null ? null : Math.round(ing.amount),
+      unit: ing.unit,
+      note: ing.note,
+    }))
+    return {
+      dishId: entry.dish.id,
+      name: entry.dish.name,
+      url: entry.dish.url,
+      slots: MEAL_SLOTS.filter((slot) => entry.slots.has(slot)),
+      days: WEEK_DAYS.filter((day) => entry.days.has(day)),
+      servings: entry.servings,
+      ingredients,
+    }
+  })
+
+  batches.sort((a, b) => {
+    const rankDiff =
+      Math.min(...a.slots.map((s) => MEAL_SLOTS.indexOf(s))) -
+      Math.min(...b.slots.map((s) => MEAL_SLOTS.indexOf(s)))
+    return rankDiff !== 0 ? rankDiff : a.name.localeCompare(b.name)
+  })
+
+  return batches
 }
 
 /** A base ingredient amount scaled by a person's factor, rounded to grams. */

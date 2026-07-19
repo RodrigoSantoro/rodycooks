@@ -1,6 +1,5 @@
 import {
   Box,
-  Chip,
   Stack,
   ToggleButton,
   ToggleButtonGroup,
@@ -158,15 +157,3 @@ export const IngredientPortions = ({
     </Stack>
   )
 }
-
-export const VegChip = () => (
-  <Chip
-    size="small"
-    label="Vegetarian"
-    sx={{
-      backgroundColor: "rgba(46, 125, 50, 0.12)",
-      color: "#2e7d32",
-      fontWeight: 600,
-    }}
-  />
-)

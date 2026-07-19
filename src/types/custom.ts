@@ -42,8 +42,6 @@ export interface Meal {
   variant?: string
   servedDays: string[]
   requiresCooking: boolean
-  seasoningBlendRef?: string
-  swappableWith?: string
   ingredients: MealIngredient[]
   macros: PersonMacros
 }
@@ -54,14 +52,37 @@ export interface MealWeek {
   meals: Meal[]
 }
 
-export interface WeekendDinnerOption {
-  id: string
-  type: string
+/** How a batch-cook component is handled: cooked ahead, kept fresh, or to taste. */
+export type MealPrepPrep = "cook" | "fresh" | "toTaste"
+
+/** One ingredient in a batch-cook session, with weekly totals + per-serving split. */
+export interface MealPrepComponent {
+  item: string
+  prep: MealPrepPrep
+  note?: string
+  /** Raw amount to cook for the whole week (both people combined), grams. */
+  rawTotalG: number | null
+  /** Approx. cooked yield for the week (both people combined), grams. */
+  cookedTotalG: number | null
+  /** Raw + cooked amount per person, per single serving. */
+  perServing: PersonPortions
+}
+
+/** A single batch-cook session (one dish, cooked once to cover the week). */
+export interface MealPrepSession {
+  slot: string
   name: string
-  vegetarian?: boolean
-  servingsBasis: number
-  ingredients: MealIngredient[]
-  macros: PersonMacros
+  servedDays: string[]
+  servings: number
+  seasoningBlendRef?: string
+  storageNote?: string
+  components: MealPrepComponent[]
+}
+
+export interface MealPrepWeek {
+  week: number
+  coverage: string
+  sessions: MealPrepSession[]
 }
 
 export interface SeasoningBlend {
@@ -69,20 +90,15 @@ export interface SeasoningBlend {
   name: string
   basis: string
   ingredients: string[]
-  containsAddedSugar: boolean
 }
 
 export interface DietaryConstraints {
   noAddedSugar?: boolean
   maxSaturatedFatGramsPerDay?: number
-  maxTotalFatGramsPerDay?: number
-  carbs?: string
   excludedFoods?: string[]
-  notableInclusions?: string[]
 }
 
 export interface DietaryProfile {
-  targetCondition: string
   constraints: DietaryConstraints
 }
 
@@ -106,18 +122,11 @@ export interface GroceryCategory {
   items: GroceryItem[]
 }
 
-export interface GroceryOptionList {
-  optionId: string
-  name: string
-  items: GroceryItem[]
-}
-
 export interface GroceryList {
   id: string
   label: string
   coverage: string
   categories?: GroceryCategory[]
-  optionLists?: GroceryOptionList[]
 }
 
 export interface MealPlanDetails {
@@ -129,13 +138,12 @@ export interface MealPlanDetails {
   notes: string[]
   mealSlots: string[]
   weeks: MealWeek[]
-  weekendDinnerOptions: WeekendDinnerOption[]
   seasoningBlends: SeasoningBlend[]
 }
 
 export interface MealPlan {
-  generatedOn: string
   mealPlan: MealPlanDetails
+  mealPrep: MealPrepWeek[]
   groceryLists: GroceryList[]
 }
 

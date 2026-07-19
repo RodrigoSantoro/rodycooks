@@ -13,6 +13,7 @@ import {
 import { MealPlan } from "@src/types/custom"
 import { MealsTab } from "./MealsTab"
 import { GroceriesTab } from "./GroceriesTab"
+import { MealPrepTab } from "./MealPrepTab"
 import { ExtrasTab } from "./ExtrasTab"
 
 interface MealPlanViewProps {
@@ -80,6 +81,7 @@ export const MealPlanView = ({ plan }: MealPlanViewProps) => {
         >
           <Tab label="Meals" />
           <Tab label="Groceries" />
+          <Tab label="Meal Prep" />
           <Tab label="Extras" />
         </Tabs>
       </Box>
@@ -99,13 +101,10 @@ export const MealPlanView = ({ plan }: MealPlanViewProps) => {
         )}
       </Box>
       <Box role="tabpanel" hidden={tab !== 2}>
-        {tab === 2 && (
-          <ExtrasTab
-            plan={details}
-            personId={personId}
-            onPersonChange={setPersonId}
-          />
-        )}
+        {tab === 2 && <MealPrepTab plan={details} mealPrep={plan.mealPrep} />}
+      </Box>
+      <Box role="tabpanel" hidden={tab !== 3}>
+        {tab === 3 && <ExtrasTab plan={details} />}
       </Box>
     </Stack>
   )

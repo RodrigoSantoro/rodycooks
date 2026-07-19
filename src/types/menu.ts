@@ -166,3 +166,30 @@ export interface GroceryGroup {
   category: string
   items: GroceryLine[]
 }
+
+/** One raw ingredient line for a batch-cook, summed across the week + people. */
+export interface MealPrepItem {
+  name: string
+  /** Total raw amount to cook for the whole batch; null = to taste. */
+  amount: number | null
+  unit: string
+  note?: string
+}
+
+/**
+ * A batch-cook session: one cook-requiring dish, with the total raw amounts to
+ * cook once to cover every time it appears in the week (all people, all days).
+ */
+export interface MealPrepBatch {
+  dishId: string
+  name: string
+  /** Recipe slug, for linking to the dish's steps. */
+  url: string
+  /** Meal slots this dish fills across the week, in slot order. */
+  slots: MealSlot[]
+  /** Days this dish is served, in week order. */
+  days: WeekDay[]
+  /** Number of person-day portions this batch covers. */
+  servings: number
+  ingredients: MealPrepItem[]
+}

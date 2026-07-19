@@ -14,6 +14,7 @@ import { SetupPanel } from "./SetupPanel"
 import { MenuGrid } from "./MenuGrid"
 import { WeeklyMenuSummary } from "./WeeklyMenuSummary"
 import { GroceryOutput } from "./GroceryOutput"
+import { MealPrepOutput } from "./MealPrepOutput"
 
 export const MenuBuilder = () => {
   const menu = useWeeklyMenu()
@@ -70,6 +71,7 @@ export const MenuBuilder = () => {
           <Tab label="2 · Build week" />
           <Tab label="3 · Menu" />
           <Tab label="4 · Groceries" />
+          <Tab label="5 · Meal prep" />
         </Tabs>
       </Box>
 
@@ -108,6 +110,15 @@ export const MenuBuilder = () => {
       <Box role="tabpanel" hidden={tab !== 3}>
         {tab === 3 && (
           <GroceryOutput
+            config={menu.config}
+            selection={menu.selection}
+            catalog={menu.catalog}
+          />
+        )}
+      </Box>
+      <Box role="tabpanel" hidden={tab !== 4}>
+        {tab === 4 && (
+          <MealPrepOutput
             config={menu.config}
             selection={menu.selection}
             catalog={menu.catalog}

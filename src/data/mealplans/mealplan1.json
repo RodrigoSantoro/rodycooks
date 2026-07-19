@@ -1,9 +1,8 @@
 {
-  "generatedOn": "2026-07-18",
   "mealPlan": {
     "id": "cholesterol-lowering-2wk",
     "name": "High-Cholesterol Diet Plan — 2 Rotating Weeks (2 people)",
-    "description": "Two rotating weekly menus (Monday–Sunday) designed to help lower cholesterol through diet. Five meals per day, portioned for two people who eat the same dishes: Him (~2000 kcal / 150 g protein) and Her (1600 kcal / 130 g protein). Weekend dinners can differ from weekdays.",
+    "description": "Two rotating weekly menus (Monday–Sunday) designed to help lower cholesterol through diet. Weekdays include five meals (breakfast, lunch, snack, dinner, snack); weekends are lighter — breakfast and two snacks only, with no lunch or dinner. Portioned for two people who eat the same dishes: Him (~2000 kcal / 150 g protein) and Her (1600 kcal / 130 g protein).",
     "people": [
       {
         "id": "him",
@@ -19,14 +18,10 @@
       }
     ],
     "dietaryProfile": {
-      "targetCondition": "high cholesterol (LDL reduction via diet)",
       "constraints": {
         "noAddedSugar": true,
         "maxSaturatedFatGramsPerDay": 10,
-        "maxTotalFatGramsPerDay": 50,
-        "carbs": "remainder of calorie budget",
-        "excludedFoods": ["red meat", "fish", "seafood"],
-        "notableInclusions": ["tofu", "high-soluble-fiber foods"]
+        "excludedFoods": ["red meat", "fish", "seafood"]
       }
     },
     "notes": [
@@ -35,7 +30,8 @@
       "Use 99% lean ground turkey breast; standard 85/15 ground turkey would exceed the saturated-fat cap.",
       "Choose whole wheat/sprouted bread with no added sugar; avoid bottled stir-fry, teriyaki, and honey-mustard sauces (hidden added sugar).",
       "Raw-to-cooked ratios used: poultry cooked ≈ raw x 0.72; rice/quinoa/oats cooked ≈ dry x 3–3.5; sweet potato roasted ≈ raw x 0.80; tofu pressed & seared ≈ raw x 0.85; frozen veg and canned beans change negligibly.",
-      "Macro values are estimates; actual values vary by brand and preparation."
+      "Macro values are estimates; actual values vary by brand and preparation.",
+      "Daily totals shown are for a full weekday (all five meals). Weekends omit lunch and dinner, so weekend intake is lower — breakfast and two snacks only."
     ],
     "mealSlots": ["breakfast", "lunch", "snack1", "dinner", "snack2"],
     "weeks": [
@@ -66,7 +62,7 @@
           {
             "slot": "lunch",
             "name": "Chicken, brown rice & pinto bean bowl",
-            "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+            "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
             "requiresCooking": true,
             "ingredients": [
               { "item": "Chicken breast", "portions": { "him": { "rawWeightG": 165, "cookedWeightG": 120 }, "her": { "rawWeightG": 115, "cookedWeightG": 83 } } },
@@ -101,7 +97,6 @@
             "variant": "weekday",
             "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
             "requiresCooking": true,
-            "seasoningBlendRef": "turkey-italian-sausage",
             "ingredients": [
               { "item": "99% lean ground turkey breast", "portions": { "him": { "rawWeightG": 165, "cookedWeightG": 120 }, "her": { "rawWeightG": 105, "cookedWeightG": 75 } } },
               { "item": "Sweet potato", "note": "roasted", "portions": { "him": { "rawWeightG": 250, "cookedWeightG": 200 }, "her": { "rawWeightG": 170, "cookedWeightG": 135 } } },
@@ -112,25 +107,6 @@
             "macros": {
               "him": { "calories": 420, "proteinG": 40, "fatG": 7, "saturatedFatG": 1.1, "carbsG": 53 },
               "her": { "calories": 380, "proteinG": 31, "fatG": 7, "saturatedFatG": 1.1, "carbsG": 47 }
-            }
-          },
-          {
-            "slot": "dinner",
-            "name": "Lemon-herb chicken with roasted veg & quinoa",
-            "variant": "weekend-default",
-            "servedDays": ["saturday", "sunday"],
-            "requiresCooking": true,
-            "swappableWith": "weekendDinnerOptions",
-            "ingredients": [
-              { "item": "Chicken breast", "portions": { "him": { "rawWeightG": 210, "cookedWeightG": 150 }, "her": { "rawWeightG": 130, "cookedWeightG": 94 } } },
-              { "item": "Brussels sprouts", "note": "roasted", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 135 }, "her": { "rawWeightG": 120, "cookedWeightG": 108 } } },
-              { "item": "Butternut squash", "note": "roasted", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 120 }, "her": { "rawWeightG": 100, "cookedWeightG": 80 } } },
-              { "item": "Quinoa", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 47, "cookedWeightG": 140 }, "her": { "rawWeightG": 30, "cookedWeightG": 90 } } },
-              { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
-            ],
-            "macros": {
-              "him": { "calories": 440, "proteinG": 48, "fatG": 10, "saturatedFatG": 2.0, "carbsG": 45 },
-              "her": { "calories": 400, "proteinG": 39, "fatG": 10, "saturatedFatG": 1.4, "carbsG": 42 }
             }
           },
           {
@@ -177,7 +153,7 @@
           {
             "slot": "lunch",
             "name": "Chicken, sweet potato & salad",
-            "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+            "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
             "requiresCooking": true,
             "ingredients": [
               { "item": "Chicken breast", "portions": { "him": { "rawWeightG": 210, "cookedWeightG": 150 }, "her": { "rawWeightG": 140, "cookedWeightG": 100 } } },
@@ -224,25 +200,6 @@
             }
           },
           {
-            "slot": "dinner",
-            "name": "Chana masala over brown rice",
-            "variant": "weekend-default",
-            "servedDays": ["saturday", "sunday"],
-            "requiresCooking": true,
-            "swappableWith": "weekendDinnerOptions",
-            "ingredients": [
-              { "item": "Chickpeas, canned & drained", "note": "already cooked", "portions": { "him": { "rawWeightG": 240, "cookedWeightG": 240 }, "her": { "rawWeightG": 150, "cookedWeightG": 150 } } },
-              { "item": "Spinach", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 50 }, "her": { "rawWeightG": 150, "cookedWeightG": 50 } } },
-              { "item": "Crushed tomato", "note": "tomato-based, no coconut milk", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 150 }, "her": { "rawWeightG": 150, "cookedWeightG": 150 } } },
-              { "item": "Brown rice", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 48, "cookedWeightG": 145 }, "her": { "rawWeightG": 30, "cookedWeightG": 90 } } },
-              { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
-            ],
-            "macros": {
-              "him": { "calories": 470, "proteinG": 20, "fatG": 12, "saturatedFatG": 1.5, "carbsG": 78 },
-              "her": { "calories": 435, "proteinG": 21, "fatG": 9, "saturatedFatG": 1.3, "carbsG": 70 }
-            }
-          },
-          {
             "slot": "snack2",
             "name": "Protein yogurt with fruit",
             "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
@@ -258,175 +215,6 @@
             }
           }
         ]
-      }
-    ],
-    "weekendDinnerOptions": [
-      {
-        "id": "wknd-1",
-        "type": "sandwich",
-        "name": "Grilled chicken & avocado sandwich",
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Whole wheat / sprouted bread (no added sugar)", "note": "2 slices", "portions": { "him": { "rawWeightG": 80, "cookedWeightG": null }, "her": { "rawWeightG": 80, "cookedWeightG": null } } },
-          { "item": "Chicken breast", "portions": { "him": { "rawWeightG": 140, "cookedWeightG": 100 }, "her": { "rawWeightG": 100, "cookedWeightG": 72 } } },
-          { "item": "Avocado", "portions": { "him": { "rawWeightG": 40, "cookedWeightG": null }, "her": { "rawWeightG": 30, "cookedWeightG": null } } },
-          { "item": "Tomato, lettuce, mustard", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } }
-        ],
-        "macros": {
-          "him": { "calories": 450, "proteinG": 42, "fatG": 13, "saturatedFatG": 2.5, "carbsG": 48 },
-          "her": { "calories": 370, "proteinG": 33, "fatG": 10, "saturatedFatG": 1.5, "carbsG": 37 }
-        }
-      },
-      {
-        "id": "wknd-2",
-        "type": "sandwich",
-        "name": "Smashed chickpea salad sandwich",
-        "vegetarian": true,
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Canned chickpeas, drained & mashed", "note": "already cooked", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 150 }, "her": { "rawWeightG": 110, "cookedWeightG": 110 } } },
-          { "item": "Nonfat Greek yogurt", "note": "stands in for mayo", "portions": { "him": { "rawWeightG": 30, "cookedWeightG": null }, "her": { "rawWeightG": 30, "cookedWeightG": null } } },
-          { "item": "Whole wheat bread (no added sugar)", "note": "2 slices", "portions": { "him": { "rawWeightG": 80, "cookedWeightG": null }, "her": { "rawWeightG": 80, "cookedWeightG": null } } },
-          { "item": "Celery, red onion, lemon, mustard, lettuce, tomato", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } }
-        ],
-        "macros": {
-          "him": { "calories": 430, "proteinG": 22, "fatG": 8, "saturatedFatG": 1.0, "carbsG": 70 },
-          "her": { "calories": 370, "proteinG": 21, "fatG": 6, "saturatedFatG": 0.9, "carbsG": 60 }
-        }
-      },
-      {
-        "id": "wknd-3",
-        "type": "sandwich",
-        "name": "Baked tofu bánh-mì-style sandwich",
-        "vegetarian": true,
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Firm tofu", "note": "baked", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 130 }, "her": { "rawWeightG": 130, "cookedWeightG": 110 } } },
-          { "item": "Whole wheat roll/bread (no added sugar)", "portions": { "him": { "rawWeightG": 80, "cookedWeightG": null }, "her": { "rawWeightG": 80, "cookedWeightG": null } } },
-          { "item": "Quick-pickled carrot & daikon (rice vinegar, no sugar), cucumber, cilantro, chili-garlic sauce", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } }
-        ],
-        "macros": {
-          "him": { "calories": 420, "proteinG": 22, "fatG": 13, "saturatedFatG": 2.0, "carbsG": 55 },
-          "her": { "calories": 355, "proteinG": 27, "fatG": 12, "saturatedFatG": 1.8, "carbsG": 38 }
-        }
-      },
-      {
-        "id": "wknd-4",
-        "type": "sandwich",
-        "name": "Open-faced egg-white veggie melt",
-        "vegetarian": true,
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Egg whites", "note": "≈33 g per white", "portions": { "him": { "rawWeightG": 132, "cookedWeightG": null }, "her": { "rawWeightG": 99, "cookedWeightG": null } } },
-          { "item": "Whole egg", "note": "1 egg", "portions": { "him": { "rawWeightG": 50, "cookedWeightG": null }, "her": { "rawWeightG": 50, "cookedWeightG": null } } },
-          { "item": "Spinach, bell pepper, mushrooms", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Whole wheat bread (no added sugar)", "note": "open-faced", "portions": { "him": { "rawWeightG": 80, "cookedWeightG": null }, "her": { "rawWeightG": 60, "cookedWeightG": null } } }
-        ],
-        "macros": {
-          "him": { "calories": 350, "proteinG": 28, "fatG": 9, "saturatedFatG": 2.5, "carbsG": 35 },
-          "her": { "calories": 295, "proteinG": 26, "fatG": 7, "saturatedFatG": 1.8, "carbsG": 30 }
-        }
-      },
-      {
-        "id": "wknd-5",
-        "type": "plated",
-        "name": "Turkey & white bean chili",
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "99% lean ground turkey breast", "portions": { "him": { "rawWeightG": 165, "cookedWeightG": 120 }, "her": { "rawWeightG": 120, "cookedWeightG": 86 } } },
-          { "item": "Canned white/kidney beans, drained", "note": "already cooked", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 150 }, "her": { "rawWeightG": 110, "cookedWeightG": 110 } } },
-          { "item": "Crushed tomato, peppers, onion, cumin, chili powder", "note": "no added sugar", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Brown rice (optional)", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 48, "cookedWeightG": 145 }, "her": { "rawWeightG": 30, "cookedWeightG": 90 } } }
-        ],
-        "macros": {
-          "him": { "calories": 500, "proteinG": 45, "fatG": 6, "saturatedFatG": 1.5, "carbsG": 60 },
-          "her": { "calories": 410, "proteinG": 41, "fatG": 3, "saturatedFatG": 0.6, "carbsG": 51 }
-        }
-      },
-      {
-        "id": "wknd-7",
-        "type": "plated",
-        "name": "Turkey & quinoa stuffed peppers",
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "99% lean ground turkey breast", "portions": { "him": { "rawWeightG": 165, "cookedWeightG": 120 }, "her": { "rawWeightG": 120, "cookedWeightG": 86 } } },
-          { "item": "Quinoa", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 47, "cookedWeightG": 140 }, "her": { "rawWeightG": 33, "cookedWeightG": 100 } } },
-          { "item": "Bell peppers", "note": "2 peppers", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Tomato, onion", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } }
-        ],
-        "macros": {
-          "him": { "calories": 480, "proteinG": 44, "fatG": 9, "saturatedFatG": 2.0, "carbsG": 52 },
-          "her": { "calories": 360, "proteinG": 37, "fatG": 4, "saturatedFatG": 0.5, "carbsG": 40 }
-        }
-      },
-      {
-        "id": "wknd-8",
-        "type": "plated",
-        "name": "Greek-style chicken bowl",
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Chicken breast", "portions": { "him": { "rawWeightG": 210, "cookedWeightG": 150 }, "her": { "rawWeightG": 130, "cookedWeightG": 94 } } },
-          { "item": "Canned chickpeas, drained", "note": "already cooked", "portions": { "him": { "rawWeightG": 80, "cookedWeightG": 80 }, "her": { "rawWeightG": 60, "cookedWeightG": 60 } } },
-          { "item": "Cucumber, tomato", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Nonfat Greek yogurt (tzatziki) with garlic", "portions": { "him": { "rawWeightG": 100, "cookedWeightG": null }, "her": { "rawWeightG": 80, "cookedWeightG": null } } },
-          { "item": "Quinoa", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 47, "cookedWeightG": 140 }, "her": { "rawWeightG": 33, "cookedWeightG": 100 } } }
-        ],
-        "macros": {
-          "him": { "calories": 520, "proteinG": 52, "fatG": 12, "saturatedFatG": 2.5, "carbsG": 45 },
-          "her": { "calories": 425, "proteinG": 47, "fatG": 7, "saturatedFatG": 1.0, "carbsG": 41 }
-        }
-      },
-      {
-        "id": "wknd-9",
-        "type": "plated",
-        "name": "White bean & vegetable minestrone with whole-grain bread",
-        "vegetarian": true,
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Canned cannellini/white beans, drained", "note": "already cooked", "portions": { "him": { "rawWeightG": 180, "cookedWeightG": 180 }, "her": { "rawWeightG": 130, "cookedWeightG": 130 } } },
-          { "item": "Whole wheat bread (no added sugar)", "note": "for dipping", "portions": { "him": { "rawWeightG": 60, "cookedWeightG": null }, "her": { "rawWeightG": 40, "cookedWeightG": null } } },
-          { "item": "Crushed tomato, carrot, celery, onion, spinach, herbs", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
-        ],
-        "macros": {
-          "him": { "calories": 490, "proteinG": 24, "fatG": 8, "saturatedFatG": 1.2, "carbsG": 82 },
-          "her": { "calories": 400, "proteinG": 20, "fatG": 6, "saturatedFatG": 1.0, "carbsG": 68 }
-        }
-      },
-      {
-        "id": "wknd-10",
-        "type": "plated",
-        "name": "Tofu & spinach curry over quinoa",
-        "vegetarian": true,
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Firm tofu", "note": "pressed & seared", "portions": { "him": { "rawWeightG": 200, "cookedWeightG": 170 }, "her": { "rawWeightG": 160, "cookedWeightG": 136 } } },
-          { "item": "Quinoa", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 47, "cookedWeightG": 140 }, "her": { "rawWeightG": 33, "cookedWeightG": 100 } } },
-          { "item": "Spinach", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 50 }, "her": { "rawWeightG": 150, "cookedWeightG": 50 } } },
-          { "item": "Crushed tomato", "note": "tomato-based, no coconut milk", "portions": { "him": { "rawWeightG": 150, "cookedWeightG": 150 }, "her": { "rawWeightG": 120, "cookedWeightG": 120 } } },
-          { "item": "Curry spices, garlic, ginger", "note": "no added sugar", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
-        ],
-        "macros": {
-          "him": { "calories": 420, "proteinG": 26, "fatG": 16, "saturatedFatG": 2.3, "carbsG": 48 },
-          "her": { "calories": 360, "proteinG": 26, "fatG": 14, "saturatedFatG": 2.0, "carbsG": 40 }
-        }
-      },
-      {
-        "id": "wknd-11",
-        "type": "plated",
-        "name": "Chicken & vegetable whole-wheat pasta primavera",
-        "servingsBasis": 1,
-        "ingredients": [
-          { "item": "Chicken breast", "portions": { "him": { "rawWeightG": 140, "cookedWeightG": 100 }, "her": { "rawWeightG": 100, "cookedWeightG": 72 } } },
-          { "item": "Whole wheat pasta", "note": "dry to cooked", "portions": { "him": { "rawWeightG": 60, "cookedWeightG": 135 }, "her": { "rawWeightG": 45, "cookedWeightG": 100 } } },
-          { "item": "Zucchini, bell peppers, cherry tomato, garlic", "portions": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } },
-          { "item": "Olive oil", "portions": { "him": { "rawWeightG": 5, "cookedWeightG": 5 }, "her": { "rawWeightG": 4, "cookedWeightG": 4 } } }
-        ],
-        "macros": {
-          "him": { "calories": 480, "proteinG": 44, "fatG": 11, "saturatedFatG": 2.0, "carbsG": 57 },
-          "her": { "calories": 390, "proteinG": 34, "fatG": 9, "saturatedFatG": 1.5, "carbsG": 50 }
-        }
       }
     ],
     "seasoningBlends": [
@@ -445,21 +233,92 @@
           "0.25-0.5 tsp red pepper flakes",
           "salt to taste",
           "splash of red wine vinegar (added at the end)"
-        ],
-        "containsAddedSugar": false
+        ]
       }
     ]
   },
+  "mealPrep": [
+    {
+      "week": 1,
+      "coverage": "Batch-cook targets for 5 weekday lunches + 5 weekday dinners (Mon–Fri), both people combined. Raw totals match the Week 1 grocery list.",
+      "sessions": [
+        {
+          "slot": "lunch",
+          "name": "Chicken, brown rice & pinto bean bowl",
+          "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+          "servings": 10,
+          "storageNote": "Keeps ~4 days in the fridge; freeze half if cooking Sunday for the whole week.",
+          "components": [
+            { "item": "Chicken breast", "prep": "cook", "rawTotalG": 1400, "cookedTotalG": 1015, "perServing": { "him": { "rawWeightG": 165, "cookedWeightG": 120 }, "her": { "rawWeightG": 115, "cookedWeightG": 83 } } },
+            { "item": "Brown rice", "prep": "cook", "note": "dry weight", "rawTotalG": 500, "cookedTotalG": 1500, "perServing": { "him": { "rawWeightG": 65, "cookedWeightG": 195 }, "her": { "rawWeightG": 35, "cookedWeightG": 105 } } },
+            { "item": "Canned pinto beans, drained & rinsed", "prep": "cook", "note": "canned — just drain, rinse & warm", "rawTotalG": 1000, "cookedTotalG": 1000, "perServing": { "him": { "rawWeightG": 130, "cookedWeightG": 130 }, "her": { "rawWeightG": 70, "cookedWeightG": 70 } } },
+            { "item": "Broccoli (frozen)", "prep": "cook", "rawTotalG": 1400, "cookedTotalG": 1350, "perServing": { "him": { "rawWeightG": 150, "cookedWeightG": 145 }, "her": { "rawWeightG": 130, "cookedWeightG": 125 } } },
+            { "item": "Olive oil", "prep": "cook", "note": "for cooking", "rawTotalG": 45, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 5, "cookedWeightG": null }, "her": { "rawWeightG": 4, "cookedWeightG": null } } },
+            { "item": "Lettuce", "prep": "fresh", "note": "add fresh at serving — do not batch", "rawTotalG": 300, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 30, "cookedWeightG": null }, "her": { "rawWeightG": 30, "cookedWeightG": null } } }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Turkey 'sausage', sweet potato & Italian veg",
+          "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+          "servings": 10,
+          "seasoningBlendRef": "turkey-italian-sausage",
+          "storageNote": "Keeps ~4 days in the fridge; freezes well for the back half of the week.",
+          "components": [
+            { "item": "99% lean ground turkey breast", "prep": "cook", "note": "season with the Italian 'sausage' blend", "rawTotalG": 1350, "cookedTotalG": 975, "perServing": { "him": { "rawWeightG": 165, "cookedWeightG": 120 }, "her": { "rawWeightG": 105, "cookedWeightG": 75 } } },
+            { "item": "Sweet potato", "prep": "cook", "note": "roasted", "rawTotalG": 2100, "cookedTotalG": 1675, "perServing": { "him": { "rawWeightG": 250, "cookedWeightG": 200 }, "her": { "rawWeightG": 170, "cookedWeightG": 135 } } },
+            { "item": "Green Giant Valley Selections Italian blend (frozen)", "prep": "cook", "rawTotalG": 1750, "cookedTotalG": 1625, "perServing": { "him": { "rawWeightG": 200, "cookedWeightG": 185 }, "her": { "rawWeightG": 150, "cookedWeightG": 140 } } },
+            { "item": "Olive oil", "prep": "cook", "rawTotalG": 50, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 5, "cookedWeightG": null }, "her": { "rawWeightG": 5, "cookedWeightG": null } } },
+            { "item": "Lettuce", "prep": "fresh", "note": "add fresh at serving — do not batch", "rawTotalG": 300, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 30, "cookedWeightG": null }, "her": { "rawWeightG": 30, "cookedWeightG": null } } }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "coverage": "Batch-cook targets for 5 weekday lunches + 5 weekday dinners (Mon–Fri), both people combined. Raw totals match the Week 2 grocery list.",
+      "sessions": [
+        {
+          "slot": "lunch",
+          "name": "Chicken, sweet potato & salad",
+          "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+          "servings": 10,
+          "storageNote": "Roast chicken and sweet potato ahead; keeps ~4 days. Assemble salad fresh each day.",
+          "components": [
+            { "item": "Chicken breast", "prep": "cook", "rawTotalG": 1750, "cookedTotalG": 1250, "perServing": { "him": { "rawWeightG": 210, "cookedWeightG": 150 }, "her": { "rawWeightG": 140, "cookedWeightG": 100 } } },
+            { "item": "Sweet potato", "prep": "cook", "note": "roasted", "rawTotalG": 2550, "cookedTotalG": 2050, "perServing": { "him": { "rawWeightG": 310, "cookedWeightG": 250 }, "her": { "rawWeightG": 200, "cookedWeightG": 160 } } },
+            { "item": "Olive oil", "prep": "cook", "rawTotalG": 50, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 5, "cookedWeightG": null }, "her": { "rawWeightG": 5, "cookedWeightG": null } } },
+            { "item": "Lettuce", "prep": "fresh", "note": "add fresh at serving — do not batch", "rawTotalG": 400, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 40, "cookedWeightG": null }, "her": { "rawWeightG": 40, "cookedWeightG": null } } },
+            { "item": "Tomato & cucumber", "prep": "fresh", "note": "add fresh at serving — do not batch", "rawTotalG": 1000, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 100, "cookedWeightG": null }, "her": { "rawWeightG": 100, "cookedWeightG": null } } }
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Tofu stir-fry with brown rice",
+          "servedDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+          "servings": 10,
+          "storageNote": "Keeps ~4 days; add sesame oil and aromatics when reheating so the veg stays crisp.",
+          "components": [
+            { "item": "Firm tofu", "prep": "cook", "note": "pressed & seared/baked", "rawTotalG": 1800, "cookedTotalG": 1530, "perServing": { "him": { "rawWeightG": 200, "cookedWeightG": 170 }, "her": { "rawWeightG": 160, "cookedWeightG": 136 } } },
+            { "item": "Brown rice", "prep": "cook", "note": "dry weight", "rawTotalG": 540, "cookedTotalG": 1625, "perServing": { "him": { "rawWeightG": 73, "cookedWeightG": 220 }, "her": { "rawWeightG": 35, "cookedWeightG": 105 } } },
+            { "item": "Stir-fry veg (peppers, broccoli, snap peas)", "prep": "cook", "rawTotalG": 1900, "cookedTotalG": 1750, "perServing": { "him": { "rawWeightG": 200, "cookedWeightG": 185 }, "her": { "rawWeightG": 180, "cookedWeightG": 165 } } },
+            { "item": "Sesame oil", "prep": "cook", "rawTotalG": 40, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": 5, "cookedWeightG": null }, "her": { "rawWeightG": 3, "cookedWeightG": null } } },
+            { "item": "Aromatics & sauce", "prep": "toTaste", "note": "garlic, ginger, low-sodium soy or coconut aminos, rice vinegar — no bottled sauce", "rawTotalG": null, "cookedTotalG": null, "perServing": { "him": { "rawWeightG": null, "cookedWeightG": null }, "her": { "rawWeightG": null, "cookedWeightG": null } } }
+          ]
+        }
+      ]
+    }
+  ],
   "groceryLists": [
     {
       "id": "week-1",
       "label": "Week 1",
-      "coverage": "Both people (Him + Her): 7 days of breakfast/lunch/snacks + 5 weekday dinners (Mon–Fri)",
+      "coverage": "Both people (Him + Her): 7 days of breakfast/snacks + 5 weekday lunches + 5 weekday dinners (Mon–Fri)",
       "categories": [
         {
           "category": "Proteins",
           "items": [
-            { "name": "Chicken breast", "quantity": 2.1, "unit": "kg", "note": "lunch x7 — Him 165 g + Her 115 g per meal" },
+            { "name": "Chicken breast", "quantity": 1.4, "unit": "kg", "note": "lunch x5 — Him 165 g + Her 115 g per meal" },
             { "name": "99% lean ground turkey breast", "quantity": 1.35, "unit": "kg", "note": "weekday dinner x5 — Him 165 g + Her 105 g per meal" },
             { "name": "Oikos Pro plain yogurt", "quantity": 4.7, "unit": "kg", "note": "breakfast + snack, both people; buy large tubs" },
             { "name": "Vega Sport protein powder, peanut butter", "quantity": 1, "unit": "tub", "note": "14 scoops — 7 each" }
@@ -470,7 +329,7 @@
           "items": [
             { "name": "Muesli", "quantity": 490, "unit": "g" },
             { "name": "Walnuts", "quantity": 175, "unit": "g", "note": "breakfast, both people" },
-            { "name": "Brown rice", "quantity": 700, "unit": "g", "note": "dry" },
+            { "name": "Brown rice", "quantity": 500, "unit": "g", "note": "dry" },
             { "name": "Ultimate Cleanse 3-in-1 fibre blend", "quantity": 200, "unit": "g" }
           ]
         },
@@ -482,13 +341,13 @@
             { "name": "Apples (or strawberries ~2 kg)", "quantity": 14, "unit": "count", "note": "snack 2" },
             { "name": "Sweet potatoes", "quantity": 2.1, "unit": "kg" },
             { "name": "Lettuce", "quantity": 3, "unit": "heads" },
-            { "name": "Canned pinto beans", "quantity": 4, "unit": "cans", "note": "400 g" }
+            { "name": "Canned pinto beans", "quantity": 3, "unit": "cans", "note": "400 g" }
           ]
         },
         {
           "category": "Frozen",
           "items": [
-            { "name": "Broccoli", "quantity": 2, "unit": "kg" },
+            { "name": "Broccoli", "quantity": 1.4, "unit": "kg" },
             { "name": "Green Giant Valley Selections Italian blend", "quantity": 1.75, "unit": "kg", "note": "~3–4 bags" }
           ]
         },
@@ -503,12 +362,12 @@
     {
       "id": "week-2",
       "label": "Week 2",
-      "coverage": "Both people (Him + Her): 7 days of breakfast/lunch/snacks + 5 weekday dinners (Mon–Fri)",
+      "coverage": "Both people (Him + Her): 7 days of breakfast/snacks + 5 weekday lunches + 5 weekday dinners (Mon–Fri)",
       "categories": [
         {
           "category": "Proteins",
           "items": [
-            { "name": "Chicken breast", "quantity": 2.45, "unit": "kg", "note": "lunch x7 — Him 210 g + Her 140 g per meal" },
+            { "name": "Chicken breast", "quantity": 1.75, "unit": "kg", "note": "lunch x5 — Him 210 g + Her 140 g per meal" },
             { "name": "Firm tofu", "quantity": 1.8, "unit": "kg", "note": "~5–6 blocks; weekday dinner x5" },
             { "name": "Oikos Pro plain yogurt", "quantity": 4.3, "unit": "kg", "note": "breakfast + snack, both people" },
             { "name": "Vega Sport protein powder, peanut butter", "quantity": 1, "unit": "tub", "note": "14 scoops — 7 each" }
@@ -529,9 +388,9 @@
             { "name": "Blueberries", "quantity": 1.1, "unit": "kg" },
             { "name": "Bananas", "quantity": 14, "unit": "count" },
             { "name": "Pears (or berries ~2 kg)", "quantity": 14, "unit": "count", "note": "snack 2" },
-            { "name": "Sweet potatoes", "quantity": 3.6, "unit": "kg" },
+            { "name": "Sweet potatoes", "quantity": 2.55, "unit": "kg" },
             { "name": "Lettuce", "quantity": 3, "unit": "heads" },
-            { "name": "Tomatoes & cucumbers", "quantity": 1.4, "unit": "kg", "note": "lunch salad" },
+            { "name": "Tomatoes & cucumbers", "quantity": 1, "unit": "kg", "note": "lunch salad" },
             { "name": "Stir-fry veg (bell peppers, broccoli, snap peas)", "quantity": 1.9, "unit": "kg", "note": "fresh or frozen" },
             { "name": "Fresh ginger & garlic", "quantity": 1, "unit": "set", "note": "1 knob ginger + 1 head garlic" }
           ]
@@ -548,116 +407,6 @@
       ]
     },
     {
-      "id": "weekend-meals",
-      "label": "Weekend meals",
-      "coverage": "Per-option ingredients combined for both people (Him + Her), one serving each. Buy only for the options you choose; each weekend needs 2 dinners.",
-      "optionLists": [
-        {
-          "optionId": "wknd-1",
-          "name": "Grilled chicken & avocado sandwich",
-          "items": [
-            { "name": "Chicken breast", "quantity": 240, "unit": "g" },
-            { "name": "Whole wheat bread (no added sugar)", "quantity": 4, "unit": "slices" },
-            { "name": "Avocado", "quantity": 1, "unit": "large" },
-            { "name": "Tomato, lettuce, mustard", "quantity": 1, "unit": "set" }
-          ]
-        },
-        {
-          "optionId": "wknd-2",
-          "name": "Smashed chickpea salad sandwich",
-          "items": [
-            { "name": "Canned chickpeas", "quantity": 1, "unit": "can" },
-            { "name": "Nonfat Greek yogurt", "quantity": 60, "unit": "g" },
-            { "name": "Whole wheat bread (no added sugar)", "quantity": 4, "unit": "slices" },
-            { "name": "Celery, red onion, lemon, mustard", "quantity": 1, "unit": "set" }
-          ]
-        },
-        {
-          "optionId": "wknd-3",
-          "name": "Baked tofu bánh-mì sandwich",
-          "items": [
-            { "name": "Firm tofu", "quantity": 280, "unit": "g" },
-            { "name": "Whole wheat rolls (no added sugar)", "quantity": 2, "unit": "count" },
-            { "name": "Carrot, daikon, cucumber, cilantro", "quantity": 1, "unit": "set" },
-            { "name": "Rice vinegar, chili-garlic sauce (no added sugar)", "quantity": 1, "unit": "set" }
-          ]
-        },
-        {
-          "optionId": "wknd-4",
-          "name": "Open-faced egg-white veggie melt",
-          "items": [
-            { "name": "Eggs", "quantity": 1, "unit": "carton", "note": "7 whites + 2 whole" },
-            { "name": "Spinach, bell pepper, mushrooms", "quantity": 1, "unit": "set" },
-            { "name": "Whole wheat bread (no added sugar)", "quantity": 3, "unit": "slices" }
-          ]
-        },
-        {
-          "optionId": "wknd-5",
-          "name": "Turkey & white bean chili",
-          "items": [
-            { "name": "99% lean ground turkey breast", "quantity": 285, "unit": "g" },
-            { "name": "Canned white/kidney beans", "quantity": 1, "unit": "can" },
-            { "name": "Crushed tomato", "quantity": 1, "unit": "can" },
-            { "name": "Bell peppers, onion", "quantity": 1, "unit": "set" },
-            { "name": "Brown rice (optional)", "quantity": 78, "unit": "g", "note": "dry" }
-          ]
-        },
-        {
-          "optionId": "wknd-7",
-          "name": "Turkey & quinoa stuffed peppers",
-          "items": [
-            { "name": "99% lean ground turkey breast", "quantity": 285, "unit": "g" },
-            { "name": "Quinoa", "quantity": 80, "unit": "g", "note": "dry" },
-            { "name": "Bell peppers", "quantity": 4, "unit": "count" },
-            { "name": "Tomato, onion", "quantity": 1, "unit": "set" }
-          ]
-        },
-        {
-          "optionId": "wknd-8",
-          "name": "Greek chicken bowl",
-          "items": [
-            { "name": "Chicken breast", "quantity": 340, "unit": "g" },
-            { "name": "Canned chickpeas", "quantity": 140, "unit": "g" },
-            { "name": "Cucumber, tomato, garlic", "quantity": 1, "unit": "set" },
-            { "name": "Nonfat Greek yogurt", "quantity": 180, "unit": "g", "note": "for tzatziki" },
-            { "name": "Quinoa", "quantity": 80, "unit": "g", "note": "dry" }
-          ]
-        },
-        {
-          "optionId": "wknd-9",
-          "name": "White bean & vegetable minestrone with whole-grain bread",
-          "items": [
-            { "name": "Canned cannellini/white beans", "quantity": 1, "unit": "can" },
-            { "name": "Whole wheat bread (no added sugar)", "quantity": 5, "unit": "slices" },
-            { "name": "Crushed tomato", "quantity": 1, "unit": "can" },
-            { "name": "Carrot, celery, onion, spinach", "quantity": 1, "unit": "set" },
-            { "name": "Olive oil", "quantity": 1, "unit": "set" }
-          ]
-        },
-        {
-          "optionId": "wknd-10",
-          "name": "Tofu & spinach curry over quinoa",
-          "items": [
-            { "name": "Firm tofu", "quantity": 360, "unit": "g" },
-            { "name": "Quinoa", "quantity": 80, "unit": "g", "note": "dry" },
-            { "name": "Spinach", "quantity": 300, "unit": "g" },
-            { "name": "Crushed tomato", "quantity": 1, "unit": "can" },
-            { "name": "Curry spices, garlic, ginger, olive oil", "quantity": 1, "unit": "set" }
-          ]
-        },
-        {
-          "optionId": "wknd-11",
-          "name": "Chicken & vegetable whole-wheat pasta primavera",
-          "items": [
-            { "name": "Chicken breast", "quantity": 240, "unit": "g" },
-            { "name": "Whole wheat pasta", "quantity": 105, "unit": "g", "note": "dry" },
-            { "name": "Zucchini, bell peppers, cherry tomato, garlic", "quantity": 1, "unit": "set" },
-            { "name": "Olive oil", "quantity": 1, "unit": "set" }
-          ]
-        }
-      ]
-    },
-    {
       "id": "pantry-staples",
       "label": "Pantry & spices (buy once)",
       "coverage": "Shared across all weeks and both people",
@@ -668,7 +417,7 @@
             { "name": "Fennel seed" }, { "name": "Garlic powder" }, { "name": "Onion powder" },
             { "name": "Paprika" }, { "name": "Dried oregano" }, { "name": "Dried basil" },
             { "name": "Black pepper" }, { "name": "Red pepper flakes" }, { "name": "Salt" },
-            { "name": "Cinnamon" }, { "name": "Cumin" }, { "name": "Chili powder" },
+            { "name": "Cinnamon" },
             { "name": "Red wine vinegar" }
           ]
         }
