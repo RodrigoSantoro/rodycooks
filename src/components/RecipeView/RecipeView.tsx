@@ -1,12 +1,13 @@
-import { Recipe } from "@src/types/custom"
-import { Stack, Typography } from "@mui/material"
+import { CatalogDish } from "@src/types/menu"
+import { Box, Stack, Typography } from "@mui/material"
 import { RecipeInfo } from "@src/components/RecipeInfo/RecipeInfo"
 import { RecipeInfoColumn } from "@src/components/RecipeInfo/RecipeInfoColumn"
 import { RecipeIngredients } from "@src/components/RecipeIngredients/RecipeIngredients"
 import { RecipeSteps } from "@src/components/RecipeSteps/RecipeSteps"
+import { MacroSummary } from "@src/components/MealPlanView/MealPlanShared"
 
 interface RecipeViewProps {
-  recipe: Recipe
+  recipe: CatalogDish
 }
 
 export const RecipeView = ({ recipe }: RecipeViewProps) => {
@@ -25,10 +26,13 @@ export const RecipeView = ({ recipe }: RecipeViewProps) => {
           />
           <RecipeInfoColumn title="Servings" value={recipe.servings} />
         </RecipeInfo>
-        {!!recipe.calories && (
-          <Typography variant="body2">{`Calories per serving: ${
-            recipe.calories / recipe.servings
-          }`}</Typography>
+        {recipe.baseMacros && (
+          <Box>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Per serving:
+            </Typography>
+            <MacroSummary macros={recipe.baseMacros} />
+          </Box>
         )}
       </Stack>
       <RecipeIngredients ingredients={recipe.ingredients} />

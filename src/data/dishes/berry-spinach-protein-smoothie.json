@@ -1,0 +1,59 @@
+{
+  "id": "berry-spinach-protein-smoothie",
+  "name": "Berry & spinach protein smoothie",
+  "url": "berry-spinach-protein-smoothie",
+  "categories": [
+    "Breakfast",
+    "Snack",
+    "Vegetarian"
+  ],
+  "slots": [
+    "breakfast",
+    "snack1",
+    "snack2"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 3,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 300,
+    "proteinG": 30,
+    "fatG": 5,
+    "saturatedFatG": 0.6,
+    "carbsG": 38
+  },
+  "steps": [
+    "Add all ingredients to a blender.",
+    "Blend until completely smooth, adding water or ice to reach the consistency you like."
+  ],
+  "ingredients": [
+    {
+      "name": "Plant protein powder",
+      "amount": 40,
+      "unit": "g"
+    },
+    {
+      "name": "Banana",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Mixed berries",
+      "note": "frozen",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Spinach",
+      "amount": 30,
+      "unit": "g"
+    },
+    {
+      "name": "Unsweetened almond milk",
+      "amount": 250,
+      "unit": "g"
+    }
+  ]
+}

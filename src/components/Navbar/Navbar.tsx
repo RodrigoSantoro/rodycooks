@@ -23,10 +23,16 @@ import LocalDiningIcon from "@mui/icons-material/LocalDining"
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded"
 import WineBarRoundedIcon from "@mui/icons-material/WineBarRounded"
 import RestaurantMenuRoundedIcon from "@mui/icons-material/RestaurantMenuRounded"
+import EditCalendarRoundedIcon from "@mui/icons-material/EditCalendarRounded"
 
 const pages = [
   { label: "Home", path: "/", icon: <HomeRoundedIcon /> },
   { label: "Meal Plan", path: "/mealplans", icon: <RestaurantMenuRoundedIcon /> },
+  {
+    label: "Menu Builder",
+    path: "/menu-builder",
+    icon: <EditCalendarRoundedIcon />,
+  },
   { label: "Wines", path: "/wines", icon: <WineBarRoundedIcon /> },
 ]
 

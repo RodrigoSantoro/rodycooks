@@ -1,0 +1,55 @@
+{
+  "id": "5d47d04b-6b4a-43c8-804b-c66956fd27d8",
+  "name": "Strawberry Frozen Yogurt",
+  "url": "strawberry-frozen-yogurt",
+  "categories": [
+    "Dessert",
+    "Snack"
+  ],
+  "slots": [
+    "snack1",
+    "snack2"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 0,
+  "servings": 8,
+  "baseMacros": {
+    "calories": 166,
+    "proteinG": 12,
+    "fatG": 5,
+    "saturatedFatG": 1.5,
+    "carbsG": 17
+  },
+  "steps": [
+    "Add all ingredients to a blender and blend until smooth."
+  ],
+  "ingredients": [
+    {
+      "name": "Greek Yogurt",
+      "amount": 800,
+      "unit": "ml"
+    },
+    {
+      "name": "Strawberry",
+      "amount": 400,
+      "unit": "g"
+    },
+    {
+      "name": "Peanut Butter",
+      "amount": 80,
+      "unit": "ml"
+    },
+    {
+      "name": "Honey or Maple Syrup",
+      "amount": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "Cinnamon Powder",
+      "amount": 4,
+      "unit": "g"
+    }
+  ]
+}

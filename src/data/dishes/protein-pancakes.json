@@ -1,12 +1,25 @@
 {
   "id": "8d3bd63f-0500-48c6-8296-c525c990ef44",
   "name": "Protein Pancakes",
-  "categories": ["Breakfast"],
+  "url": "protein-pancakes",
+  "categories": [
+    "Breakfast"
+  ],
+  "slots": [
+    "breakfast"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
   "prepTime": 5,
   "cookTime": 5,
   "servings": 4,
-  "calories": 620,
-  "url": "protein-pancakes",
+  "baseMacros": {
+    "calories": 155,
+    "proteinG": 11,
+    "fatG": 2,
+    "saturatedFatG": 0.4,
+    "carbsG": 24
+  },
   "steps": [
     "Add all ingredients dry ingredients to a bowl and mix.",
     "Add all the wet ingredients to the bowl and mix.",
@@ -16,27 +29,33 @@
   "ingredients": [
     {
       "name": "All-Purpose Flour",
-      "amount": "120g"
+      "amount": 120,
+      "unit": "g"
     },
     {
       "name": "Protein Powder",
-      "amount": "28g"
+      "amount": 28,
+      "unit": "g"
     },
     {
       "name": "Baking Powder",
-      "amount": "1 tsp"
+      "amount": 1,
+      "unit": "tsp"
     },
     {
       "name": "Salt",
-      "amount": "1 tsp"
+      "amount": 1,
+      "unit": "tsp"
     },
     {
       "name": "Honey or Maple Syrup",
-      "amount": "20ml"
+      "amount": 20,
+      "unit": "ml"
     },
     {
       "name": "Water",
-      "amount": "240ml"
+      "amount": 240,
+      "unit": "ml"
     }
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "id": "blackbean-sweetpotato-burrito-bowl",
+  "name": "Black bean & sweet potato burrito bowl",
+  "url": "blackbean-sweetpotato-burrito-bowl",
+  "categories": [
+    "Lunch",
+    "Dinner",
+    "Vegetarian"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 520,
+    "proteinG": 20,
+    "fatG": 10,
+    "saturatedFatG": 1.5,
+    "carbsG": 86
+  },
+  "steps": [
+    "Roast the diced sweet potato at 200°C (400°F) until tender.",
+    "Cook the brown rice and warm the black beans and sweetcorn.",
+    "Assemble the bowl and finish with salsa, lime and cilantro."
+  ],
+  "ingredients": [
+    {
+      "name": "Canned black beans, drained",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Sweet potato",
+      "note": "roasted",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Brown rice",
+      "note": "dry",
+      "amount": 55,
+      "unit": "g"
+    },
+    {
+      "name": "Sweetcorn",
+      "amount": 60,
+      "unit": "g"
+    },
+    {
+      "name": "Salsa, lime, cilantro",
+      "note": "no added sugar",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

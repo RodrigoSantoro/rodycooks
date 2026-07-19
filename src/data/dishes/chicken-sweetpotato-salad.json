@@ -1,0 +1,58 @@
+{
+  "id": "chicken-sweetpotato-salad",
+  "name": "Chicken, sweet potato & salad",
+  "url": "chicken-sweetpotato-salad",
+  "categories": [
+    "Lunch",
+    "Dinner"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "prepTime": 10,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 515,
+    "proteinG": 52,
+    "fatG": 10,
+    "saturatedFatG": 2.1,
+    "carbsG": 55
+  },
+  "steps": [
+    "Roast the sweet potato at 200°C (400°F) until tender, about 30 minutes.",
+    "Season and cook the chicken breast in the olive oil, then slice.",
+    "Toss the lettuce, tomato and cucumber into a salad.",
+    "Plate the chicken and sweet potato alongside the salad."
+  ],
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "amount": 210,
+      "unit": "g"
+    },
+    {
+      "name": "Sweet potato",
+      "note": "roasted",
+      "amount": 310,
+      "unit": "g"
+    },
+    {
+      "name": "Lettuce",
+      "amount": 40,
+      "unit": "g"
+    },
+    {
+      "name": "Tomato & cucumber",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

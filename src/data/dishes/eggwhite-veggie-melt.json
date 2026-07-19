@@ -1,0 +1,56 @@
+{
+  "id": "eggwhite-veggie-melt",
+  "name": "Open-faced egg-white veggie melt",
+  "url": "eggwhite-veggie-melt",
+  "categories": [
+    "Breakfast",
+    "Lunch",
+    "Vegetarian"
+  ],
+  "slots": [
+    "breakfast",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 8,
+  "cookTime": 10,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 350,
+    "proteinG": 28,
+    "fatG": 9,
+    "saturatedFatG": 2.5,
+    "carbsG": 35
+  },
+  "steps": [
+    "Sauté the spinach, bell pepper and mushrooms until soft.",
+    "Add the egg whites and whole egg and scramble to your liking.",
+    "Pile onto the toasted bread and serve open-faced."
+  ],
+  "ingredients": [
+    {
+      "name": "Egg whites",
+      "note": "≈33 g per white",
+      "amount": 132,
+      "unit": "g"
+    },
+    {
+      "name": "Whole egg",
+      "note": "1 egg",
+      "amount": 50,
+      "unit": "g"
+    },
+    {
+      "name": "Spinach, bell pepper, mushrooms",
+      "amount": null,
+      "unit": ""
+    },
+    {
+      "name": "Whole wheat bread (no added sugar)",
+      "note": "open-faced",
+      "amount": 80,
+      "unit": "g"
+    }
+  ]
+}

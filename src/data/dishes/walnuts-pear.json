@@ -1,0 +1,41 @@
+{
+  "id": "walnuts-pear",
+  "name": "Walnuts & a pear",
+  "url": "walnuts-pear",
+  "categories": [
+    "Snack",
+    "Vegetarian"
+  ],
+  "slots": [
+    "snack2",
+    "snack1"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 2,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 260,
+    "proteinG": 6,
+    "fatG": 18,
+    "saturatedFatG": 1.7,
+    "carbsG": 24
+  },
+  "steps": [
+    "Slice the pear.",
+    "Serve with the walnuts."
+  ],
+  "ingredients": [
+    {
+      "name": "Walnuts",
+      "amount": 25,
+      "unit": "g"
+    },
+    {
+      "name": "Pear",
+      "amount": 180,
+      "unit": "g"
+    }
+  ]
+}

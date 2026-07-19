@@ -1,0 +1,63 @@
+{
+  "id": "tofu-veg-curry-rice",
+  "name": "Tofu & vegetable curry with brown rice",
+  "url": "tofu-veg-curry-rice",
+  "categories": [
+    "Dinner",
+    "Vegetarian"
+  ],
+  "slots": [
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 15,
+  "cookTime": 25,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 510,
+    "proteinG": 26,
+    "fatG": 16,
+    "saturatedFatG": 2.5,
+    "carbsG": 66
+  },
+  "steps": [
+    "Press, cube and sear the tofu in the olive oil.",
+    "Sauté curry spices with garlic and ginger, then add the mixed veg and crushed tomato.",
+    "Simmer until the veg is tender, return the tofu and serve over brown rice."
+  ],
+  "ingredients": [
+    {
+      "name": "Firm tofu",
+      "amount": 180,
+      "unit": "g"
+    },
+    {
+      "name": "Brown rice",
+      "note": "dry",
+      "amount": 55,
+      "unit": "g"
+    },
+    {
+      "name": "Mixed veg (cauliflower, peas, pepper)",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Crushed tomato",
+      "note": "tomato-based, no coconut milk",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Curry spices, garlic, ginger",
+      "amount": null,
+      "unit": ""
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

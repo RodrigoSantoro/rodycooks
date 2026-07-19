@@ -1,0 +1,55 @@
+{
+  "id": "smashed-chickpea-sandwich",
+  "name": "Smashed chickpea salad sandwich",
+  "url": "smashed-chickpea-sandwich",
+  "categories": [
+    "Lunch",
+    "Dinner",
+    "Vegetarian"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 430,
+    "proteinG": 22,
+    "fatG": 8,
+    "saturatedFatG": 1,
+    "carbsG": 70
+  },
+  "steps": [
+    "Mash the drained chickpeas with the Greek yogurt.",
+    "Fold in finely chopped celery and red onion, a squeeze of lemon and mustard.",
+    "Pile onto the bread with lettuce and tomato."
+  ],
+  "ingredients": [
+    {
+      "name": "Canned chickpeas, drained & mashed",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Nonfat Greek yogurt",
+      "note": "stands in for mayo",
+      "amount": 30,
+      "unit": "g"
+    },
+    {
+      "name": "Whole wheat bread (no added sugar)",
+      "note": "2 slices",
+      "amount": 80,
+      "unit": "g"
+    },
+    {
+      "name": "Celery, red onion, lemon, mustard, lettuce, tomato",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

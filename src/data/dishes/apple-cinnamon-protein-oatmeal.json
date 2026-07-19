@@ -1,0 +1,58 @@
+{
+  "id": "apple-cinnamon-protein-oatmeal",
+  "name": "Apple-cinnamon protein oatmeal",
+  "url": "apple-cinnamon-protein-oatmeal",
+  "categories": [
+    "Breakfast",
+    "Vegetarian"
+  ],
+  "slots": [
+    "breakfast"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 3,
+  "cookTime": 7,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 430,
+    "proteinG": 30,
+    "fatG": 8,
+    "saturatedFatG": 1,
+    "carbsG": 60
+  },
+  "steps": [
+    "Cook the rolled oats in water until creamy.",
+    "Off the heat, stir in the protein powder until smooth.",
+    "Top with chopped apple, walnuts and cinnamon."
+  ],
+  "ingredients": [
+    {
+      "name": "Rolled oats",
+      "note": "dry",
+      "amount": 60,
+      "unit": "g"
+    },
+    {
+      "name": "Plant protein powder, unsweetened vanilla",
+      "amount": 30,
+      "unit": "g"
+    },
+    {
+      "name": "Apple",
+      "amount": 120,
+      "unit": "g"
+    },
+    {
+      "name": "Walnuts",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "name": "Cinnamon",
+      "note": "to taste",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

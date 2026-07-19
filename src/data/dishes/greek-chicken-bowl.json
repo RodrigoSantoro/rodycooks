@@ -1,0 +1,57 @@
+{
+  "id": "greek-chicken-bowl",
+  "name": "Greek-style chicken bowl",
+  "url": "greek-chicken-bowl",
+  "categories": [
+    "Lunch",
+    "Dinner"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "prepTime": 15,
+  "cookTime": 20,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 520,
+    "proteinG": 52,
+    "fatG": 12,
+    "saturatedFatG": 2.5,
+    "carbsG": 45
+  },
+  "steps": [
+    "Cook the quinoa and grill the seasoned chicken, then slice.",
+    "Make a quick tzatziki by mixing the Greek yogurt with grated garlic.",
+    "Assemble the bowl with quinoa, chicken, chickpeas, cucumber, tomato and tzatziki."
+  ],
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "amount": 210,
+      "unit": "g"
+    },
+    {
+      "name": "Canned chickpeas, drained",
+      "amount": 80,
+      "unit": "g"
+    },
+    {
+      "name": "Cucumber, tomato",
+      "amount": null,
+      "unit": ""
+    },
+    {
+      "name": "Nonfat Greek yogurt (tzatziki) with garlic",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Quinoa",
+      "note": "dry",
+      "amount": 47,
+      "unit": "g"
+    }
+  ]
+}

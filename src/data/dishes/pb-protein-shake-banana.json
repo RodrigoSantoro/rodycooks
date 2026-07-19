@@ -1,0 +1,42 @@
+{
+  "id": "pb-protein-shake-banana",
+  "name": "Peanut butter protein shake & banana",
+  "url": "pb-protein-shake-banana",
+  "categories": [
+    "Snack",
+    "Vegetarian"
+  ],
+  "slots": [
+    "snack1",
+    "snack2"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 3,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 275,
+    "proteinG": 31,
+    "fatG": 4,
+    "saturatedFatG": 0.5,
+    "carbsG": 35
+  },
+  "steps": [
+    "Blend the protein powder with water (and ice if you like) until smooth.",
+    "Serve with the banana on the side or blended in."
+  ],
+  "ingredients": [
+    {
+      "name": "Vega Sport protein powder, peanut butter",
+      "note": "1 scoop, blended with water",
+      "amount": 44,
+      "unit": "g"
+    },
+    {
+      "name": "Banana",
+      "amount": 118,
+      "unit": "g"
+    }
+  ]
+}

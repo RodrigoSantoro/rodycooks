@@ -1,13 +1,13 @@
 import { Typography } from "@mui/material"
 import { GetStaticProps } from "next"
-import { Recipe } from "@src/types/custom"
+import { CatalogDish } from "@src/types/menu"
 import { ParsedUrlQuery } from "querystring"
 import { getAllPaths, getRecipeFromUrl } from "@src/utils/database"
 import { RecipeView } from "@src/components/RecipeView/RecipeView"
 import { NextSeo } from "next-seo"
 
 interface Props {
-  recipe: Recipe
+  recipe: CatalogDish
 }
 
 export default function RecipePage({ recipe }: Props) {

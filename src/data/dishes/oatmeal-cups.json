@@ -1,0 +1,73 @@
+{
+  "id": "2f18df5b-1a1e-4f6f-a876-2f649ccab7bf",
+  "name": "Oatmeal Cups",
+  "url": "oatmeal-cups",
+  "categories": [
+    "Breakfast",
+    "Snack"
+  ],
+  "slots": [
+    "breakfast",
+    "snack1",
+    "snack2"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 5,
+  "cookTime": 30,
+  "servings": 20,
+  "baseMacros": {
+    "calories": 80,
+    "proteinG": 3,
+    "fatG": 1.5,
+    "saturatedFatG": 0.4,
+    "carbsG": 14
+  },
+  "steps": [
+    "Mix all the ingredients in a bowl.",
+    "Grease a muffin tin and fill half of each cup with the mixture.",
+    "Bake at 350°F (180°C) for 30 minutes or until golden brown."
+  ],
+  "ingredients": [
+    {
+      "name": "Eggs",
+      "amount": 2,
+      "unit": "count"
+    },
+    {
+      "name": "Milk",
+      "amount": 350,
+      "unit": "ml"
+    },
+    {
+      "name": "Unsweetened Applesauce",
+      "amount": 180,
+      "unit": "ml"
+    },
+    {
+      "name": "Maple Syrup",
+      "amount": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "Quick Oats",
+      "amount": 270,
+      "unit": "g"
+    },
+    {
+      "name": "Baking Powder",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "Cinnamon Powder",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "Salt",
+      "amount": 0.5,
+      "unit": "tsp"
+    }
+  ]
+}

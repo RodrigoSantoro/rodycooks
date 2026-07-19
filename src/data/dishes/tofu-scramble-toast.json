@@ -1,0 +1,62 @@
+{
+  "id": "tofu-scramble-toast",
+  "name": "Tofu scramble on whole wheat toast",
+  "url": "tofu-scramble-toast",
+  "categories": [
+    "Breakfast",
+    "Vegetarian"
+  ],
+  "slots": [
+    "breakfast"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 5,
+  "cookTime": 12,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 400,
+    "proteinG": 27,
+    "fatG": 14,
+    "saturatedFatG": 2,
+    "carbsG": 40
+  },
+  "steps": [
+    "Crumble the tofu and sauté in the olive oil with turmeric and black pepper.",
+    "Add the spinach and tomato and cook until wilted.",
+    "Serve over the toasted whole wheat bread."
+  ],
+  "ingredients": [
+    {
+      "name": "Firm tofu",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Whole wheat bread (no added sugar)",
+      "note": "2 slices",
+      "amount": 80,
+      "unit": "g"
+    },
+    {
+      "name": "Spinach",
+      "amount": 50,
+      "unit": "g"
+    },
+    {
+      "name": "Tomato",
+      "amount": 60,
+      "unit": "g"
+    },
+    {
+      "name": "Turmeric, black pepper",
+      "amount": null,
+      "unit": ""
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

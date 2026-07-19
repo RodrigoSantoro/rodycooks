@@ -1,0 +1,49 @@
+{
+  "id": "greek-yogurt-berries",
+  "name": "Nonfat Greek yogurt with berries",
+  "url": "greek-yogurt-berries",
+  "categories": [
+    "Snack",
+    "Breakfast",
+    "Vegetarian"
+  ],
+  "slots": [
+    "snack2",
+    "snack1",
+    "breakfast"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 2,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 180,
+    "proteinG": 18,
+    "fatG": 0.5,
+    "saturatedFatG": 0.3,
+    "carbsG": 24
+  },
+  "steps": [
+    "Spoon the yogurt into a bowl.",
+    "Top with mixed berries and a dusting of cinnamon."
+  ],
+  "ingredients": [
+    {
+      "name": "Nonfat Greek yogurt",
+      "amount": 170,
+      "unit": "g"
+    },
+    {
+      "name": "Mixed berries",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Cinnamon",
+      "note": "to taste",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

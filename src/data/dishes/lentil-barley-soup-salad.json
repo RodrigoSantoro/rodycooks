@@ -1,0 +1,66 @@
+{
+  "id": "lentil-barley-soup-salad",
+  "name": "Lentil & barley soup with side salad",
+  "url": "lentil-barley-soup-salad",
+  "categories": [
+    "Lunch",
+    "Dinner",
+    "Vegetarian"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 40,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 450,
+    "proteinG": 22,
+    "fatG": 8,
+    "saturatedFatG": 1,
+    "carbsG": 72
+  },
+  "steps": [
+    "Sauté the carrot, celery and onion in the olive oil.",
+    "Add the lentils, barley, crushed tomato and water/stock.",
+    "Simmer until the lentils and barley are tender, about 35 minutes.",
+    "Serve with a simple side salad."
+  ],
+  "ingredients": [
+    {
+      "name": "Green/brown lentils",
+      "note": "dry",
+      "amount": 60,
+      "unit": "g"
+    },
+    {
+      "name": "Pearl barley",
+      "note": "dry",
+      "amount": 50,
+      "unit": "g"
+    },
+    {
+      "name": "Carrot, celery, onion",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Crushed tomato",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "name": "Side salad greens",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

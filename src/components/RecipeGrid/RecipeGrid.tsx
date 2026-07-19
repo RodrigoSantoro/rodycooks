@@ -1,4 +1,4 @@
-import { Recipe } from "@src/types/custom"
+import { CatalogDish } from "@src/types/menu"
 import { useMemo, useState } from "react"
 import {
   Box,
@@ -12,7 +12,7 @@ import SearchIcon from "@mui/icons-material/Search"
 import { RecipeCard } from "@src/components/RecipeCard/RecipeCard"
 
 interface RecipeGridProps {
-  recipes: Recipe[]
+  recipes: CatalogDish[]
 }
 
 export const RecipeGrid = ({ recipes }: RecipeGridProps) => {

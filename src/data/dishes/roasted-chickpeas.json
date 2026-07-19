@@ -1,0 +1,46 @@
+{
+  "id": "roasted-chickpeas",
+  "name": "Roasted chickpeas",
+  "url": "roasted-chickpeas",
+  "categories": [
+    "Snack",
+    "Vegetarian"
+  ],
+  "slots": [
+    "snack1",
+    "snack2"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 5,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 220,
+    "proteinG": 11,
+    "fatG": 7,
+    "saturatedFatG": 0.8,
+    "carbsG": 30
+  },
+  "steps": [
+    "Pat the drained chickpeas dry and toss with the olive oil, paprika, cumin and salt.",
+    "Roast at 200°C (400°F) for 25–30 minutes, shaking halfway, until crisp."
+  ],
+  "ingredients": [
+    {
+      "name": "Canned chickpeas, drained",
+      "amount": 120,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "name": "Paprika, cumin, salt",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

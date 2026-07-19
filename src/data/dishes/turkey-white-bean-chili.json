@@ -1,0 +1,54 @@
+{
+  "id": "turkey-white-bean-chili",
+  "name": "Turkey & white bean chili",
+  "url": "turkey-white-bean-chili",
+  "categories": [
+    "Dinner",
+    "Lunch"
+  ],
+  "slots": [
+    "dinner",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "prepTime": 10,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 500,
+    "proteinG": 45,
+    "fatG": 6,
+    "saturatedFatG": 1.5,
+    "carbsG": 60
+  },
+  "steps": [
+    "Brown the ground turkey in a pot, breaking it up.",
+    "Add crushed tomato, peppers, onion, cumin and chili powder.",
+    "Stir in the beans and simmer 20 minutes.",
+    "Serve on its own or over brown rice."
+  ],
+  "ingredients": [
+    {
+      "name": "99% lean ground turkey breast",
+      "amount": 165,
+      "unit": "g"
+    },
+    {
+      "name": "Canned white/kidney beans, drained",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Crushed tomato, peppers, onion, cumin, chili powder",
+      "note": "no added sugar",
+      "amount": null,
+      "unit": ""
+    },
+    {
+      "name": "Brown rice",
+      "note": "dry, optional",
+      "amount": 48,
+      "unit": "g"
+    }
+  ]
+}

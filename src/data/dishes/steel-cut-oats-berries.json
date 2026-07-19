@@ -1,0 +1,57 @@
+{
+  "id": "steel-cut-oats-berries",
+  "name": "Steel-cut oats with walnuts, fibre & berries",
+  "url": "steel-cut-oats-berries",
+  "categories": [
+    "Breakfast",
+    "Vegetarian"
+  ],
+  "slots": [
+    "breakfast"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 2,
+  "cookTime": 8,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 450,
+    "proteinG": 23,
+    "fatG": 13,
+    "saturatedFatG": 1.5,
+    "carbsG": 64
+  },
+  "steps": [
+    "Cook the steel-cut oats in water (microwave or stovetop) until tender.",
+    "Stir in the fibre blend and yogurt.",
+    "Top with walnuts and blueberries."
+  ],
+  "ingredients": [
+    {
+      "name": "Steel-cut oats",
+      "note": "dry",
+      "amount": 53,
+      "unit": "g"
+    },
+    {
+      "name": "Walnuts",
+      "amount": 15,
+      "unit": "g"
+    },
+    {
+      "name": "Ultimate Cleanse 3-in-1 fibre blend",
+      "amount": 16,
+      "unit": "g"
+    },
+    {
+      "name": "Blueberries",
+      "amount": 80,
+      "unit": "g"
+    },
+    {
+      "name": "Oikos Pro plain yogurt",
+      "amount": 150,
+      "unit": "g"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { Recipe } from "@src/types/custom"
+import { CatalogDish } from "@src/types/menu"
 import Link from "next/link"
 import {
   Box,
@@ -16,7 +16,7 @@ import { useEffect, useRef, useState } from "react"
 import { getCategoryStyle } from "./categoryStyle"
 
 interface RecipeCardProps {
-  recipe: Recipe
+  recipe: CatalogDish
 }
 
 const InfoItem = ({
@@ -49,10 +49,8 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
     }
   }, [])
   const totalTime = (recipe.prepTime || 0) + (recipe.cookTime || 0)
-  const caloriesPerServing =
-    recipe.calories && recipe.servings
-      ? Math.round(recipe.calories / recipe.servings)
-      : null
+  // Macros are per serving, so this is already the per-serving calories.
+  const caloriesPerServing = recipe.baseMacros?.calories ?? null
 
   return (
     <Card
@@ -139,7 +137,9 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
             )}
             <InfoItem
               icon={<RestaurantIcon fontSize="small" color="action" />}
-              label={`${recipe.servings} servings`}
+              label={`${recipe.servings} serving${
+                recipe.servings === 1 ? "" : "s"
+              }`}
             />
             {caloriesPerServing !== null && (
               <InfoItem

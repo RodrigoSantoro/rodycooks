@@ -1,0 +1,58 @@
+{
+  "id": "chickpea-quinoa-tabbouleh",
+  "name": "Chickpea & quinoa tabbouleh bowl",
+  "url": "chickpea-quinoa-tabbouleh",
+  "categories": [
+    "Lunch",
+    "Vegetarian"
+  ],
+  "slots": [
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 15,
+  "cookTime": 15,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 480,
+    "proteinG": 20,
+    "fatG": 16,
+    "saturatedFatG": 2,
+    "carbsG": 62
+  },
+  "steps": [
+    "Cook the quinoa and let it cool.",
+    "Combine with the chickpeas, chopped parsley, tomato and cucumber.",
+    "Dress with the olive oil and plenty of lemon; season to taste."
+  ],
+  "ingredients": [
+    {
+      "name": "Canned chickpeas, drained",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Quinoa",
+      "note": "dry",
+      "amount": 50,
+      "unit": "g"
+    },
+    {
+      "name": "Parsley, tomato, cucumber",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 8,
+      "unit": "g"
+    },
+    {
+      "name": "Lemon",
+      "note": "to taste",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

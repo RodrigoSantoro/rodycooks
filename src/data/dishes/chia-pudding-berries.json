@@ -1,0 +1,49 @@
+{
+  "id": "chia-pudding-berries",
+  "name": "Chia seed pudding with berries",
+  "url": "chia-pudding-berries",
+  "categories": [
+    "Snack",
+    "Breakfast",
+    "Vegetarian"
+  ],
+  "slots": [
+    "snack2",
+    "snack1",
+    "breakfast"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 5,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 240,
+    "proteinG": 9,
+    "fatG": 12,
+    "saturatedFatG": 1.5,
+    "carbsG": 28
+  },
+  "steps": [
+    "Stir the chia seeds into the almond milk and let sit 5 minutes, then stir again.",
+    "Chill for at least 4 hours or overnight until set.",
+    "Top with mixed berries before serving."
+  ],
+  "ingredients": [
+    {
+      "name": "Chia seeds",
+      "amount": 25,
+      "unit": "g"
+    },
+    {
+      "name": "Unsweetened almond milk",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Mixed berries",
+      "amount": 80,
+      "unit": "g"
+    }
+  ]
+}

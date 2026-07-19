@@ -1,0 +1,52 @@
+{
+  "id": "chicken-avocado-sandwich",
+  "name": "Grilled chicken & avocado sandwich",
+  "url": "chicken-avocado-sandwich",
+  "categories": [
+    "Lunch",
+    "Dinner"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "prepTime": 10,
+  "cookTime": 12,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 450,
+    "proteinG": 42,
+    "fatG": 13,
+    "saturatedFatG": 2.5,
+    "carbsG": 48
+  },
+  "steps": [
+    "Season and grill the chicken breast, then slice.",
+    "Toast the bread and mash or slice the avocado.",
+    "Build the sandwich with chicken, avocado, tomato, lettuce and mustard."
+  ],
+  "ingredients": [
+    {
+      "name": "Whole wheat / sprouted bread (no added sugar)",
+      "note": "2 slices",
+      "amount": 80,
+      "unit": "g"
+    },
+    {
+      "name": "Chicken breast",
+      "amount": 140,
+      "unit": "g"
+    },
+    {
+      "name": "Avocado",
+      "amount": 40,
+      "unit": "g"
+    },
+    {
+      "name": "Tomato, lettuce, mustard",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

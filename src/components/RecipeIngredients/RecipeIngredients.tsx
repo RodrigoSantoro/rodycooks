@@ -6,11 +6,21 @@ import {
   Stack,
   Typography,
 } from "@mui/material"
-import { Ingredient } from "@src/types/custom"
+import { CatalogIngredient } from "@src/types/menu"
 import { useState } from "react"
 
 interface RecipeIngredientsProps {
-  ingredients: Ingredient[]
+  ingredients: CatalogIngredient[]
+}
+
+/** "165 g", "2", "1 tsp", or "to taste" for a null amount. */
+const formatAmount = (amount: number | null, unit: string): string => {
+  if (amount == null) return "to taste"
+  if (unit === "" || unit === "count") return `${amount}`
+  if (unit === "g" || unit === "ml" || unit === "kg" || unit === "l") {
+    return `${amount}${unit}`
+  }
+  return `${amount} ${unit}`
 }
 
 export const RecipeIngredients = ({ ingredients }: RecipeIngredientsProps) => {
@@ -28,15 +38,8 @@ export const RecipeIngredients = ({ ingredients }: RecipeIngredientsProps) => {
       <FormGroup>
         <Stack>
           {ingredients.map((ingredient) => {
-            let amountWithUnit = ""
-
-            if (ingredient.amount === "to taste") {
-              amountWithUnit = `${ingredient.amount}`
-            } else {
-              amountWithUnit = `- ${ingredient.amount}`
-            }
-
-            const output = `${ingredient.name} ${amountWithUnit}`
+            const amount = formatAmount(ingredient.amount, ingredient.unit)
+            const output = `${ingredient.name} — ${amount}`
             const isSelected = selectedItems.get(ingredient.name)
             return (
               <FormControlLabel

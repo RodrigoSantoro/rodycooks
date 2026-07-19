@@ -1,0 +1,63 @@
+{
+  "id": "white-bean-kale-stew",
+  "name": "White bean & kale stew",
+  "url": "white-bean-kale-stew",
+  "categories": [
+    "Dinner",
+    "Lunch",
+    "Vegetarian"
+  ],
+  "slots": [
+    "dinner",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 25,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 430,
+    "proteinG": 22,
+    "fatG": 9,
+    "saturatedFatG": 1.3,
+    "carbsG": 62
+  },
+  "steps": [
+    "Sauté the carrot, onion and garlic in the olive oil.",
+    "Add the cannellini beans and crushed tomato and simmer 15 minutes.",
+    "Stir in the kale and cook until tender; season with herbs."
+  ],
+  "ingredients": [
+    {
+      "name": "Canned cannellini beans, drained",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Kale",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Crushed tomato",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Carrot, onion",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 8,
+      "unit": "g"
+    },
+    {
+      "name": "Garlic, herbs",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

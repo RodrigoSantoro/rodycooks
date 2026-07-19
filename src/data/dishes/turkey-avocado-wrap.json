@@ -1,0 +1,57 @@
+{
+  "id": "turkey-avocado-wrap",
+  "name": "Turkey & avocado whole-wheat wrap",
+  "url": "turkey-avocado-wrap",
+  "categories": [
+    "Lunch",
+    "Dinner"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": false,
+  "prepTime": 8,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 470,
+    "proteinG": 38,
+    "fatG": 14,
+    "saturatedFatG": 2.5,
+    "carbsG": 48
+  },
+  "steps": [
+    "Spread the mashed avocado over the tortilla.",
+    "Layer the sliced turkey, lettuce, tomato and a smear of mustard.",
+    "Roll tightly and slice in half."
+  ],
+  "ingredients": [
+    {
+      "name": "Whole wheat tortilla (no added sugar)",
+      "amount": 70,
+      "unit": "g"
+    },
+    {
+      "name": "Cooked turkey breast, sliced",
+      "amount": 120,
+      "unit": "g"
+    },
+    {
+      "name": "Avocado",
+      "amount": 40,
+      "unit": "g"
+    },
+    {
+      "name": "Lettuce, tomato",
+      "amount": 60,
+      "unit": "g"
+    },
+    {
+      "name": "Mustard",
+      "note": "to taste",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "red-lentil-dal-rice",
+  "name": "Red lentil dal with brown rice",
+  "url": "red-lentil-dal-rice",
+  "categories": [
+    "Dinner",
+    "Lunch",
+    "Vegetarian"
+  ],
+  "slots": [
+    "dinner",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 480,
+    "proteinG": 22,
+    "fatG": 9,
+    "saturatedFatG": 1.2,
+    "carbsG": 78
+  },
+  "steps": [
+    "Sauté the onion, garlic and ginger with dal spices in the olive oil.",
+    "Add the red lentils, crushed tomato and water and simmer until the lentils break down.",
+    "Serve over cooked brown rice."
+  ],
+  "ingredients": [
+    {
+      "name": "Red lentils",
+      "note": "dry",
+      "amount": 70,
+      "unit": "g"
+    },
+    {
+      "name": "Brown rice",
+      "note": "dry",
+      "amount": 50,
+      "unit": "g"
+    },
+    {
+      "name": "Crushed tomato",
+      "amount": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Onion, garlic, ginger, dal spices",
+      "amount": null,
+      "unit": ""
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

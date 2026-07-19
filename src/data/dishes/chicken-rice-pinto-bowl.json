@@ -1,0 +1,64 @@
+{
+  "id": "chicken-rice-pinto-bowl",
+  "name": "Chicken, brown rice & pinto bean bowl",
+  "url": "chicken-rice-pinto-bowl",
+  "categories": [
+    "Lunch",
+    "Dinner"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "prepTime": 10,
+  "cookTime": 25,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 600,
+    "proteinG": 52,
+    "fatG": 13,
+    "saturatedFatG": 2.1,
+    "carbsG": 74
+  },
+  "steps": [
+    "Cook the brown rice according to package directions.",
+    "Season the chicken breast and pan-sear in the olive oil until cooked through, then slice.",
+    "Steam the broccoli and warm the drained pinto beans.",
+    "Assemble everything over a bed of lettuce."
+  ],
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "amount": 165,
+      "unit": "g"
+    },
+    {
+      "name": "Brown rice",
+      "note": "dry",
+      "amount": 65,
+      "unit": "g"
+    },
+    {
+      "name": "Canned pinto beans, drained & rinsed",
+      "amount": 130,
+      "unit": "g"
+    },
+    {
+      "name": "Broccoli",
+      "note": "frozen",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Lettuce",
+      "amount": 30,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

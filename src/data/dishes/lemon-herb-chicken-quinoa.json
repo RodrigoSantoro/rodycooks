@@ -1,0 +1,60 @@
+{
+  "id": "lemon-herb-chicken-quinoa",
+  "name": "Lemon-herb chicken with roasted veg & quinoa",
+  "url": "lemon-herb-chicken-quinoa",
+  "categories": [
+    "Dinner",
+    "Lunch"
+  ],
+  "slots": [
+    "dinner",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "prepTime": 15,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 440,
+    "proteinG": 48,
+    "fatG": 10,
+    "saturatedFatG": 2,
+    "carbsG": 45
+  },
+  "steps": [
+    "Marinate the chicken in lemon juice and herbs.",
+    "Toss the Brussels sprouts and butternut squash in the olive oil and roast at 200°C (400°F) until caramelised.",
+    "Cook the quinoa according to package directions.",
+    "Grill or pan-cook the chicken, then slice and serve over the quinoa with the veg."
+  ],
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "amount": 210,
+      "unit": "g"
+    },
+    {
+      "name": "Brussels sprouts",
+      "note": "roasted",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Butternut squash",
+      "note": "roasted",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Quinoa",
+      "note": "dry",
+      "amount": 47,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

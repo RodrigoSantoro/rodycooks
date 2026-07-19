@@ -1,0 +1,50 @@
+{
+  "id": "turkey-quinoa-stuffed-peppers",
+  "name": "Turkey & quinoa stuffed peppers",
+  "url": "turkey-quinoa-stuffed-peppers",
+  "categories": [
+    "Dinner"
+  ],
+  "slots": [
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "prepTime": 15,
+  "cookTime": 35,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 480,
+    "proteinG": 44,
+    "fatG": 9,
+    "saturatedFatG": 2,
+    "carbsG": 52
+  },
+  "steps": [
+    "Cook the quinoa according to package directions.",
+    "Brown the ground turkey with tomato and onion, then mix in the quinoa.",
+    "Halve the bell peppers, fill with the mixture and bake at 190°C (375°F) for 25–30 minutes."
+  ],
+  "ingredients": [
+    {
+      "name": "99% lean ground turkey breast",
+      "amount": 165,
+      "unit": "g"
+    },
+    {
+      "name": "Quinoa",
+      "note": "dry",
+      "amount": 47,
+      "unit": "g"
+    },
+    {
+      "name": "Bell peppers",
+      "amount": 2,
+      "unit": "count"
+    },
+    {
+      "name": "Tomato, onion",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

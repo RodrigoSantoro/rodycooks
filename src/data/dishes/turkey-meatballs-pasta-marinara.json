@@ -1,0 +1,56 @@
+{
+  "id": "turkey-meatballs-pasta-marinara",
+  "name": "Turkey meatballs with whole-wheat pasta & marinara",
+  "url": "turkey-meatballs-pasta-marinara",
+  "categories": [
+    "Dinner"
+  ],
+  "slots": [
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "prepTime": 15,
+  "cookTime": 25,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 540,
+    "proteinG": 42,
+    "fatG": 12,
+    "saturatedFatG": 2.5,
+    "carbsG": 62
+  },
+  "steps": [
+    "Form the ground turkey into meatballs and bake or pan-cook in the olive oil until browned.",
+    "Simmer the meatballs in the marinara sauce.",
+    "Cook the pasta, then combine and finish with a little grated parmesan."
+  ],
+  "ingredients": [
+    {
+      "name": "99% lean ground turkey breast",
+      "amount": 165,
+      "unit": "g"
+    },
+    {
+      "name": "Whole wheat pasta",
+      "note": "dry",
+      "amount": 70,
+      "unit": "g"
+    },
+    {
+      "name": "Marinara sauce (no added sugar)",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Parmesan",
+      "note": "light",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

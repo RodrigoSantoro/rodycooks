@@ -1,0 +1,58 @@
+{
+  "id": "chicken-veg-quinoa-skillet",
+  "name": "Chicken & vegetable quinoa skillet",
+  "url": "chicken-veg-quinoa-skillet",
+  "categories": [
+    "Dinner",
+    "Lunch"
+  ],
+  "slots": [
+    "dinner",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "prepTime": 10,
+  "cookTime": 25,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 500,
+    "proteinG": 48,
+    "fatG": 12,
+    "saturatedFatG": 2.2,
+    "carbsG": 48
+  },
+  "steps": [
+    "Cook the quinoa according to package directions.",
+    "Sauté the diced chicken in the olive oil with garlic until cooked through.",
+    "Add the zucchini, bell pepper and onion and cook until tender.",
+    "Fold in the quinoa and herbs; season and serve."
+  ],
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Quinoa",
+      "note": "dry",
+      "amount": 50,
+      "unit": "g"
+    },
+    {
+      "name": "Zucchini, bell pepper, onion",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "name": "Garlic, herbs",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

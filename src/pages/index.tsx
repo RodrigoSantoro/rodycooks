@@ -1,10 +1,10 @@
 import { getAllRecipes } from "@src/utils/database"
 import { NextSeo } from "next-seo"
-import { Recipe } from "@src/types/custom"
+import { CatalogDish } from "@src/types/menu"
 import { RecipeGrid } from "@src/components/RecipeGrid/RecipeGrid"
 
 interface Props {
-  recipes: Recipe[]
+  recipes: CatalogDish[]
 }
 
 export default function HomePage({ recipes }: Props) {

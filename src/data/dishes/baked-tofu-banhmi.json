@@ -1,0 +1,50 @@
+{
+  "id": "baked-tofu-banhmi",
+  "name": "Baked tofu bánh-mì-style sandwich",
+  "url": "baked-tofu-banhmi",
+  "categories": [
+    "Lunch",
+    "Dinner",
+    "Vegetarian"
+  ],
+  "slots": [
+    "lunch",
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 15,
+  "cookTime": 25,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 420,
+    "proteinG": 22,
+    "fatG": 13,
+    "saturatedFatG": 2,
+    "carbsG": 55
+  },
+  "steps": [
+    "Slice and bake the tofu at 200°C (400°F) until firm, about 25 minutes.",
+    "Quick-pickle the carrot and daikon in rice vinegar (no sugar).",
+    "Fill the roll with tofu, pickles, cucumber, cilantro and chili-garlic sauce."
+  ],
+  "ingredients": [
+    {
+      "name": "Firm tofu",
+      "note": "baked",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Whole wheat roll/bread (no added sugar)",
+      "amount": 80,
+      "unit": "g"
+    },
+    {
+      "name": "Pickled carrot & daikon, cucumber, cilantro, chili-garlic sauce",
+      "note": "no added sugar",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

@@ -1,12 +1,27 @@
 {
   "id": "ec5dc87f-11fd-4b28-949d-5c65fb2115d1",
   "name": "Simple Pour-Over Coffee",
-  "categories": ["Coffee", "Breakfast"],
+  "url": "pour-over-coffee",
+  "categories": [
+    "Coffee",
+    "Breakfast"
+  ],
+  "slots": [
+    "snack1",
+    "snack2"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
   "prepTime": 2,
   "cookTime": 3,
   "servings": 1,
-  "calories": 5,
-  "url": "pour-over-coffee",
+  "baseMacros": {
+    "calories": 5,
+    "proteinG": 0.3,
+    "fatG": 0,
+    "saturatedFatG": 0,
+    "carbsG": 0
+  },
   "steps": [
     "Rinse the paper filter with hot water to preheat the brewer, then pour the water out.",
     "Add the ground coffee and make a small dip in the center of the grounds.",
@@ -23,11 +38,13 @@
   "ingredients": [
     {
       "name": "Ground Coffee (medium)",
-      "amount": "15g"
+      "amount": 15,
+      "unit": "g"
     },
     {
       "name": "Water, just off the boil",
-      "amount": "250g"
+      "amount": 250,
+      "unit": "g"
     }
   ]
 }

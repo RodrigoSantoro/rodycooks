@@ -1,0 +1,60 @@
+{
+  "id": "chana-masala-rice",
+  "name": "Chana masala over brown rice",
+  "url": "chana-masala-rice",
+  "categories": [
+    "Dinner",
+    "Lunch",
+    "Vegetarian"
+  ],
+  "slots": [
+    "dinner",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 25,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 470,
+    "proteinG": 20,
+    "fatG": 12,
+    "saturatedFatG": 1.5,
+    "carbsG": 78
+  },
+  "steps": [
+    "Sauté onion, garlic and ginger with masala spices in the olive oil.",
+    "Add the crushed tomato and chickpeas and simmer 10–15 minutes.",
+    "Stir in the spinach until wilted.",
+    "Serve over cooked brown rice."
+  ],
+  "ingredients": [
+    {
+      "name": "Chickpeas, canned & drained",
+      "amount": 240,
+      "unit": "g"
+    },
+    {
+      "name": "Spinach",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Crushed tomato",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Brown rice",
+      "note": "dry",
+      "amount": 48,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

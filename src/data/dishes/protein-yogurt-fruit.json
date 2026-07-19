@@ -1,0 +1,49 @@
+{
+  "id": "protein-yogurt-fruit",
+  "name": "Protein yogurt with fruit",
+  "url": "protein-yogurt-fruit",
+  "categories": [
+    "Snack",
+    "Breakfast",
+    "Vegetarian"
+  ],
+  "slots": [
+    "snack2",
+    "snack1",
+    "breakfast"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 3,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 195,
+    "proteinG": 13,
+    "fatG": 0.3,
+    "saturatedFatG": 0.3,
+    "carbsG": 37
+  },
+  "steps": [
+    "Stir the cinnamon into the yogurt.",
+    "Top with chopped apple or strawberries and serve."
+  ],
+  "ingredients": [
+    {
+      "name": "Oikos Pro plain yogurt",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Apple (or strawberries)",
+      "amount": 180,
+      "unit": "g"
+    },
+    {
+      "name": "Cinnamon",
+      "note": "to taste",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

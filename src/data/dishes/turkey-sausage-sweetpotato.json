@@ -1,0 +1,57 @@
+{
+  "id": "turkey-sausage-sweetpotato",
+  "name": "Turkey 'sausage', sweet potato & Italian veg",
+  "url": "turkey-sausage-sweetpotato",
+  "categories": [
+    "Dinner"
+  ],
+  "slots": [
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "prepTime": 10,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 420,
+    "proteinG": 40,
+    "fatG": 7,
+    "saturatedFatG": 1.1,
+    "carbsG": 53
+  },
+  "steps": [
+    "Roast the sweet potato at 200°C (400°F) until tender.",
+    "Mix the ground turkey with the Italian 'sausage' seasoning blend and cook in the olive oil, breaking it up, until browned.",
+    "Steam or microwave the Italian veg blend.",
+    "Plate the turkey and sweet potato over lettuce with the veg alongside."
+  ],
+  "ingredients": [
+    {
+      "name": "99% lean ground turkey breast",
+      "amount": 165,
+      "unit": "g"
+    },
+    {
+      "name": "Sweet potato",
+      "note": "roasted",
+      "amount": 250,
+      "unit": "g"
+    },
+    {
+      "name": "Green Giant Valley Selections Italian blend",
+      "note": "frozen",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Lettuce",
+      "amount": 30,
+      "unit": "g"
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

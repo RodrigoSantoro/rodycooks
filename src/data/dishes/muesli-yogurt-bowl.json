@@ -1,0 +1,56 @@
+{
+  "id": "muesli-yogurt-bowl",
+  "name": "Muesli & fibre yogurt bowl",
+  "url": "muesli-yogurt-bowl",
+  "categories": [
+    "Breakfast",
+    "Vegetarian"
+  ],
+  "slots": [
+    "breakfast"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 3,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 490,
+    "proteinG": 26,
+    "fatG": 14,
+    "saturatedFatG": 1.5,
+    "carbsG": 65
+  },
+  "steps": [
+    "Spoon the yogurt into a bowl and stir in the fibre blend until smooth.",
+    "Top with muesli, walnuts and blueberries.",
+    "Stir gently and serve."
+  ],
+  "ingredients": [
+    {
+      "name": "Muesli",
+      "amount": 45,
+      "unit": "g"
+    },
+    {
+      "name": "Walnuts",
+      "amount": 15,
+      "unit": "g"
+    },
+    {
+      "name": "Ultimate Cleanse 3-in-1 fibre blend",
+      "amount": 16,
+      "unit": "g"
+    },
+    {
+      "name": "Blueberries",
+      "amount": 80,
+      "unit": "g"
+    },
+    {
+      "name": "Oikos Pro plain yogurt",
+      "amount": 200,
+      "unit": "g"
+    }
+  ]
+}

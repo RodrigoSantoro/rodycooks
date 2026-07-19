@@ -1,0 +1,55 @@
+{
+  "id": "lentil-bolognese-pasta",
+  "name": "Lentil bolognese over whole wheat pasta",
+  "url": "lentil-bolognese-pasta",
+  "categories": [
+    "Dinner",
+    "Lunch",
+    "Vegetarian"
+  ],
+  "slots": [
+    "dinner",
+    "lunch"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 10,
+  "cookTime": 30,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 520,
+    "proteinG": 26,
+    "fatG": 8,
+    "saturatedFatG": 1,
+    "carbsG": 88
+  },
+  "steps": [
+    "Simmer the lentils with crushed tomato, garlic and herbs until thick (or use canned lentils).",
+    "Cook the whole wheat pasta according to package directions.",
+    "Toss the pasta with the lentil sauce and a drizzle of olive oil."
+  ],
+  "ingredients": [
+    {
+      "name": "Whole wheat pasta",
+      "note": "dry",
+      "amount": 70,
+      "unit": "g"
+    },
+    {
+      "name": "Green/brown lentils",
+      "note": "dry, or canned",
+      "amount": 60,
+      "unit": "g"
+    },
+    {
+      "name": "Crushed tomato, garlic, herbs",
+      "amount": null,
+      "unit": ""
+    },
+    {
+      "name": "Olive oil",
+      "amount": 5,
+      "unit": "g"
+    }
+  ]
+}

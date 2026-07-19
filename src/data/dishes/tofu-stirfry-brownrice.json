@@ -1,0 +1,60 @@
+{
+  "id": "tofu-stirfry-brownrice",
+  "name": "Tofu stir-fry with brown rice",
+  "url": "tofu-stirfry-brownrice",
+  "categories": [
+    "Dinner",
+    "Vegetarian"
+  ],
+  "slots": [
+    "dinner"
+  ],
+  "requiresCooking": true,
+  "vegetarian": true,
+  "prepTime": 15,
+  "cookTime": 20,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 490,
+    "proteinG": 28,
+    "fatG": 18,
+    "saturatedFatG": 2.2,
+    "carbsG": 57
+  },
+  "steps": [
+    "Press and cube the tofu, then sear in the sesame oil until golden.",
+    "Cook the brown rice according to package directions.",
+    "Stir-fry the vegetables with garlic and ginger until crisp-tender.",
+    "Return the tofu, add soy/coconut aminos and rice vinegar, toss and serve over rice."
+  ],
+  "ingredients": [
+    {
+      "name": "Firm tofu",
+      "note": "pressed & seared/baked",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Brown rice",
+      "note": "dry",
+      "amount": 73,
+      "unit": "g"
+    },
+    {
+      "name": "Stir-fry veg (peppers, broccoli, snap peas)",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Sesame oil",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "name": "Garlic, ginger, low-sodium soy / coconut aminos, rice vinegar",
+      "note": "no bottled sauce",
+      "amount": null,
+      "unit": ""
+    }
+  ]
+}

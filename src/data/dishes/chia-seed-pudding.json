@@ -1,0 +1,58 @@
+{
+  "id": "4b1760a5-3420-497e-9b6a-7e2ca5cdd3a5",
+  "name": "Chia Seed Pudding",
+  "url": "chia-seed-pudding",
+  "categories": [
+    "Dessert",
+    "Vegan",
+    "Breakfast",
+    "Snack"
+  ],
+  "slots": [
+    "breakfast",
+    "snack1",
+    "snack2"
+  ],
+  "requiresCooking": false,
+  "vegetarian": true,
+  "prepTime": 5,
+  "cookTime": 0,
+  "servings": 1,
+  "baseMacros": {
+    "calories": 350,
+    "proteinG": 11,
+    "fatG": 13,
+    "saturatedFatG": 1.5,
+    "carbsG": 45
+  },
+  "steps": [
+    "Add all ingredients to a mason jar, mix them well, close it, and leave it in the fridge overnight."
+  ],
+  "ingredients": [
+    {
+      "name": "Chia Seed",
+      "amount": 30,
+      "unit": "g"
+    },
+    {
+      "name": "Oat Milk",
+      "amount": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "Quick Oats",
+      "amount": 20,
+      "unit": "g"
+    },
+    {
+      "name": "Cinnamon Powder",
+      "amount": 1,
+      "unit": "g"
+    },
+    {
+      "name": "Maple Syrup",
+      "amount": 10,
+      "unit": "ml"
+    }
+  ]
+}
