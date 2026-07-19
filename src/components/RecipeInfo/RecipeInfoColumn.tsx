@@ -7,7 +7,7 @@ interface RecipeInfoColumnProps {
 
 export const RecipeInfoColumn = ({ title, value }: RecipeInfoColumnProps) => (
     <Stack>
-        <Typography fontWeight="bold">{title}</Typography>
-        <Typography fontSize="20px">{value}</Typography>
+        <Typography sx={{ fontWeight: 'bold' }}>{title}</Typography>
+        <Typography sx={{ fontSize: '20px' }}>{value}</Typography>
     </Stack>
 )

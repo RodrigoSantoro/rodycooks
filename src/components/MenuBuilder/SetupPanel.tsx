@@ -90,7 +90,7 @@ const PersonCard = ({
             onChange={(e) =>
               onUpdate({ calorieTarget: parseNumber(e.target.value) })
             }
-            inputProps={{ min: 0, step: 50 }}
+            slotProps={{ htmlInput: { min: 0, step: 50 } }}
             fullWidth
           />
           <TextField
@@ -101,7 +101,7 @@ const PersonCard = ({
             onChange={(e) =>
               onUpdate({ proteinTarget: parseNumber(e.target.value) })
             }
-            inputProps={{ min: 0, step: 5 }}
+            slotProps={{ htmlInput: { min: 0, step: 5 } }}
             fullWidth
           />
         </Box>

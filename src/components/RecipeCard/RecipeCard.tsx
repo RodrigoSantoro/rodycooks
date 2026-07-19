@@ -26,7 +26,7 @@ const InfoItem = ({
   icon: React.ReactNode
   label: string
 }) => (
-  <Stack direction="row" spacing={0.5} alignItems="center">
+  <Stack direction="row" spacing={0.5} sx={{ alignItems: "center" }}>
     {icon}
     <Typography variant="body2" color="text.secondary">
       {label}
@@ -114,8 +114,7 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
               direction="row"
               spacing={0.5}
               useFlexGap
-              flexWrap="wrap"
-              sx={{ mb: 1.5 }}
+              sx={{ mb: 1.5, flexWrap: "wrap" }}
             >
               {recipe.categories.map((category) => (
                 <Chip
@@ -128,7 +127,7 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
             </Stack>
           )}
 
-          <Stack direction="row" spacing={2} flexWrap="wrap" useFlexGap>
+          <Stack direction="row" spacing={2} useFlexGap sx={{ flexWrap: "wrap" }}>
             {totalTime > 0 && (
               <InfoItem
                 icon={<AccessTimeIcon fontSize="small" color="action" />}

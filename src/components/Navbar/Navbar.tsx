@@ -69,7 +69,7 @@ export const Navbar = () => {
           >
             RODY COOKS
           </Typography>
-          <Box display={{ xs: "flex", md: "none" }} flexGrow={1}>
+          <Box sx={{ display: { xs: "flex", md: "none" }, flexGrow: 1 }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -84,13 +84,15 @@ export const Navbar = () => {
               anchor="left"
               open={openDrawer}
               onClose={toggleDrawer}
-              PaperProps={{
-                sx: {
-                  width: 280,
-                  boxSizing: "border-box",
-                  borderTopRightRadius: 16,
-                  borderBottomRightRadius: 16,
-                  backgroundColor: "#ffffff",
+              slotProps={{
+                paper: {
+                  sx: {
+                    width: 280,
+                    boxSizing: "border-box",
+                    borderTopRightRadius: 16,
+                    borderBottomRightRadius: 16,
+                    backgroundColor: "#ffffff",
+                  },
                 },
               }}
             >
@@ -167,8 +169,10 @@ export const Navbar = () => {
                         </ListItemIcon>
                         <ListItemText
                           primary={page.label}
-                          primaryTypographyProps={{
-                            fontWeight: active ? 700 : 500,
+                          slotProps={{
+                            primary: {
+                              sx: { fontWeight: active ? 700 : 500 },
+                            },
                           }}
                         />
                       </ListItemButton>
@@ -197,10 +201,12 @@ export const Navbar = () => {
             Rody Cooks
           </Typography>
           <Box
-            flexGrow={1}
-            display={{ xs: "none", md: "flex" }}
-            justifyContent="end"
-            ml={4}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "end",
+              ml: 4,
+            }}
           >
             {pages.map((page) => (
               <Button

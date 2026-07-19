@@ -64,7 +64,7 @@ const MealCard = ({ meal, personId }: { meal: Meal; personId: string }) => {
                 {meal.name}
               </Typography>
             </Box>
-            <Stack spacing={0.5} alignItems="flex-end">
+            <Stack spacing={0.5} sx={{ alignItems: "flex-end" }}>
               <Chip size="small" label={summarizeDays(meal.servedDays)} />
               <Box
                 sx={{

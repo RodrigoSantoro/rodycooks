@@ -66,16 +66,18 @@ export const RecipeGrid = ({ recipes }: RecipeGridProps) => {
         placeholder="Search recipes…"
         value={search}
         onChange={(event) => setSearch(event.target.value)}
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <SearchIcon color="action" />
-            </InputAdornment>
-          ),
+        slotProps={{
+          input: {
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon color="action" />
+              </InputAdornment>
+            ),
+          },
         }}
       />
 
-      <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
+      <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
         <Chip
           label="All"
           color={activeCategory === null ? "primary" : "default"}

@@ -96,6 +96,7 @@ export const GroceriesTab = ({ planId, groceryLists }: GroceriesTabProps) => {
   useEffect(() => {
     try {
       const raw = window.localStorage.getItem(storageKey(planId))
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- SSG renders unchecked; hydrate persisted state on the client after mount.
       if (raw) setChecked(JSON.parse(raw))
     } catch {
       // Ignore malformed / unavailable storage.

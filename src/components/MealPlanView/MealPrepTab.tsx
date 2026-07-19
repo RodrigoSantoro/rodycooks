@@ -184,7 +184,7 @@ const SessionCard = ({
                 {session.name}
               </Typography>
             </Box>
-            <Stack spacing={0.5} alignItems="flex-end">
+            <Stack spacing={0.5} sx={{ alignItems: "flex-end" }}>
               <Chip size="small" label={summarizeDays(session.servedDays)} />
               <Typography variant="caption" color="text.secondary">
                 {session.servings} servings

@@ -15,9 +15,11 @@ export const RecipeInfo = ({ children }: RecipeInfoProps) => {
             <Stack
                 spacing={2}
                 direction="row"
-                alignItems="center"
-                justifyContent="space-around"
-                height="100%"
+                sx={{
+                    alignItems: 'center',
+                    justifyContent: 'space-around',
+                    height: '100%',
+                }}
             >
                 {children}
             </Stack>
