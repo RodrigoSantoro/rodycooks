@@ -15,12 +15,13 @@
   "cookTime": 20,
   "servings": 1,
   "baseMacros": {
-    "calories": 520,
-    "proteinG": 52,
+    "calories": 590,
+    "proteinG": 66,
     "fatG": 12,
     "saturatedFatG": 2.5,
-    "carbsG": 45
+    "carbsG": 54
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cook the quinoa and grill the seasoned chicken, then slice.",
     "Make a quick tzatziki by mixing the Greek yogurt with grated garlic.",

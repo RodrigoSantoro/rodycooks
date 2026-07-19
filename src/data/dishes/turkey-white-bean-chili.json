@@ -15,12 +15,13 @@
   "cookTime": 30,
   "servings": 1,
   "baseMacros": {
-    "calories": 500,
-    "proteinG": 45,
+    "calories": 560,
+    "proteinG": 50,
     "fatG": 6,
     "saturatedFatG": 1.5,
-    "carbsG": 60
+    "carbsG": 76
   },
+  "cholesterolRating": "green",
   "steps": [
     "Brown the ground turkey in a pot, breaking it up.",
     "Add crushed tomato, peppers, onion, cumin and chili powder.",

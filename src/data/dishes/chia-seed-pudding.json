@@ -25,6 +25,7 @@
     "saturatedFatG": 1.5,
     "carbsG": 45
   },
+  "cholesterolRating": "green",
   "steps": [
     "Add all ingredients to a mason jar, mix them well, close it, and leave it in the fridge overnight."
   ],

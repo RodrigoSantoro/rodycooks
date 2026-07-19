@@ -17,12 +17,13 @@
   "cookTime": 30,
   "servings": 1,
   "baseMacros": {
-    "calories": 520,
+    "calories": 555,
     "proteinG": 20,
-    "fatG": 10,
-    "saturatedFatG": 1.5,
-    "carbsG": 86
+    "fatG": 4,
+    "saturatedFatG": 0.8,
+    "carbsG": 110
   },
+  "cholesterolRating": "green",
   "steps": [
     "Roast the diced sweet potato at 200°C (400°F) until tender.",
     "Cook the brown rice and warm the black beans and sweetcorn.",

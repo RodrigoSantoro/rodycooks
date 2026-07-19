@@ -13,12 +13,13 @@
   "cookTime": 25,
   "servings": 1,
   "baseMacros": {
-    "calories": 540,
-    "proteinG": 42,
+    "calories": 550,
+    "proteinG": 49,
     "fatG": 12,
     "saturatedFatG": 2.5,
     "carbsG": 62
   },
+  "cholesterolRating": "yellow",
   "steps": [
     "Form the ground turkey into meatballs and bake or pan-cook in the olive oil until browned.",
     "Simmer the meatballs in the marinara sauce.",

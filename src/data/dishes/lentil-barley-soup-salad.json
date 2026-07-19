@@ -17,12 +17,13 @@
   "cookTime": 40,
   "servings": 1,
   "baseMacros": {
-    "calories": 450,
+    "calories": 510,
     "proteinG": 22,
     "fatG": 8,
     "saturatedFatG": 1,
-    "carbsG": 72
+    "carbsG": 88
   },
+  "cholesterolRating": "green",
   "steps": [
     "Sauté the carrot, celery and onion in the olive oil.",
     "Add the lentils, barley, crushed tomato and water/stock.",

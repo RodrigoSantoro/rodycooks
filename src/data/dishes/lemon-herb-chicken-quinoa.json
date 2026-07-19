@@ -15,12 +15,13 @@
   "cookTime": 30,
   "servings": 1,
   "baseMacros": {
-    "calories": 440,
-    "proteinG": 48,
-    "fatG": 10,
-    "saturatedFatG": 2,
-    "carbsG": 45
+    "calories": 585,
+    "proteinG": 58,
+    "fatG": 13,
+    "saturatedFatG": 2.3,
+    "carbsG": 60
   },
+  "cholesterolRating": "green",
   "steps": [
     "Marinate the chicken in lemon juice and herbs.",
     "Toss the Brussels sprouts and butternut squash in the olive oil and roast at 200°C (400°F) until caramelised.",

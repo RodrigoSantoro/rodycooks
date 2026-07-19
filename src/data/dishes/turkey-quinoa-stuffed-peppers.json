@@ -19,6 +19,7 @@
     "saturatedFatG": 2,
     "carbsG": 52
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cook the quinoa according to package directions.",
     "Brown the ground turkey with tomato and onion, then mix in the quinoa.",

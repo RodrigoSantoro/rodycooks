@@ -22,6 +22,7 @@
     "saturatedFatG": 0.5,
     "carbsG": 35
   },
+  "cholesterolRating": "yellow",
   "steps": [
     "Blend the protein powder with water (and ice if you like) until smooth.",
     "Serve with the banana on the side or blended in."

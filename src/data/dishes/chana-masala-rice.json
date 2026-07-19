@@ -17,12 +17,13 @@
   "cookTime": 25,
   "servings": 1,
   "baseMacros": {
-    "calories": 470,
+    "calories": 580,
     "proteinG": 20,
     "fatG": 12,
     "saturatedFatG": 1.5,
-    "carbsG": 78
+    "carbsG": 98
   },
+  "cholesterolRating": "green",
   "steps": [
     "Sauté onion, garlic and ginger with masala spices in the olive oil.",
     "Add the crushed tomato and chickpeas and simmer 10–15 minutes.",

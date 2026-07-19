@@ -24,6 +24,7 @@
     "saturatedFatG": 0.6,
     "carbsG": 38
   },
+  "cholesterolRating": "green",
   "steps": [
     "Add all ingredients to a blender.",
     "Blend until completely smooth, adding water or ice to reach the consistency you like."

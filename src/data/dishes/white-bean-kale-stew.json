@@ -23,6 +23,7 @@
     "saturatedFatG": 1.3,
     "carbsG": 62
   },
+  "cholesterolRating": "green",
   "steps": [
     "Sauté the carrot, onion and garlic in the olive oil.",
     "Add the cannellini beans and crushed tomato and simmer 15 minutes.",

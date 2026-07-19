@@ -18,12 +18,13 @@
   "cookTime": 0,
   "servings": 1,
   "baseMacros": {
-    "calories": 240,
-    "proteinG": 9,
-    "fatG": 12,
-    "saturatedFatG": 1.5,
-    "carbsG": 28
+    "calories": 190,
+    "proteinG": 6,
+    "fatG": 8,
+    "saturatedFatG": 0.9,
+    "carbsG": 24
   },
+  "cholesterolRating": "green",
   "steps": [
     "Stir the chia seeds into the almond milk and let sit 5 minutes, then stir again.",
     "Chill for at least 4 hours or overnight until set.",

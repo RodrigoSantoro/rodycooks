@@ -22,6 +22,7 @@
     "saturatedFatG": 1.7,
     "carbsG": 24
   },
+  "cholesterolRating": "green",
   "steps": [
     "Slice the pear.",
     "Serve with the walnuts."

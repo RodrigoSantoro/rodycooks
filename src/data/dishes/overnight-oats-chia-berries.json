@@ -15,12 +15,13 @@
   "cookTime": 0,
   "servings": 1,
   "baseMacros": {
-    "calories": 420,
-    "proteinG": 22,
-    "fatG": 12,
-    "saturatedFatG": 1.5,
+    "calories": 475,
+    "proteinG": 18,
+    "fatG": 18,
+    "saturatedFatG": 2,
     "carbsG": 60
   },
+  "cholesterolRating": "green",
   "steps": [
     "Combine the rolled oats, chia seeds and soy milk in a jar and stir well.",
     "Refrigerate overnight (or at least 4 hours).",

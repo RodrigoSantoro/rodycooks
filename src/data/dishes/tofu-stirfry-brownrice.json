@@ -15,12 +15,13 @@
   "cookTime": 20,
   "servings": 1,
   "baseMacros": {
-    "calories": 490,
+    "calories": 560,
     "proteinG": 28,
     "fatG": 18,
     "saturatedFatG": 2.2,
-    "carbsG": 57
+    "carbsG": 72
   },
+  "cholesterolRating": "green",
   "steps": [
     "Press and cube the tofu, then sear in the sesame oil until golden.",
     "Cook the brown rice according to package directions.",

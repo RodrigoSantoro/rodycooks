@@ -13,12 +13,13 @@
   "cookTime": 30,
   "servings": 1,
   "baseMacros": {
-    "calories": 420,
+    "calories": 500,
     "proteinG": 40,
-    "fatG": 7,
-    "saturatedFatG": 1.1,
-    "carbsG": 53
+    "fatG": 9,
+    "saturatedFatG": 1.2,
+    "carbsG": 64
   },
+  "cholesterolRating": "green",
   "steps": [
     "Roast the sweet potato at 200°C (400°F) until tender.",
     "Mix the ground turkey with the Italian 'sausage' seasoning blend and cook in the olive oil, breaking it up, until browned.",

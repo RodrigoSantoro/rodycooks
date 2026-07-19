@@ -15,12 +15,13 @@
   "cookTime": 7,
   "servings": 1,
   "baseMacros": {
-    "calories": 430,
+    "calories": 475,
     "proteinG": 30,
-    "fatG": 8,
-    "saturatedFatG": 1,
+    "fatG": 13,
+    "saturatedFatG": 1.3,
     "carbsG": 60
   },
+  "cholesterolRating": "green",
   "steps": [
     "Cook the rolled oats in water until creamy.",
     "Off the heat, stir in the protein powder until smooth.",

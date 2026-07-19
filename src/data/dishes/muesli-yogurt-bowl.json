@@ -21,6 +21,7 @@
     "saturatedFatG": 1.5,
     "carbsG": 65
   },
+  "cholesterolRating": "green",
   "steps": [
     "Spoon the yogurt into a bowl and stir in the fibre blend until smooth.",
     "Top with muesli, walnuts and blueberries.",
