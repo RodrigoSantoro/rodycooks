@@ -93,6 +93,7 @@ export const MenuBuilder = () => {
             selection={menu.selection}
             catalog={menu.catalog}
             onSetDish={menu.setDish}
+            onRepeatNextDay={menu.repeatNextDay}
             onRepeatAcrossWeek={menu.repeatAcrossWeek}
             onClearSlot={menu.clearSlot}
           />

@@ -13,6 +13,7 @@ import {
   Typography,
 } from "@mui/material"
 import RepeatRoundedIcon from "@mui/icons-material/RepeatRounded"
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded"
 import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded"
 import BackspaceRoundedIcon from "@mui/icons-material/BackspaceRounded"
 import {
@@ -31,25 +32,33 @@ interface MenuGridProps {
   selection: MenuSelection
   catalog: CatalogDish[]
   onSetDish: (day: WeekDay, slot: MealSlot, dishId: string | null) => void
+  onRepeatNextDay: (day: WeekDay, slot: MealSlot, dishId: string | null) => void
   onRepeatAcrossWeek: (slot: MealSlot, dishId: string | null) => void
   onClearSlot: (slot: MealSlot) => void
 }
 
-/** A single day's dish picker for one slot, with a "repeat across week" action. */
+/**
+ * A single day's dish picker for one slot, with two repeat actions: copy the
+ * choice to the following day only, or repeat it across the whole week.
+ */
 const DayCell = ({
   day,
   slot,
   dishId,
   options,
+  isLastDay,
   onSetDish,
-  onRepeat,
+  onRepeatNextDay,
+  onRepeatWeek,
 }: {
   day: WeekDay
   slot: MealSlot
   dishId: string | null
   options: CatalogDish[]
+  isLastDay: boolean
   onSetDish: (dishId: string | null) => void
-  onRepeat: () => void
+  onRepeatNextDay: () => void
+  onRepeatWeek: () => void
 }) => {
   const value = options.find((dish) => dish.id === dishId) ?? null
   return (
@@ -69,11 +78,27 @@ const DayCell = ({
           <TextField {...params} label={dayLabel(day)} placeholder="Search…" />
         )}
       />
+      {!isLastDay && (
+        <Tooltip
+          title={`Copy ${dayLabel(day)}'s ${slotLabel(slot)} to the next day`}
+        >
+          <span>
+            <IconButton
+              size="small"
+              onClick={onRepeatNextDay}
+              disabled={!dishId}
+              aria-label={`Copy ${dayLabel(day)} ${slotLabel(slot)} to the next day`}
+            >
+              <ArrowForwardRoundedIcon fontSize="small" />
+            </IconButton>
+          </span>
+        </Tooltip>
+      )}
       <Tooltip title={`Repeat ${dayLabel(day)}'s ${slotLabel(slot)} all week`}>
         <span>
           <IconButton
             size="small"
-            onClick={onRepeat}
+            onClick={onRepeatWeek}
             disabled={!dishId}
             aria-label={`Repeat ${dayLabel(day)} ${slotLabel(slot)} across the week`}
           >
@@ -91,6 +116,7 @@ const SlotSection = ({
   selection,
   catalog,
   onSetDish,
+  onRepeatNextDay,
   onRepeatAcrossWeek,
   onClearSlot,
 }: {
@@ -146,15 +172,19 @@ const SlotSection = ({
             },
           }}
         >
-          {WEEK_DAYS.map((day) => (
+          {WEEK_DAYS.map((day, index) => (
             <DayCell
               key={day}
               day={day}
               slot={slot}
               dishId={selection[day]?.[slot] ?? null}
               options={options}
+              isLastDay={index === WEEK_DAYS.length - 1}
               onSetDish={(dishId) => onSetDish(day, slot, dishId)}
-              onRepeat={() =>
+              onRepeatNextDay={() =>
+                onRepeatNextDay(day, slot, selection[day]?.[slot] ?? null)
+              }
+              onRepeatWeek={() =>
                 onRepeatAcrossWeek(slot, selection[day]?.[slot] ?? null)
               }
             />
@@ -185,9 +215,13 @@ export const MenuGrid = (props: MenuGridProps) => {
     <Stack spacing={2}>
       <Typography variant="body2" color="text.secondary">
         Pick a dish for each day. Use the{" "}
+        <ArrowForwardRoundedIcon
+          fontSize="inherit"
+          sx={{ verticalAlign: "middle" }}
+        />{" "}
+        button to copy a day&apos;s choice to the next day, or the{" "}
         <RepeatRoundedIcon fontSize="inherit" sx={{ verticalAlign: "middle" }} />{" "}
-        button to repeat a day&apos;s choice across the whole week, then tweak
-        individual days.
+        button to repeat it across the whole week, then tweak individual days.
       </Typography>
       {activeSlots.map((slot) => (
         <SlotSection key={slot} slot={slot} {...props} />

@@ -30,6 +30,7 @@ export interface UseWeeklyMenu {
   toggleSlot: (slot: MealSlot) => void
   // selection mutators
   setDish: (day: WeekDay, slot: MealSlot, dishId: string | null) => void
+  repeatNextDay: (day: WeekDay, slot: MealSlot, dishId: string | null) => void
   repeatAcrossWeek: (slot: MealSlot, dishId: string | null) => void
   clearSlot: (slot: MealSlot) => void
   clearSelection: () => void
@@ -144,6 +145,25 @@ export const useWeeklyMenu = (): UseWeeklyMenu => {
     []
   )
 
+  const repeatNextDay = useCallback(
+    (day: WeekDay, slot: MealSlot, dishId: string | null) => {
+      const index = WEEK_DAYS.indexOf(day)
+      const nextDay = WEEK_DAYS[index + 1]
+      // No-op on the last day of the week (nothing after Sunday).
+      if (!nextDay) return
+      setState((prev) => {
+        const daySel = { ...(prev.selection[nextDay] ?? {}) }
+        if (dishId) daySel[slot] = dishId
+        else delete daySel[slot]
+        return {
+          ...prev,
+          selection: { ...prev.selection, [nextDay]: daySel },
+        }
+      })
+    },
+    []
+  )
+
   const repeatAcrossWeek = useCallback(
     (slot: MealSlot, dishId: string | null) => {
       setState((prev) => {
@@ -191,6 +211,7 @@ export const useWeeklyMenu = (): UseWeeklyMenu => {
     updatePerson,
     toggleSlot,
     setDish,
+    repeatNextDay,
     repeatAcrossWeek,
     clearSlot,
     clearSelection,
